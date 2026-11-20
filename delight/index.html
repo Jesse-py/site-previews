@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Delight Mobile Detailing | Mobile Car Detailing in Spring, Tomball &amp; The Woodlands</title>
+<meta name="description" content="Mobile car detailing at your home or work in Spring, Tomball, Klein, The Woodlands, Houston and Conroe. Interior from $70, washes from $60, ceramic coating. Text Jacob at 832-840-5342.">
+<meta name="theme-color" content="#0b5394">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Delight Mobile Detailing: car detailing to your doorstep">
+<meta property="og:description" content="Interior details from $70, washes from $60, clay, polish and ceramic coating. Spring, Tomball, Klein, The Woodlands, Houston, Conroe. Text Jacob at 832-840-5342.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoWash",
+  "name": "Delight Mobile Detailing",
+  "description": "Mobile car detailing: interior cleaning, washes, wax, ceramic spray, clay and polish, sealant and ceramic coating, at the customer's home or work.",
+  "employee": { "@type": "Person", "name": "Jacob Perez" },
+  "telephone": "+1-832-840-5342",
+  "email": "detailingautomd@gmail.com",
+  "image": "assets/share.jpg",
+  "areaServed": ["Spring, TX", "Tomball, TX", "Klein, TX", "The Woodlands, TX", "Houston, TX", "Conroe, TX"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Spring", "addressRegion": "TX", "addressCountry": "US" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "name": "Interior Basic", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "70", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Interior Extreme", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "150", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Basic Wash", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "60", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Ultimate Mobile Detail (ceramic coating)", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "1250", "priceCurrency": "USD" } }
+  ]
+}
+</script>
+<style>
+  /* Colors from their own site (sources in README.md):
+     --blue #0b5394 their heading text (computed style on Home); --sky #49aad4 their active nav link;
+     --teal #0aafc2 / --teal-d #03525d the pattern band on their Packages page; --slate #56707e the band behind "25% OFF" on Home.
+     Fonts: Caveat (their site title) and Lato (their body and headings). */
+  :root {
+    --blue: #0b5394;
+    --blue-2: #08427a;
+    --sky: #49aad4;
+    --teal: #0aafc2;
+    --teal-2: #29d3e1;
+    --teal-d: #03525d;
+    --slate: #56707e;
+    --night: #0a2238;
+    --ink: #142433;
+    --muted: #4c5d6c;
+    --line: #d8e3eb;
+    --pale: #eef6fa;
+    --paper: #ffffff;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(10,34,56,.06), 0 8px 24px rgba(10,34,56,.10);
+    --script: "Caveat", "Segoe Print", cursive;
+    --sans: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 18px/1.6 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--blue); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--night); color: #fff; border-bottom: 4px solid var(--teal); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 74px; }
+  .lockup { margin-right: auto; text-decoration: none; color: #fff; line-height: 1; }
+  .lockup b { font: 700 38px/1 var(--script); display: block; }
+  .lockup span { display: block; font: 700 11px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--teal-2); margin-top: 2px; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; opacity: .9; }
+  .nav a:hover { opacity: 1; color: var(--teal-2); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 900 17px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: 999px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-teal { background: var(--teal); color: #04252b; }
+  .btn-teal:hover { background: var(--teal-2); }
+  .btn-blue { background: var(--blue); color: #fff; }
+  .btn-blue:hover { background: var(--blue-2); }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: rgba(10,34,56,.3); }
+  .btn-ghost:hover { background: rgba(255,255,255,.14); }
+  .head-call { padding: 12px 18px; font-size: 16px; }
+  @media (max-width: 1000px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 64px; } .lockup b { font-size: 32px; } }
+
+  .hero { position: relative; color: #fff; background: var(--night); overflow: hidden; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,34,56,.96) 0%, rgba(10,34,56,.84) 48%, rgba(10,34,56,.15) 88%); }
+  .hero .wrap { position: relative; z-index: 1; padding-top: 86px; padding-bottom: 92px; }
+  .hero-text { max-width: 620px; }
+  .kicker { font: 700 14px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--teal-2); margin: 0 0 16px; display: flex; align-items: center; gap: 10px; }
+  .kicker::before { content: ""; width: 36px; height: 4px; border-radius: 2px; background: var(--sky); }
+  .hero h1 { font: 900 clamp(38px, 5.2vw, 60px)/1.05 var(--sans); margin: 0 0 18px; letter-spacing: -.01em; }
+  .hero h1 em { font: 700 1.2em/1 var(--script); color: var(--teal-2); }
+  .hero p.sub { font-size: 20px; margin: 0 0 24px; color: #d8e6f0; }
+  .hero-prices { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; padding: 0; list-style: none; }
+  .hero-prices li { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); border-radius: 10px; padding: 8px 14px; font-size: 16px; }
+  .hero-prices b { color: var(--teal-2); font-size: 19px; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .small { margin-top: 20px; font-size: 16px; color: #c4d6e3; }
+  @media (max-width: 760px) {
+    .hero::after { background: linear-gradient(180deg, rgba(10,34,56,.9) 0%, rgba(10,34,56,.84) 62%, rgba(10,34,56,.66) 100%); }
+    .hero .wrap { padding-top: 50px; padding-bottom: 60px; }
+  }
+
+  .trust { background: var(--teal); color: #04252b; }
+  .trust ul { list-style: none; margin: 0 auto; padding: 18px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 12px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 900; }
+  .trust svg { width: 26px; height: 26px; flex: none; }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+
+  section { padding: 84px 0; }
+  .tint { background: var(--pale); }
+  .eyebrow { font: 700 14px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--blue); margin: 0 0 12px; }
+  h2 { font: 900 clamp(30px, 3.8vw, 44px)/1.12 var(--sans); margin: 0 0 14px; color: var(--night); letter-spacing: -.01em; }
+  .intro { color: var(--muted); max-width: 740px; margin: 0 0 40px; font-size: 19px; }
+  @media (max-width: 640px) { section { padding: 60px 0; } }
+
+  /* Interior packages */
+  .int-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  @media (max-width: 820px) { .int-grid { grid-template-columns: 1fr; } }
+  .pkg { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+  .pkg img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; }
+  .pkg .body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+  .pkg h3 { font: 900 25px/1.15 var(--sans); margin: 0 0 2px; color: var(--night); }
+  .pkg .price { font: 900 20px/1.3 var(--sans); color: var(--blue); margin: 0 0 14px; }
+  .pkg .price small { font-weight: 400; font-size: 15px; color: var(--muted); }
+  .ticks { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-size: 16px; }
+  @media (max-width: 480px) { .ticks { grid-template-columns: 1fr; } }
+  .ticks li { display: flex; gap: 8px; align-items: flex-start; }
+  .ticks svg { width: 18px; height: 18px; color: var(--teal-d); flex: none; margin-top: 4px; }
+
+  /* Exterior comparison */
+  .cmp-wrap { overflow-x: auto; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); }
+  .cmp { width: 100%; border-collapse: collapse; min-width: 760px; }
+  .cmp th, .cmp td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: center; font-size: 16px; }
+  .cmp thead th { vertical-align: bottom; background: var(--night); color: #fff; font-weight: 900; font-size: 17px; line-height: 1.2; }
+  .cmp thead th small { display: block; font-weight: 400; font-size: 13px; color: #b9d0e0; margin-top: 4px; }
+  .cmp thead th:first-child { text-align: left; background: var(--night); }
+  .cmp tbody th { text-align: left; font-weight: 700; }
+  .cmp .yes svg { width: 20px; height: 20px; color: var(--teal-d); display: inline-block; vertical-align: middle; }
+  .cmp .no { color: #b3c2ce; }
+  .cmp tr.prices td { font: 900 18px/1.25 var(--sans); color: var(--blue); background: var(--pale); }
+  .cmp tr.prices th { background: var(--pale); }
+  .cmp tr.base th { font-weight: 400; color: var(--muted); }
+  .cmp .hl { background: rgba(10,175,194,.08); }
+  .cmp thead th.hl { background: var(--teal-d); }
+  .ext-note { margin: 18px 0 0; font-size: 16px; color: var(--muted); max-width: 860px; }
+
+  /* Add-ons */
+  .addons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
+  @media (max-width: 820px) { .addons { grid-template-columns: 1fr; } }
+  .addon { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border-left: 6px solid var(--teal); padding: 20px 22px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .addon h3 { font: 900 20px/1.2 var(--sans); margin: 0; color: var(--night); }
+  .addon p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+  .addon b { font: 900 24px/1 var(--sans); color: var(--blue); }
+
+  /* Build your detail */
+  .builder { background: var(--night); color: #fff; }
+  .builder h2 { color: #fff; }
+  .builder .eyebrow { color: var(--teal-2); }
+  .builder .intro { color: #c9dae6; }
+  .b-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 36px; align-items: start; }
+  @media (max-width: 900px) { .b-grid { grid-template-columns: 1fr; } }
+  .b-card { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 26px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+  fieldset { border: 0; margin: 0 0 18px; padding: 0; }
+  legend { font: 900 17px/1.2 var(--sans); color: var(--night); margin-bottom: 10px; padding: 0; }
+  .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 520px) { .opts { grid-template-columns: 1fr; } }
+  .opt { display: flex; gap: 10px; align-items: center; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; font-size: 16px; }
+  .opt:has(input:checked) { border-color: var(--teal-d); background: rgba(10,175,194,.08); }
+  .opt input { width: 18px; height: 18px; accent-color: var(--teal-d); flex: none; }
+  .opt span { flex: 1; }
+  .opt em { font-style: normal; font-weight: 900; color: var(--blue); white-space: nowrap; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+  .field input, .field select, .field textarea { width: 100%; font: 17px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #b6c6d3; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 3px rgba(11,83,148,.2); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .total { position: sticky; top: 96px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.18); border-radius: var(--radius); padding: 24px; }
+  .total small { display: block; font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #a9c3d4; }
+  .total output { display: block; font: 900 46px/1.1 var(--sans); color: var(--teal-2); margin: 10px 0 6px; }
+  .total ul { list-style: none; padding: 0; margin: 0 0 14px; font-size: 16px; color: #d8e6f0; }
+  .total ul li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,.15); }
+  .total p { font-size: 15px; color: #b9cfdd; margin: 0 0 16px; }
+  .total .btn { width: 100%; justify-content: center; margin-top: 8px; }
+  .err { color: #ffd2cc; font-size: 15px; min-height: 1.2em; margin: 6px 0 0; }
+
+  /* Work */
+  .gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .gal { grid-template-columns: 1fr 1fr; } }
+  .gal figure { margin: 0; }
+  .gal img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow); }
+  .gal figure.wide { grid-column: span 2; }
+  .gal figure.wide img { aspect-ratio: 16 / 9; }
+  .gal figcaption { font-size: 15px; color: var(--muted); margin-top: 8px; }
+  .ba { position: relative; }
+  .ba .lbl { position: absolute; top: 10px; background: rgba(10,34,56,.85); color: #fff; font: 900 12px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; padding: 6px 8px; border-radius: 6px; }
+
+  /* Hours + area */
+  .ha { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 820px) { .ha { grid-template-columns: 1fr; } }
+  .ha-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 26px 28px; }
+  .ha-card h3 { font: 900 24px/1.2 var(--sans); color: var(--night); margin: 0 0 14px; display: flex; gap: 10px; align-items: center; }
+  .ha-card h3 svg { width: 26px; height: 26px; color: var(--blue); }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours th, .hours td { padding: 10px 0; border-bottom: 1px solid var(--line); text-align: left; font-size: 17px; }
+  .hours td { text-align: right; font-weight: 700; }
+  .hours tr.closed td { color: var(--muted); font-weight: 400; }
+  .towns { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .towns li { background: var(--pale); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-weight: 700; color: var(--night); }
+  .ha-card p { color: var(--muted); font-size: 16px; margin: 16px 0 0; }
+
+  /* Contact */
+  .contact { background: linear-gradient(135deg, var(--blue) 0%, var(--night) 100%); color: #fff; text-align: center; }
+  .contact h2 { color: #fff; }
+  .contact .lead { color: #d3e3ee; font-size: 20px; margin: 0 auto 30px; max-width: 640px; }
+  .contact .lead b { font: 700 1.3em/1 var(--script); color: var(--teal-2); }
+  .cways { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .contact .email { margin-top: 22px; font-size: 17px; color: #d3e3ee; }
+  .contact .email a { color: #fff; font-weight: 700; }
+
+  .site-foot { background: #071827; color: #b5c7d5; font-size: 15px; padding: 40px 0 30px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 24px 56px; align-items: flex-start; justify-content: space-between; }
+  .foot-name { font: 700 34px/1 var(--script); color: #fff; }
+  .site-foot a { color: #e6f0f7; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 6px; font-weight: 900; color: #fff; text-decoration: none; background: var(--blue); font-size: 16px; }
+    .callbar a + a { background: var(--night); }
+    .callbar a:last-child { background: var(--teal); color: #04252b; }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Delight Mobile Detailing from the text and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h14l2 5v5h-2M5 12h14"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Delight Mobile Detailing, home"><b>Delight</b><span>Mobile Detailing</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#interior">Interior</a>
+      <a href="#exterior">Exterior</a>
+      <a href="#addons">Add-ons</a>
+      <a href="#build">Price your detail</a>
+      <a href="#work">Our work</a>
+      <a href="#hours">Hours &amp; area</a>
+    </nav>
+    <a class="btn btn-teal head-call" href="sms:+18328405342"><svg><use href="#i-text"/></svg>Text 832-840-5342</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <img src="assets/img/g-wagon.webp" srcset="assets/img/g-wagon-800.webp 800w, assets/img/g-wagon.webp 1280w" sizes="100vw" alt="A lime green Mercedes G-Wagon, freshly detailed" width="1280" height="1280">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="kicker">Spring · Tomball · The Woodlands</p>
+        <h1>Car detailing, <em>to your doorstep.</em></h1>
+        <p class="sub">Delight brings the detail to you: interior cleaning, washes, wax, ceramic spray, clay and polish, sealant and ceramic coating. Text Jacob to set a time.</p>
+        <ul class="hero-prices" aria-label="Starting prices">
+          <li>Interior <b>from $70</b></li><li>Wash <b>from $60</b></li><li>Wash &amp; wax <b>from $100</b></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-teal" href="sms:+18328405342"><svg><use href="#i-text"/></svg>Text Jacob for an appointment</a>
+          <a class="btn btn-ghost" href="#build">Price your detail</a>
+        </div>
+        <p class="small">Monday–Friday 8 am–6 pm · Saturday 8 am–3 pm</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-car"/></svg>We come to you</li>
+      <li><svg><use href="#i-text"/></svg>Text Jacob directly</li>
+      <li><svg><use href="#i-tag"/></svg>Prices posted up front</li>
+      <li><svg><use href="#i-check"/></svg>No more swirls</li>
+    </ul>
+  </div>
+
+  <section id="interior">
+    <div class="wrap">
+      <p class="eyebrow">Interior detailing</p>
+      <h2>From dirt to spring clean</h2>
+      <p class="intro">Two interior packages. Prices start where shown and depend on the vehicle's size and condition; Jacob confirms the price before he starts.</p>
+      <div class="int-grid">
+        <article class="pkg">
+          <img src="assets/img/dash-seats-800.webp" alt="A clean leather interior: dash, console and front seats" width="800" height="449" loading="lazy">
+          <div class="body">
+            <h3>Interior Basic</h3>
+            <p class="price" data-pkg="int-basic">From $70 <small>· depends on condition</small></p>
+            <ul class="ticks">
+              <li><svg><use href="#i-check"/></svg>Deep clean on doors, dash and plastics</li>
+              <li><svg><use href="#i-check"/></svg>Blowout crevices and under seats</li>
+              <li><svg><use href="#i-check"/></svg>Protectant on doors, dash and plastics</li>
+              <li><svg><use href="#i-check"/></svg>Clean all glass</li>
+              <li><svg><use href="#i-check"/></svg>Vacuum all interior</li>
+              <li><svg><use href="#i-check"/></svg>Leather conditioning</li>
+              <li><svg><use href="#i-check"/></svg>Trunk vacuumed</li>
+            </ul>
+          </div>
+        </article>
+        <article class="pkg">
+          <img src="assets/img/interior-before-after-800.webp" alt="A truck's back seat and floor before and after an interior detail" width="693" height="693" loading="lazy" style="aspect-ratio:16/8;object-position:50% 50%">
+          <div class="body">
+            <h3>Interior Extreme</h3>
+            <p class="price" data-pkg="int-extreme">From $150 <small>· depends on condition</small></p>
+            <ul class="ticks">
+              <li><svg><use href="#i-check"/></svg>Thorough vacuum</li>
+              <li><svg><use href="#i-check"/></svg>Extraction for carpets and seats if needed</li>
+              <li><svg><use href="#i-check"/></svg>Shampoo seats</li>
+              <li><svg><use href="#i-check"/></svg>Deep clean leather seats with pH-balanced cleaner</li>
+              <li><svg><use href="#i-check"/></svg>Interior dressing / protectant</li>
+              <li><svg><use href="#i-check"/></svg>Blow out carpet and crevices</li>
+              <li><svg><use href="#i-check"/></svg>Door jambs cleaned</li>
+              <li><svg><use href="#i-check"/></svg>Trunk vacuumed</li>
+              <li><svg><use href="#i-check"/></svg>Windows cleaned inside and out</li>
+              <li><svg><use href="#i-check"/></svg>Steam clean</li>
+              <li><svg><use href="#i-check"/></svg>Brushed air vents</li>
+              <li><svg><use href="#i-check"/></svg>Headliner spot remover</li>
+              <li><svg><use href="#i-check"/></svg>Vomit, urine and mold removal</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="exterior" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Exterior packages</p>
+      <h2>Five levels of shine, side by side</h2>
+      <p class="intro">Every exterior package starts with the same careful wash. Each step up adds protection, from a coat of wax to an 8-year ceramic coating. The final price is given when Jacob sees the vehicle.</p>
+      <div class="cmp-wrap" role="region" aria-label="Exterior package comparison" tabindex="0">
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th scope="col">What's included</th>
+              <th scope="col">Basic Wash<small>Car wash</small></th>
+              <th scope="col">Standard<small>Wash and wax</small></th>
+              <th scope="col">Premium<small>Wash and ceramic spray</small></th>
+              <th scope="col" class="hl">The Boss<small>Wash, clay and polish</small></th>
+              <th scope="col">Ultimate<small>Clay, polish, ceramic coating</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="prices"><th scope="row">Starting price</th><td>$60</td><td>$100</td><td>$230–$250</td><td class="hl">$400–$460</td><td>$1,250–$1,450</td></tr>
+            <tr class="base"><th scope="row">Foam wash, wheels and wheel wells, bug &amp; tar removal, gas cap, glass, tire shine, microfiber towel dry</th><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes hl"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td></tr>
+            <tr><th scope="row">Wax</th><td class="no">–</td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="no">–</td><td class="no hl">–</td><td class="no">–</td></tr>
+            <tr><th scope="row">Ceramic spray protection</th><td class="no">–</td><td class="no">–</td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="no hl">–</td><td class="no">–</td></tr>
+            <tr><th scope="row">Clay treatment to decontaminate paint and rims</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="yes hl"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td></tr>
+            <tr><th scope="row">Compound and polish</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="yes hl"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td></tr>
+            <tr><th scope="row">1-year sealant protection</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="yes hl"><svg aria-label="Included"><use href="#i-check"/></svg></td><td class="no">–</td></tr>
+            <tr><th scope="row">8-year ceramic coating</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="no hl">–</td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td></tr>
+            <tr><th scope="row">Engine clean</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="no hl">–</td><td class="yes"><svg aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ext-note">Prices are starting prices from Delight's own package list and vary with vehicle type and condition. Swipe the table sideways on a phone.</p>
+
+      <div id="addons" class="addons">
+        <div class="addon"><div><h3>Engine detail</h3><p>Top to bottom</p></div><b>$100</b></div>
+        <div class="addon"><div><h3>Headlight restoration</h3></div><b>$65</b></div>
+        <div class="addon"><div><h3>Pet hair removal</h3></div><b>$50</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="build" class="builder">
+    <div class="wrap">
+      <p class="eyebrow">Price your detail</p>
+      <h2>Pick what you want, see where it starts</h2>
+      <p class="intro">Choose an interior package, an exterior package and any add-ons. The total uses Delight's posted starting prices; Jacob gives the final price once he sees the vehicle. Then send it to him as a text or an email.</p>
+      <div class="b-grid">
+        <form class="b-card" id="bform" novalidate>
+          <fieldset>
+            <legend>Interior</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="int" value="" checked><span>No interior</span></label>
+              <label class="opt"><input type="radio" name="int" value="int-basic"><span>Interior Basic</span><em>$70+</em></label>
+              <label class="opt"><input type="radio" name="int" value="int-extreme"><span>Interior Extreme</span><em>$150+</em></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Exterior</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="ext" value="" checked><span>No exterior</span></label>
+              <label class="opt"><input type="radio" name="ext" value="basic-wash"><span>Basic Wash</span><em>$60+</em></label>
+              <label class="opt"><input type="radio" name="ext" value="standard"><span>Standard (wash &amp; wax)</span><em>$100+</em></label>
+              <label class="opt"><input type="radio" name="ext" value="premium"><span>Premium (ceramic spray)</span><em>$230+</em></label>
+              <label class="opt"><input type="radio" name="ext" value="boss"><span>The Boss (clay &amp; polish)</span><em>$400+</em></label>
+              <label class="opt"><input type="radio" name="ext" value="ultimate"><span>Ultimate (ceramic coating)</span><em>$1,250+</em></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Add-ons</legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" name="add" value="engine"><span>Engine detail</span><em>$100</em></label>
+              <label class="opt"><input type="checkbox" name="add" value="headlights"><span>Headlight restoration</span><em>$65</em></label>
+              <label class="opt"><input type="checkbox" name="add" value="pet-hair"><span>Pet hair removal</span><em>$50</em></label>
+            </div>
+          </fieldset>
+          <div class="two">
+            <div class="field"><label for="f-vehicle">Vehicle</label><input id="f-vehicle" name="vehicle" type="text" placeholder="e.g. 2019 Honda CR-V" autocomplete="off"></div>
+            <div class="field"><label for="f-town">Where should Jacob come?</label>
+              <select id="f-town" name="town"><option value="">Choose your area</option><option>Spring</option><option>Tomball</option><option>Klein</option><option>The Woodlands</option><option>Houston</option><option>Conroe</option></select></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="f-when">Best day / time</label><input id="f-when" name="when" type="text" placeholder="e.g. Saturday morning"></div>
+          </div>
+          <div class="field"><label for="f-notes">Anything Jacob should know?</label><textarea id="f-notes" name="notes" rows="3" placeholder="Pet hair, stains, the car's condition, where it's parked..."></textarea></div>
+        </form>
+        <aside class="total" aria-live="polite">
+          <small>Starting price</small>
+          <output id="total" form="bform">$0</output>
+          <ul id="lines"><li><span>Pick a package to start</span></li></ul>
+          <p>Starting prices from Delight's own list. Larger vehicles or heavy soiling cost more; Jacob confirms the price before he starts.</p>
+          <a class="btn btn-teal" id="send-sms" href="sms:+18328405342"><svg><use href="#i-text"/></svg>Text this to Jacob</a>
+          <a class="btn btn-ghost" id="send-mail" href="mailto:detailingautomd@gmail.com"><svg><use href="#i-mail"/></svg>Email it instead</a>
+          <p class="err" id="err" role="alert"></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="eyebrow">Our work</p>
+      <h2>Recent details</h2>
+      <p class="intro">Photos from Delight's own site.</p>
+      <div class="gal">
+        <figure class="wide ba"><img src="assets/img/trunk-before-after-800.webp" alt="An SUV cargo area before (dirty carpet) and after (clean carpet)" width="720" height="404" loading="lazy"><span class="lbl" style="left:10px">Before</span><span class="lbl" style="right:10px;background:var(--teal);color:#04252b">After</span><figcaption>Cargo area, before and after</figcaption></figure>
+        <figure class="wide"><img src="assets/img/foam-suv-800.webp" alt="An SUV covered in foam during a hand wash in a driveway" width="800" height="600" loading="lazy"><figcaption>Foam wash</figcaption></figure>
+        <figure><img src="assets/img/white-suv-800.webp" alt="A white Land Rover Discovery Sport after a detail" width="720" height="404" loading="lazy"><figcaption>White Discovery Sport</figcaption></figure>
+        <figure><img src="assets/img/black-truck-800.webp" alt="A black Ford F-150 Raptor after a wash" width="800" height="449" loading="lazy"><figcaption>Black F-150 Raptor</figcaption></figure>
+        <figure><img src="assets/img/silver-sedan-800.webp" alt="A silver Toyota Camry, washed and shining in a driveway" width="800" height="572" loading="lazy"><figcaption>Silver Camry</figcaption></figure>
+        <figure><img src="assets/img/engine-bay-800.webp" alt="A clean engine bay" width="800" height="600" loading="lazy"><figcaption>Engine detail</figcaption></figure>
+        <figure><img src="assets/img/front-seats-800.webp" alt="Clean front seats and door panel" width="800" height="449" loading="lazy"><figcaption>Front seats and door panel</figcaption></figure>
+        <figure><img src="assets/img/interior-before-after-800.webp" alt="A truck interior before and after: the floor and seats cleaned" width="693" height="693" loading="lazy"><figcaption>Back seat, before and after</figcaption></figure>
+        <figure class="wide"><img src="assets/img/g-wagon-800.webp" alt="The lime green G-Wagon after a detail" width="800" height="800" loading="lazy" style="object-position:50% 60%"><figcaption>Lime green G-Wagon</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Hours &amp; service area</p>
+      <h2>When and where Jacob works</h2>
+      <div class="ha">
+        <div class="ha-card">
+          <h3><svg><use href="#i-clock"/></svg>Mobile detail hours</h3>
+          <table class="hours">
+            <tbody>
+              <tr><th scope="row">Monday – Friday</th><td>8:00 am – 6:00 pm</td></tr>
+              <tr><th scope="row">Saturday</th><td>8:00 am – 3:00 pm</td></tr>
+              <tr class="closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ha-card">
+          <h3><svg><use href="#i-pin"/></svg>Areas served</h3>
+          <ul class="towns"><li>Spring</li><li>Tomball</li><li>Klein</li><li>The Woodlands</li><li>Houston</li><li>Conroe</li></ul>
+          <p>Mobile service: Jacob comes to you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Ready for a cleaner car?</h2>
+      <p class="lead">To make your appointment, text <b>Jacob Perez</b> at 832-840-5342.</p>
+      <div class="cways">
+        <a class="btn btn-teal" href="sms:+18328405342"><svg><use href="#i-text"/></svg>Text 832-840-5342</a>
+        <a class="btn btn-ghost" href="tel:+18328405342"><svg><use href="#i-phone"/></svg>Call</a>
+        <a class="btn btn-ghost" href="#build">Price your detail</a>
+      </div>
+      <p class="email">Or email <a href="mailto:detailingautomd@gmail.com">detailingautomd@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-name">Delight Mobile Detailing</div><p>Car detailing to your doorstep.<br>Spring, Tomball, Klein, The Woodlands, Houston and Conroe.</p></div>
+      <div><p><a href="sms:+18328405342">Text 832-840-5342</a><br><a href="mailto:detailingautomd@gmail.com">detailingautomd@gmail.com</a></p>
+        <nav class="foot-links" aria-label="Footer"><a href="#interior">Interior</a><a href="#exterior">Exterior</a><a href="#build">Price your detail</a><a href="#hours">Hours</a></nav></div>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> Delight Mobile Detailing</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="sms:+18328405342"><svg><use href="#i-text"/></svg>Text</a>
+  <a href="tel:+18328405342"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="#build"><svg><use href="#i-tag"/></svg>Price it</a>
+</nav>
+
+<script>
+  // Starting prices from Delight's own Packages and Add On Services pages. [low, high]: a few packages start at a range.
+  const PRICES = {
+    "int-basic": ["Interior Basic", 70, 70], "int-extreme": ["Interior Extreme", 150, 150],
+    "basic-wash": ["Basic Wash", 60, 60], "standard": ["Standard Mobile Detail (wash & wax)", 100, 100],
+    "premium": ["Premium Mobile Detail (ceramic spray)", 230, 250], "boss": ["The Boss Mobile Detail (clay & polish)", 400, 460],
+    "ultimate": ["Ultimate Mobile Detail (ceramic coating)", 1250, 1450],
+    "engine": ["Engine detail", 100, 100], "headlights": ["Headlight restoration", 65, 65], "pet-hair": ["Pet hair removal", 50, 50]
+  };
+  const PHONE = "+18328405342", EMAIL = "detailingautomd@gmail.com";
+  const form = document.getElementById("bform");
+  const money = n => "$" + n.toLocaleString("en-US");
+  const range = (lo, hi) => lo === hi ? money(lo) : money(lo) + "–" + money(hi);
+
+  function picks() {
+    const keys = [];
+    const int = form.querySelector("input[name=int]:checked").value; if (int) keys.push(int);
+    const ext = form.querySelector("input[name=ext]:checked").value; if (ext) keys.push(ext);
+    form.querySelectorAll("input[name=add]:checked").forEach(b => keys.push(b.value));
+    return keys;
+  }
+  function totals(keys) {
+    return keys.reduce((t, k) => [t[0] + PRICES[k][1], t[1] + PRICES[k][2]], [0, 0]);
+  }
+  function message(keys) {
+    const [lo, hi] = totals(keys);
+    const v = id => form.elements[id].value.trim();
+    const lines = ["Hi Jacob, I'd like to book a mobile detail."];
+    lines.push("Packages: " + keys.map(k => PRICES[k][0]).join(", ") + " (starting at " + range(lo, hi) + ")");
+    if (v("vehicle")) lines.push("Vehicle: " + v("vehicle"));
+    if (v("town")) lines.push("Area: " + v("town"));
+    if (v("when")) lines.push("Best time: " + v("when"));
+    if (v("notes")) lines.push("Notes: " + v("notes"));
+    if (v("name")) lines.push("- " + v("name"));
+    return lines.join("\n");
+  }
+  function update() {
+    const keys = picks();
+    const [lo, hi] = totals(keys);
+    document.getElementById("total").textContent = range(lo, hi) + (keys.length ? "+" : "");
+    document.getElementById("lines").innerHTML = keys.length
+      ? keys.map(k => `<li><span>${PRICES[k][0]}</span><span>${range(PRICES[k][1], PRICES[k][2])}</span></li>`).join("")
+      : "<li><span>Pick a package to start</span></li>";
+    const body = encodeURIComponent(keys.length ? message(keys) : "Hi Jacob, I'd like to book a mobile detail.");
+    document.getElementById("send-sms").href = "sms:" + PHONE + "?&body=" + body;
+    document.getElementById("send-mail").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Mobile detail request") + "&body=" + body;
+    document.getElementById("err").textContent = "";
+  }
+  form.addEventListener("input", update);
+  form.addEventListener("change", update);
+  for (const id of ["send-sms", "send-mail"]) {
+    document.getElementById(id).addEventListener("click", e => {
+      if (!picks().length) { e.preventDefault(); document.getElementById("err").textContent = "Pick at least one package or add-on first."; }
+    });
+  }
+  update();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
