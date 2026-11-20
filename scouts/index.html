@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Scout's Maintenance and Hauling | Junk Removal, Hauling &amp; Handyman, Edgewood NM</title>
+<meta name="description" content="Family-run hauling, junk removal, skid steer rental and handyman services in Edgewood, NM and the East Mountains. Hauling from $100 a trip, skid steer rental $400 a day. Call or text (505) 259-4578.">
+<meta name="theme-color" content="#24304a">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scout's Maintenance and Hauling LLC, Edgewood NM">
+<meta property="og:description" content="Hauling, junk removal, skid steer rental and handyman help in Albuquerque and the East Mountains. Call, text, or email for an estimate.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Scout's Maintenance and Hauling LLC",
+  "description": "Family business offering hauling, junk removal, clean outs, skid steer rental and handyman services in Edgewood, NM, Albuquerque and the East Mountains.",
+  "telephone": "+1-505-259-4578",
+  "email": "SMHnewmexico@gmail.com",
+  "image": "assets/share.jpg",
+  "logo": "assets/logo-192.webp",
+  "address": { "@type": "PostalAddress", "addressLocality": "Edgewood", "addressRegion": "NM", "addressCountry": "US" },
+  "areaServed": ["Edgewood, NM", "Albuquerque, NM", "East Mountains, NM"],
+  "paymentAccepted": "Cash, Card, Venmo, Cash App, Apple Pay",
+  "makesOffer": [
+    { "@type": "Offer", "name": "Full trailer load (14 cubic yards)", "price": "400", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "1/4 trailer load", "price": "150", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Skid steer rental, per day", "price": "400", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Skid steer with operator, per hour", "price": "100", "priceCurrency": "USD" }
+  ]
+}
+</script>
+<style>
+  /* Colors from their own logo (sources in README.md):
+     --navy #36476b the cap Scout wears in their logo (sampled from home/img-01.png); darker shades --navy-d / --navy-dd for text and bands;
+     --tan #9e6132 Scout's tan eyebrow marks in the logo; --coal #0d0b0b the logo's black background.
+     Fonts: Montserrat (their site title and headings) and Open Sans (their body text). */
+  :root {
+    --navy: #36476b;
+    --navy-d: #24304a;
+    --navy-dd: #161d2e;
+    --tan: #9e6132;
+    --tan-d: #7d4c26;
+    --sand: #f6efe7;
+    --sand-2: #ede2d5;
+    --coal: #0d0b0b;
+    --ink: #1d2230;
+    --muted: #535a68;
+    --line: #e2dbd2;
+    --paper: #ffffff;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(22,29,46,.06), 0 10px 26px rgba(22,29,46,.10);
+    --head: "Montserrat", system-ui, "Segoe UI", sans-serif;
+    --sans: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 17px/1.65 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--navy); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--tan); outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--coal); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
+  .bar { display: flex; align-items: center; gap: 22px; height: 72px; }
+  .lockup { margin-right: auto; text-decoration: none; color: #fff; line-height: 1.1; display: flex; align-items: center; gap: 12px; }
+  .lockup img { width: 52px; height: 52px; }
+  .lockup b { font: 800 20px/1.1 var(--head); display: block; }
+  .lockup small { display: block; font: 700 11px/1.2 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #d9b896; margin-top: 4px; }
+  .nav { display: flex; gap: 20px; }
+  .nav a { color: #e9e6e1; text-decoration: none; font-weight: 600; font-size: 15px; }
+  .nav a:hover { color: #fff; text-decoration: underline; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 700 16px/1 var(--head); text-decoration: none; padding: 15px 22px; border-radius: 10px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-tan { background: var(--tan); color: #fff; }
+  .btn-tan:hover { background: var(--tan-d); }
+  .btn-navy { background: var(--navy-d); color: #fff; }
+  .btn-navy:hover { background: var(--navy-dd); }
+  .btn-line { border-color: var(--navy-d); color: var(--navy-d); background: #fff; }
+  .btn-line:hover { background: var(--sand); }
+  .btn-white { background: #fff; color: var(--navy-dd); }
+  .btn-white:hover { background: var(--sand); }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 12px 16px; font-size: 15px; }
+  @media (max-width: 1060px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 64px; } .lockup b { font-size: 17px; } .lockup img { width: 44px; height: 44px; } }
+
+  .hero { background: linear-gradient(180deg, var(--navy-dd) 0%, var(--navy-d) 100%); color: #fff; overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; padding-top: 56px; padding-bottom: 64px; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; padding-bottom: 44px; } }
+  .kicker { font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #e2c3a2; margin: 0 0 16px; display: flex; align-items: center; gap: 10px; }
+  .kicker::before { flex: none; content: ""; width: 32px; height: 4px; border-radius: 2px; background: var(--tan); }
+  .hero h1 { font: 800 clamp(32px, 4.4vw, 52px)/1.12 var(--head); margin: 0 0 18px; letter-spacing: -.01em; }
+  .hero h1 em { font-style: normal; color: #e9c7a3; }
+  .hero p.sub { font-size: 19px; margin: 0 0 22px; color: #d7dbe6; max-width: 580px; }
+  .hero-prices { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; padding: 0; list-style: none; }
+  .hero-prices li { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); border-radius: 10px; padding: 8px 14px; font-size: 15px; }
+  .hero-prices b { color: #fff; font-size: 18px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .small { margin: 18px 0 0; font-size: 15px; color: #c3c9d8; }
+  .hero-photo { position: relative; justify-self: center; max-width: 420px; width: 100%; }
+  .hero-photo img { border-radius: 20px; box-shadow: 0 24px 60px rgba(0,0,0,.45); aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 35%; width: 100%; }
+  .hero-photo .tag { position: absolute; left: -16px; bottom: 26px; background: var(--tan); color: #fff; border-radius: 12px; padding: 12px 16px; font-size: 14px; line-height: 1.35; box-shadow: var(--shadow); max-width: 230px; }
+  .hero-photo .tag b { font: 800 18px/1.15 var(--head); display: block; }
+  @media (max-width: 860px) { .hero-photo { max-width: 360px; } .hero-photo .tag { left: 10px; } }
+
+  .trust { background: var(--sand-2); color: var(--navy-dd); }
+  .trust ul { list-style: none; margin: 0 auto; padding: 16px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 12px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 15.5px; font-weight: 700; }
+  .trust svg { width: 24px; height: 24px; flex: none; color: var(--tan); }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 480px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 80px 0; }
+  .tint { background: var(--sand); }
+  .eyebrow { font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--tan-d); margin: 0 0 12px; }
+  h2 { font: 800 clamp(27px, 3.3vw, 38px)/1.2 var(--head); margin: 0 0 14px; color: var(--navy-dd); }
+  h3 { font-family: var(--head); }
+  .intro { color: var(--muted); max-width: 760px; margin: 0 0 36px; font-size: 18px; }
+  @media (max-width: 640px) { section { padding: 56px 0; } }
+
+  /* Hauling */
+  .split { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: start; }
+  @media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+  .loads { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 18px; padding: 0; list-style: none; }
+  @media (max-width: 560px) { .loads { grid-template-columns: 1fr 1fr; } }
+  .loads li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 12px 14px; text-align: center; box-shadow: var(--shadow); }
+  .loads .fill { height: 46px; border: 2px solid var(--navy-d); border-top-width: 0; border-radius: 0 0 6px 6px; margin: 0 auto 10px; width: 86%; position: relative; background: #fff; }
+  .loads .fill i { position: absolute; left: 0; right: 0; bottom: 0; background: var(--tan); border-radius: 0 0 3px 3px; }
+  .loads b { display: block; font: 800 26px/1.1 var(--head); color: var(--navy-dd); }
+  .loads span { display: block; font-weight: 700; font-size: 15px; }
+  .loads small { display: block; color: var(--muted); font-size: 13.5px; }
+  .notes { margin: 0; padding: 0; list-style: none; }
+  .notes li { position: relative; padding: 0 0 10px 28px; font-size: 16px; color: var(--muted); }
+  .notes li svg { position: absolute; left: 0; top: 4px; width: 18px; height: 18px; color: var(--tan); }
+  .notes b { color: var(--ink); }
+  .photo-card { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #fff; margin: 0; }
+  .photo-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .photo-card figcaption { padding: 12px 16px; font-size: 15px; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .chips li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 14.5px; font-weight: 600; }
+
+  /* Skid steer */
+  .rates { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 22px; }
+  @media (max-width: 560px) { .rates { grid-template-columns: 1fr; } }
+  .rate { background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--navy); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); }
+  .rate h3 { font-size: 18px; margin: 0 0 6px; color: var(--navy-dd); }
+  .rate .big { font: 800 30px/1.1 var(--head); color: var(--navy-dd); margin: 0 0 6px; }
+  .rate .big small { font: 600 15px/1 var(--sans); color: var(--muted); }
+  .rate p { margin: 0; font-size: 15px; color: var(--muted); }
+  .specs { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .specs th, .specs td { padding: 10px 16px; border-bottom: 1px solid var(--line); text-align: left; font-size: 15.5px; }
+  .specs td { font-weight: 700; text-align: right; }
+  .specs caption { text-align: left; font: 800 17px/1.3 var(--head); color: var(--navy-dd); padding: 0 0 10px; }
+  .fine { margin: 18px 0 0; font-size: 14.5px; color: var(--muted); background: #fff; border-left: 4px solid var(--tan); padding: 12px 16px; border-radius: 0 10px 10px 0; }
+
+  /* Handyman */
+  .hm-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 18px; }
+  .hm-tools input { flex: 1 1 280px; font: 16px/1.3 var(--sans); padding: 13px 14px; border: 1.5px solid #b9b0a5; border-radius: 10px; }
+  .hm-tools input:focus { border-color: var(--navy); outline: none; box-shadow: 0 0 0 3px rgba(54,71,107,.2); }
+  .hm-count { color: var(--muted); font-size: 15px; }
+  .hm { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 18px; margin: 0; padding: 0; list-style: none; }
+  @media (max-width: 900px) { .hm { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .hm { grid-template-columns: 1fr; } }
+  .hm li { display: flex; justify-content: space-between; gap: 12px; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 11px 14px; font-weight: 600; font-size: 15.5px; }
+  .hm li b { color: var(--tan-d); white-space: nowrap; }
+  .hm li[hidden] { display: none; }
+  .hm-empty { color: var(--muted); }
+
+  /* Estimate */
+  .est { background: linear-gradient(160deg, var(--navy-dd) 0%, var(--navy-d) 100%); color: #fff; }
+  .est h2 { color: #fff; }
+  .est .eyebrow { color: #e2c3a2; }
+  .est .intro { color: #d2d7e3; }
+  .e-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 34px; align-items: start; }
+  @media (max-width: 900px) { .e-grid { grid-template-columns: 1fr; } }
+  .e-card { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 26px; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
+  fieldset { border: 0; margin: 0 0 18px; padding: 0; min-width: 0; }
+  fieldset[hidden], .field[hidden] { display: none; }
+  legend { font: 800 16px/1.2 var(--head); color: var(--navy-dd); margin-bottom: 10px; padding: 0; }
+  .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 520px) { .opts { grid-template-columns: 1fr; } }
+  .opt { display: flex; gap: 10px; align-items: center; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; font-size: 15.5px; }
+  .opt:has(input:checked) { border-color: var(--navy); background: var(--sand); }
+  .opt input { width: 18px; height: 18px; accent-color: var(--navy); flex: none; }
+  .opt span { flex: 1; }
+  .opt em { font-style: normal; font-weight: 700; color: var(--tan-d); white-space: nowrap; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+  .field input, .field select, .field textarea { width: 100%; font: 16px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #b9b0a5; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--navy); outline: none; box-shadow: 0 0 0 3px rgba(54,71,107,.2); }
+  .field .hint { font-size: 13.5px; color: var(--muted); margin: 5px 0 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .total { position: sticky; top: 96px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); padding: 24px; }
+  .total small { display: block; font: 700 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #e2c3a2; }
+  .total output { display: block; font: 800 40px/1.1 var(--head); color: #fff; margin: 10px 0 6px; }
+  .total ul { list-style: none; padding: 0; margin: 0 0 14px; font-size: 15px; color: #e3e6ee; }
+  .total ul li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,.18); }
+  .total p { font-size: 14.5px; color: #cfd5e2; margin: 0 0 12px; }
+  .total .btn { width: 100%; justify-content: center; margin-top: 8px; }
+  .err { color: #ffd2c4; font-size: 15px; min-height: 1.2em; margin: 6px 0 0; }
+
+  /* Before and after */
+  .ba { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  @media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
+  .ba figure { margin: 0; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+  .ba .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; background: var(--coal); }
+  .ba .pair div { position: relative; }
+  .ba .pair img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+  .ba .pair span { position: absolute; left: 8px; top: 8px; background: rgba(13,11,11,.78); color: #fff; font: 700 12px/1 var(--head); letter-spacing: .08em; text-transform: uppercase; padding: 6px 8px; border-radius: 6px; }
+  .ba .pair div + div span { background: var(--tan); }
+  .ba figcaption { padding: 12px 16px; font-weight: 700; font-size: 15.5px; }
+  .gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 22px; }
+  @media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } }
+  .gal img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow); }
+
+  /* Reviews */
+  .revs { columns: 3 300px; column-gap: 20px; }
+  .rev { break-inside: avoid; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px 18px; margin: 0 0 20px; border: 1px solid var(--line); }
+  .rev blockquote { margin: 0 0 12px; font-size: 15.5px; color: var(--ink); }
+  .rev blockquote p { margin: 0 0 10px; }
+  .rev blockquote::before { content: "\201C"; display: block; font: 800 50px/0.6 var(--head); color: var(--tan); margin-bottom: 6px; }
+  .rev figcaption { font-weight: 700; color: var(--navy); }
+  details.more summary { cursor: pointer; display: inline-flex; margin: 4px 0 22px; list-style: none; }
+  details.more summary::-webkit-details-marker { display: none; }
+  details.more[open] summary { display: none; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: center; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; } }
+  .about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .about-photos img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  .about-photos img + img { object-position: 30% 50%; }
+  .about p { color: var(--muted); }
+  .scout { display: flex; gap: 16px; align-items: center; background: var(--coal); color: #eee; border-radius: var(--radius); padding: 14px 18px; margin-top: 20px; }
+  .scout img { width: 72px; height: 72px; flex: none; }
+  .scout p { margin: 0; color: #e4e1dc; font-size: 15.5px; }
+
+  /* Pay + contact */
+  .pay { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0 0 12px; list-style: none; justify-content: center; }
+  .pay li { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 6px 14px; font-weight: 600; font-size: 15px; }
+  .contact { background: var(--coal); color: #fff; text-align: center; }
+  .contact h2 { color: #fff; }
+  .contact .lead { color: #dedad4; font-size: 19px; margin: 0 auto 28px; max-width: 660px; }
+  .cways { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 26px; }
+  .contact .email { margin: 0 0 30px; font-size: 17px; color: #dedad4; }
+  .contact .email a { color: #fff; font-weight: 700; }
+  .contact .paynote { color: #bdb8b0; font-size: 15px; margin: 0; }
+
+  .site-foot { background: var(--navy-dd); color: #c4cad8; font-size: 15px; padding: 40px 0 30px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 24px 56px; align-items: flex-start; justify-content: space-between; }
+  .foot-name { font: 800 22px/1.2 var(--head); color: #fff; }
+  .site-foot a { color: #eef0f6; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 6px; font-weight: 700; color: #fff; text-decoration: none; background: var(--tan); font-size: 15px; font-family: var(--head); }
+    .callbar a + a { background: var(--navy-d); }
+    .callbar a:last-child { background: var(--coal); }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Scout's Maintenance and Hauling from the text and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></g></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Scout's Maintenance and Hauling, home"><img src="assets/logo-96.webp" srcset="assets/logo-96.webp 1x, assets/logo-192.webp 2x" alt="" width="52" height="52"><span><b>Scout's Maintenance</b><small>&amp; Hauling LLC · Edgewood, NM</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#hauling">Hauling</a>
+      <a href="#skid-steer">Skid steer</a>
+      <a href="#handyman">Handyman</a>
+      <a href="#estimate">Estimate</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About us</a>
+    </nav>
+    <a class="btn btn-tan head-call" href="tel:+15052594578"><svg><use href="#i-phone"/></svg>(505) 259-4578</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Edgewood, NM · the East Mountains</p>
+        <h1>Hauling, junk removal &amp; handyman help, <em>from a local family business</em></h1>
+        <p class="sub">Don and Shawna offer home maintenance, handyman, debris removal and hauling services in Albuquerque, the East Mountains and surrounding areas. Call, text, or email for an estimate.</p>
+        <ul class="hero-prices" aria-label="Starting prices">
+          <li>Hauling <b>from $100</b></li><li>Skid steer <b>$400/day</b></li><li>Handyman jobs <b>priced up front</b></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-tan" href="tel:+15052594578"><svg><use href="#i-phone"/></svg>Call (505) 259-4578</a>
+          <a class="btn btn-ghost" href="sms:+15052594578"><svg><use href="#i-msg"/></svg>Text us</a>
+          <a class="btn btn-ghost" href="#estimate">Price my job</a>
+        </div>
+        <p class="small">Commercial and residential · The LLC is insured · OSHA 10, 30, and MSHA certified</p>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/don-trailer.webp" srcset="assets/img/don-trailer-800.webp 800w, assets/img/don-trailer.webp 1200w" sizes="(max-width: 860px) 360px, 420px" alt="Don holding tools in front of Scout's wooden-sided hauling trailer" width="1200" height="1600">
+        <p class="tag"><b>We do the heavy lifting</b>so you don't have to!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-shield"/></svg>The LLC is insured</li>
+      <li><svg><use href="#i-check"/></svg>OSHA 10, 30 &amp; MSHA certified</li>
+      <li><svg><use href="#i-tag"/></svg>Prices posted up front</li>
+      <li><svg><use href="#i-home"/></svg>Family business, former first responders</li>
+    </ul>
+  </div>
+
+  <section id="hauling">
+    <div class="wrap">
+      <p class="eyebrow">Hauling &amp; junk removal</p>
+      <h2>Priced by the trailer load</h2>
+      <p class="intro">Brush and junk removal, and house, apartment and garage clean outs, for homes and businesses. One trailer is 14' x 7' x 4', about 14 cubic yards. You pay for the share of it your load fills.</p>
+      <div class="split">
+        <div>
+          <ul class="loads" aria-label="Prices by trailer load">
+            <li><div class="fill" aria-hidden="true"><i style="height:25%"></i></div><span>1/4 trailer</span><b>$150</b><small>+ tax</small></li>
+            <li><div class="fill" aria-hidden="true"><i style="height:50%"></i></div><span>1/2 trailer</span><b>$250</b><small>+ tax</small></li>
+            <li><div class="fill" aria-hidden="true"><i style="height:75%"></i></div><span>3/4 trailer</span><b>$300</b><small>+ tax</small></li>
+            <li><div class="fill" aria-hidden="true"><i style="height:100%"></i></div><span>Full trailer</span><b>$400</b><small>+ tax</small></li>
+          </ul>
+          <ul class="notes">
+            <li><svg><use href="#i-check"/></svg><b>Minimum per trip: $100.</b></li>
+            <li><svg><use href="#i-check"/></svg><b>First hour of loading is included</b> in the full trailer price; $40 per hour after the first hour.</li>
+            <li><svg><use href="#i-check"/></svg>Prices vary depending on the materials and ease of access to the materials.</li>
+            <li><svg><use href="#i-check"/></svg>Additional fees may exist for some items (tires, appliances, couches, mattresses) and for weights over 1 ton.</li>
+            <li><svg><use href="#i-check"/></svg><b>Vehicle hauling</b> is priced per mile. <b>Mulch, rock, gravel and sand</b> are priced by weight and distance.</li>
+          </ul>
+          <ul class="chips" aria-label="What we haul">
+            <li>Brush &amp; tree limbs</li><li>Junk removal</li><li>House clean outs</li><li>Apartment clean outs</li><li>Garage clean outs</li><li>Storage units</li><li>Yard clean up</li>
+          </ul>
+        </div>
+        <figure class="photo-card">
+          <img src="assets/img/trailer-800.webp" alt="Scout's two hauling trailers, one with tall wooden sides" width="800" height="600" loading="lazy">
+          <figcaption>Our 14 cubic yard trailer, with tall wooden sides for brush and junk.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="skid-steer" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Skid steer / Bobcat</p>
+      <h2>Rent the skid steer, or hire it with an operator</h2>
+      <p class="intro">A Case 420 with a bucket, delivered and picked up for you in Edgewood, Moriarty, Tijeras and surrounding areas. It can go further for an additional fee.</p>
+      <div class="split">
+        <div>
+          <div class="rates">
+            <div class="rate"><h3>Rental</h3><p class="big">$400 <small>+ tax a day (8 hours)</small></p><p>$350 a day for 2 or more consecutive days. Delivery and pick up included.</p></div>
+            <div class="rate"><h3>With an operator</h3><p class="big">$100 <small>an hour</small></p><p>4 hours minimum, 8 hours max per day. Multi day discount for 2 or more consecutive days.</p></div>
+          </div>
+          <table class="specs">
+            <caption>Skid steer specs</caption>
+            <tbody>
+              <tr><th scope="row">Machine</th><td>Case 420 with a bucket</td></tr>
+              <tr><th scope="row">Rated operating capacity</th><td>1,750 lbs</td></tr>
+              <tr><th scope="row">Tipping load</th><td>3,500 lbs</td></tr>
+              <tr><th scope="row">Lift / dump clearance</th><td>7.45 ft</td></tr>
+              <tr><th scope="row">Weight</th><td>about 5,813 lbs</td></tr>
+              <tr><th scope="row">Width over tires</th><td>5 ft</td></tr>
+              <tr><th scope="row">Attachments</th><td>Bucket only, for now</td></tr>
+            </tbody>
+          </table>
+          <p class="fine"><b>Renting on your own:</b> rentals require a non refundable credit or debit card deposit that goes toward the rental cost. The renter assumes full responsibility for any injuries to themselves or others; any damage to property, structures, utilities, or vehicles; any accidents or incidents during the rental period; and any damage to or theft of the equipment.</p>
+        </div>
+        <figure class="photo-card">
+          <img src="assets/img/skid-steer-800.webp" alt="Scout's orange Case skid steer with its bucket down" width="800" height="600" loading="lazy">
+          <figcaption>Not sure if it can do your job? Just ask and we'll let you know what we're able to do.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="handyman">
+    <div class="wrap">
+      <p class="eyebrow">Handyman services &amp; prices</p>
+      <h2>46 jobs, each with a price range</h2>
+      <p class="intro">Search the list for your job. Don't see it? Just ask and we'll let you know if we're able to do it. <b>Discount offered if bundling multiple services.</b></p>
+      <div class="hm-tools">
+        <label for="hm-q" class="hm-count" style="flex-basis:100%;margin:0;font-weight:700;color:var(--ink)">Find a job</label>
+        <input id="hm-q" type="search" placeholder="e.g. faucet, garage door, TV" autocomplete="off">
+        <span class="hm-count" id="hm-count" aria-live="polite">46 jobs</span>
+      </div>
+      <ul class="hm" id="hm">
+        <li><span>Appliance install</span><b>$100–$250</b></li>
+        <li><span>Art hanging</span><b>$40–$200</b></li>
+        <li><span>Attic fan install</span><b>$250–$900</b></li>
+        <li><span>Attic ladder install</span><b>$200–$650</b></li>
+        <li><span>Awning install</span><b>$175–$400</b></li>
+        <li><span>Bathroom fan install</span><b>$150–$550</b></li>
+        <li><span>Blind install</span><b>$30–$80 each</b></li>
+        <li><span>Blind repair</span><b>$75–$175</b></li>
+        <li><span>Ceiling fan install</span><b>$75–$150</b></li>
+        <li><span>Childproofing</span><b>$200–$700</b></li>
+        <li><span>Curtain rod hanging</span><b>$100–$250</b></li>
+        <li><span>Deck repair / build</span><b>$15–$50 / sq ft</b></li>
+        <li><span>Dishwasher install</span><b>$120–$250</b></li>
+        <li><span>Door install</span><b>$225–$800</b></li>
+        <li><span>Dryer vent install, repair or cleaning</span><b>$80–$500</b></li>
+        <li><span>Faucet install</span><b>$120–$300</b></li>
+        <li><span>Fence / gate repair</span><b>$200–$800</b></li>
+        <li><span>Flooring install</span><b>$3–$5 / sq ft</b></li>
+        <li><span>Furniture assembly</span><b>$100–$400</b></li>
+        <li><span>Garage door install</span><b>$250–$600</b></li>
+        <li><span>Garage door opener install</span><b>$150–$300</b></li>
+        <li><span>Garage door repair</span><b>$125–$300</b></li>
+        <li><span>Garbage disposal install</span><b>$80–$200</b></li>
+        <li><span>Gutter cleaning</span><b>$100–$300</b></li>
+        <li><span>Heater filter changes</span><b>$30–$100</b></li>
+        <li><span>Leaky faucet repair</span><b>$65–$150</b></li>
+        <li><span>Light bulb replacement</span><b>$5–$30</b></li>
+        <li><span>Light fixture replacement</span><b>$65–$175</b></li>
+        <li><span>Lock replacement</span><b>$75–$200</b></li>
+        <li><span>Mailbox install</span><b>$150–$200</b></li>
+        <li><span>Mirror install</span><b>$140–$400</b></li>
+        <li><span>Paint a room</span><b>$350–$850</b></li>
+        <li><span>Paver install</span><b>$4–$10 / sq ft</b></li>
+        <li><span>Pet door install</span><b>$100–$450</b></li>
+        <li><span>Pressure washing</span><b>$150–$300</b></li>
+        <li><span>Re-grout</span><b>$250–$1,000</b></li>
+        <li><span>Security camera install</span><b>$80–$200</b></li>
+        <li><span>Shelf install</span><b>$100–$500</b></li>
+        <li><span>Shutter install</span><b>$150–$350 per shutter</b></li>
+        <li><span>Sink install / replacement</span><b>$150–$500</b></li>
+        <li><span>Sliding glass door install or repair</span><b>$100–$600</b></li>
+        <li><span>Smoke detector replace / install</span><b>$10–$30</b></li>
+        <li><span>Swamp cooler start up and shut down</span><b>$75–$100</b></li>
+        <li><span>Thermostat install</span><b>$80–$200</b></li>
+        <li><span>Toilet replacement / repair</span><b>$75–$150</b></li>
+        <li><span>TV mounting</span><b>$100–$400</b></li>
+      </ul>
+      <p class="hm-empty" id="hm-empty" hidden>Not on the list? <a href="#estimate">Ask us anyway</a>: we're open to other services.</p>
+    </div>
+  </section>
+
+  <section id="estimate" class="est">
+    <div class="wrap">
+      <p class="eyebrow">Price my job</p>
+      <h2>See the price before you call</h2>
+      <p class="intro">Pick a service to see the price from Scout's own list, add your details, then email or text the request. Don and Shawna confirm the final price once they see the job.</p>
+      <div class="e-grid">
+        <form class="e-card" id="eform" novalidate>
+          <fieldset>
+            <legend>What do you need?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="svc" value="haul"><span>Hauling / junk removal</span></label>
+              <label class="opt"><input type="radio" name="svc" value="rent"><span>Skid steer rental</span></label>
+              <label class="opt"><input type="radio" name="svc" value="op"><span>Skid steer with operator</span></label>
+              <label class="opt"><input type="radio" name="svc" value="hm"><span>Handyman job</span></label>
+            </div>
+          </fieldset>
+          <fieldset id="set-haul" hidden>
+            <legend>How much of the trailer will it fill?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="load" value="min"><span>A few items (minimum trip)</span><em>$100</em></label>
+              <label class="opt"><input type="radio" name="load" value="q"><span>1/4 trailer · about 3.5 yd³</span><em>$150</em></label>
+              <label class="opt"><input type="radio" name="load" value="h"><span>1/2 trailer · about 7 yd³</span><em>$250</em></label>
+              <label class="opt"><input type="radio" name="load" value="t"><span>3/4 trailer · about 10.5 yd³</span><em>$300</em></label>
+              <label class="opt"><input type="radio" name="load" value="f"><span>Full trailer · about 14 yd³</span><em>$400</em></label>
+            </div>
+            <div class="field" id="hours-field" hidden style="margin-top:14px">
+              <label for="f-hours">Loading time beyond the first hour (hours)</label>
+              <input id="f-hours" name="hours" type="number" min="0" max="12" step="1" value="0" inputmode="numeric">
+              <p class="hint">The first hour of loading is included in the full trailer price; $40 per hour after that.</p>
+            </div>
+            <legend style="margin-top:6px">Any of these in the load? <span style="font:400 14px var(--sans);color:var(--muted)">(may add a fee)</span></legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" name="extra" value="Tires"><span>Tires</span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="Appliances"><span>Appliances</span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="Couches"><span>Couches</span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="Mattresses"><span>Mattresses</span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="Over 1 ton"><span>Heavy: over 1 ton</span></label>
+            </div>
+          </fieldset>
+          <fieldset id="set-rent" hidden>
+            <div class="field">
+              <label for="f-days">How many consecutive days?</label>
+              <input id="f-days" name="days" type="number" min="1" max="30" step="1" value="1" inputmode="numeric">
+              <p class="hint">$400 + tax a day; $350 a day for 2 or more consecutive days. A non refundable card deposit goes toward the cost.</p>
+            </div>
+          </fieldset>
+          <fieldset id="set-op" hidden>
+            <div class="two">
+              <div class="field">
+                <label for="f-ophours">Hours a day</label>
+                <input id="f-ophours" name="ophours" type="number" min="4" max="8" step="1" value="4" inputmode="numeric">
+                <p class="hint">4 hours minimum, 8 max per day.</p>
+              </div>
+              <div class="field">
+                <label for="f-opdays">Days</label>
+                <input id="f-opdays" name="opdays" type="number" min="1" max="30" step="1" value="1" inputmode="numeric">
+                <p class="hint">2+ consecutive days get a discount.</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset id="set-hm" hidden>
+            <div class="field">
+              <label for="f-job">Which job?</label>
+              <select id="f-job" name="job"></select>
+              <p class="hint">Have more than one job? Say so below: bundling multiple services gets a discount.</p>
+            </div>
+          </fieldset>
+          <div class="field"><label for="f-what">Describe the job</label><textarea id="f-what" name="what" rows="3" placeholder="What needs doing or hauling, how much, and how easy it is to get to"></textarea></div>
+          <div class="two">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="f-phone">Your phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="f-where">Town or address</label><input id="f-where" name="where" type="text" autocomplete="street-address" placeholder="e.g. Edgewood"></div>
+            <div class="field"><label for="f-when">Best day / time</label><input id="f-when" name="when" type="text" placeholder="e.g. Saturday morning"></div>
+          </div>
+        </form>
+        <aside class="total" aria-live="polite">
+          <small>Your price</small>
+          <output id="total" form="eform">–</output>
+          <ul id="lines"><li><span>Pick a service to start</span></li></ul>
+          <p id="tnote">From Scout's posted prices. They confirm the final price before starting.</p>
+          <a class="btn btn-white" id="send-mail" href="mailto:SMHnewmexico@gmail.com"><svg><use href="#i-mail"/></svg>Email this request</a>
+          <a class="btn btn-ghost" id="send-sms" href="sms:+15052594578"><svg><use href="#i-msg"/></svg>Text it instead</a>
+          <a class="btn btn-ghost" href="tel:+15052594578"><svg><use href="#i-phone"/></svg>Or call (505) 259-4578</a>
+          <p class="err" id="err" role="alert"></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="eyebrow">Our work</p>
+      <h2>Before and after</h2>
+      <p class="intro">Real jobs, from Scout's own photos.</p>
+      <div class="ba">
+        <figure><div class="pair"><div><img src="assets/img/yard-before-800.webp" alt="Overgrown yard with weeds around a round stone planter, before" width="800" height="600" loading="lazy"><span>Before</span></div><div><img src="assets/img/yard-after-800.webp" alt="The same yard cleared down to clean dirt around the planter, after" width="800" height="600" loading="lazy"><span>After</span></div></div><figcaption>Yard clean up</figcaption></figure>
+        <figure><div class="pair"><div><img src="assets/img/storage-before-800.webp" alt="Storage unit packed with furniture and boxes, before" width="800" height="1067" loading="lazy"><span>Before</span></div><div><img src="assets/img/storage-after-800.webp" alt="The same storage unit emptied, after" width="800" height="1067" loading="lazy"><span>After</span></div></div><figcaption>Storage unit clean out</figcaption></figure>
+        <figure><div class="pair"><div><img src="assets/img/garage-before-800.webp" alt="Cluttered garage floor with tools and boxes, before" width="800" height="600" loading="lazy"><span>Before</span></div><div><img src="assets/img/garage-after-800.webp" alt="The same garage with a clear floor and items on shelves, after" width="800" height="600" loading="lazy"><span>After</span></div></div><figcaption>Garage clean out</figcaption></figure>
+        <figure><div class="pair"><div><img src="assets/img/bath-before-800.webp" alt="Bathroom with old worn flooring, before" width="800" height="1067" loading="lazy"><span>Before</span></div><div><img src="assets/img/bath-after-800.webp" alt="The same bathroom with new wood-look flooring, after" width="800" height="1067" loading="lazy"><span>After</span></div></div><figcaption>Bathroom flooring</figcaption></figure>
+      </div>
+      <div class="gal">
+        <img src="assets/img/brush-pile-800.webp" alt="A large pile of cut brush ready to haul" width="800" height="600" loading="lazy">
+        <img src="assets/img/loaded-trailer-800.webp" alt="The wooden-sided trailer at a job" width="800" height="600" loading="lazy">
+        <img src="assets/img/branches-800.webp" alt="Cut tree branches piled for removal" width="800" height="600" loading="lazy">
+        <img src="assets/img/garage-opener-800.webp" alt="A newly installed garage door opener" width="800" height="1067" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Reviews</p>
+      <h2>What neighbors say</h2>
+      <div class="revs">
+        <figure class="rev"><blockquote><p>Scouts Maintenance and hauling did such a fantastic job clearing the brush from my place! They came by to give me an estimate and realized that i couldn't clear it without help and not only did they take a full load that day but they came back early on monday and brought a trailer and not only did they take the rest of the pile but also cleared the branches from some trees i had to have removed over the weekend. they refused to accept more payment for the extra and were so conscientious of my medical issues they cleared the small stuff so i wouldn't hurt my feet!! amazing job! they are a young couple just starting out in their business so any help you need helps them too. give them a call for any hauling or clearing and even small jobs helps.</p></blockquote><figcaption>G.J.</figcaption></figure>
+        <figure class="rev"><blockquote><p>My husband and I had several jobs that we simply did not have the time for. I called Scout’s and while we were at work, all of the jobs were completed! They fixed our garage door, installed the needed hardware, demoed a shed, and took all of the brush out! Our backyard was left in pristine condition and I was even given a lesson on how to connect my garage door to my phone!</p><p>This couple went above and beyond for us and for the price! We were finally able to get these jobs done. We have several more jobs coming up and will definitely use their services! Thanks so much!</p></blockquote><figcaption>Jackie Cusimano</figcaption></figure>
+        <figure class="rev"><blockquote><p>Don and Shawna are, professional, prompt and responsive. Don has done several odd jobs for me such as changing batteries in smoke detectors, hanging a large rug and a coat rack. He also repaired my deck, replacing two boards and built a deck box. Don has also installed two faucets and a utility sink. He shows up in time, does good work for a reasonable and fair price. I highly recommend Scout's Maintenance.</p></blockquote><figcaption>Lorri Knight</figcaption></figure>
+        <figure class="rev"><blockquote><p>So hard working with good communication. They emptied, and hauled away the contents of my storage unit. They swept it and left it very clean. I will definitely call on them again.</p></blockquote><figcaption>Christy W</figcaption></figure>
+        <figure class="rev"><blockquote><p>Don and Shawna arrive on time. Don fixed several barn doors that were in need of reworking. Shawna worked in my yard with an ailing yucca and raked up shrub clippings and got after dried weeds that they both loaded in their trailer to be hauled off. They both were great workers and I will be calling them again. Highly recommended!!!</p></blockquote><figcaption>Lynn Myers</figcaption></figure>
+        <figure class="rev"><blockquote><p>Wow! What great service! We had our old tree limbs removed from our property. They were prompt, professional and very friendly! The nice thing is that they are not very expensive at all! Thank you Don and Shawna!</p></blockquote><figcaption>Ann P</figcaption></figure>
+      </div>
+      <details class="more">
+        <summary class="btn btn-line">Read 7 more reviews</summary>
+        <div class="revs">
+          <figure class="rev"><blockquote><p>They are the best. We have used them for furtintue assembly,, landscapeing and junk haul away. They are always on time, thorough and efficient! And they have very fair pricing. We highly recommend Scout's Maintenance.</p></blockquote><figcaption>Walt and Celia Bolic</figcaption></figure>
+          <figure class="rev"><blockquote><p>I would definitely recommend Scouts Maintenance. Don is an exceptionally good and trustworthy person with a broad range of knowledge and he is incredibly hard working.</p></blockquote><figcaption>Russ Henrie</figcaption></figure>
+          <figure class="rev"><blockquote><p>Today 10- 6- 2024 I hired Don to repair my kitchen sink. He was punctual, showed up on time. Presented himself as very profressional, got right to the task at hand. Will have him back for items that need repair and general maintenance. Highly recommend Don</p><p>505 259 4578. Local in Edgewood.</p></blockquote><figcaption>Steven Lamken</figcaption></figure>
+          <figure class="rev"><blockquote><p>these guys are awesome! that came and hauled out my brush and gave me an awesome price for it. very friendly and helpful!! call them if you need help around your house!!</p></blockquote><figcaption>G. J.</figcaption></figure>
+          <figure class="rev"><blockquote><p>Awesome service, went above and beyond to clean up my yard. showed up on time and left the place better than they found it, highly recommend these folks and very reasonable prices.</p></blockquote><figcaption>Matthew P.</figcaption></figure>
+          <figure class="rev"><blockquote><p>On time. Hard working. Definitely recommend!</p></blockquote><figcaption>Summer Willis</figcaption></figure>
+          <figure class="rev"><blockquote><p>I was so happy to finally get my backyard cleaned up. They were quick and efficient and thorough. And it turned out better than I expected. Thanks so much!</p></blockquote><figcaption>Sarah Mikeal</figcaption></figure>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="about-photos">
+        <img src="assets/img/don-shawna-800.webp" alt="Don and Shawna in straw hats holding their baby daughter" width="800" height="1067" loading="lazy">
+        <img src="assets/img/family-scout-800.webp" alt="Don and Shawna by their truck with Scout, their bluetick hound" width="800" height="600" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">Our team</p>
+        <h2>Meet Don and Shawna</h2>
+        <p>We are Don and Shawna, a husband and wife team that recently welcomed our beautiful daughter into the world. We're a family business in the beautiful East Mountains of New Mexico, here to offer a helping hand with the services listed, and we're open to other services too. Please feel free to ask us if a service is available.</p>
+        <p>We both worked as first responders in New Mexico for many years. We are very passionate about helping and serving those around us. We are not afraid to work hard and get our hands dirty.</p>
+        <p>When we're not working we enjoy our family time: in our garden, or hanging out with our dogs and chickens on our little homestead.</p>
+        <div class="scout"><img src="assets/logo-192.webp" alt="" width="72" height="72"><p><b>Why "Scout's"?</b> Our namesake and logo are inspired by our bluetick hound, Scout! He is full of energy and loves to play ball.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Call, text, or email for an estimate</h2>
+      <p class="lead">Serving Albuquerque, the East Mountains and surrounding areas from Edgewood, NM. Commercial and residential.</p>
+      <div class="cways">
+        <a class="btn btn-tan" href="tel:+15052594578"><svg><use href="#i-phone"/></svg>Call (505) 259-4578</a>
+        <a class="btn btn-ghost" href="sms:+15052594578"><svg><use href="#i-msg"/></svg>Text us</a>
+        <a class="btn btn-ghost" href="#estimate">Price my job</a>
+      </div>
+      <p class="email">Or email <a href="mailto:SMHnewmexico@gmail.com">SMHnewmexico@gmail.com</a></p>
+      <ul class="pay" aria-label="Payment types accepted"><li>Cash</li><li>Card (3% processing fee)</li><li>Venmo</li><li>Cash App</li><li>Apple Pay</li></ul>
+      <p class="paynote">Payment due upon completion of job.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-name">Scout's Maintenance and Hauling LLC</div><p>Hauling, junk removal, skid steer and handyman services<br>Edgewood, NM · Albuquerque and the East Mountains</p></div>
+      <div><p><a href="tel:+15052594578">(505) 259-4578</a><br><a href="mailto:SMHnewmexico@gmail.com">SMHnewmexico@gmail.com</a></p>
+        <nav class="foot-links" aria-label="Footer"><a href="#hauling">Hauling</a><a href="#skid-steer">Skid steer</a><a href="#handyman">Handyman</a><a href="#estimate">Estimate</a></nav></div>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> Scout's Maintenance and Hauling LLC</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+15052594578"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="sms:+15052594578"><svg><use href="#i-msg"/></svg>Text</a>
+  <a href="#estimate"><svg><use href="#i-tag"/></svg>Price it</a>
+</nav>
+
+<script>
+  // Prices from Scout's own Hauling, Skid Steer and Handyman pages (read 2026-11-20).
+  const LOADS = { min: ["Minimum trip", 100], q: ["1/4 trailer", 150], h: ["1/2 trailer", 250], t: ["3/4 trailer", 300], f: ["Full trailer", 400] };
+  const EXTRA_HOUR = 40, RENT_DAY = 400, RENT_MULTI = 350, OP_HOUR = 100, OP_MIN = 4, OP_MAX = 8;
+  const PHONE = "+15052594578", EMAIL = "SMHnewmexico@gmail.com";
+  const form = document.getElementById("eform");
+  const $ = id => document.getElementById(id);
+  const HM = [...document.querySelectorAll("#hm li")].map(li => [li.children[0].textContent, li.children[1].textContent]);
+  $("f-job").innerHTML = '<option value="">Pick a job</option>' + HM.map(([n, p], i) => `<option value="${i}">${n} (${p})</option>`).join("") + '<option value="other">Something else</option>';
+  const int = (el, lo, hi) => Math.min(hi, Math.max(lo, Math.round(+el.value || 0)));
+  const money = n => "$" + n.toLocaleString("en-US");
+
+  function picked() {
+    const s = form.querySelector("input[name=svc]:checked");
+    if (!s) return null;
+    const svc = s.value;
+    if (svc === "haul") {
+      const l = form.querySelector("input[name=load]:checked");
+      if (!l) return { svc, ready: false };
+      const [name, base] = LOADS[l.value];
+      const hours = l.value === "f" ? int(form.elements.hours, 0, 12) : 0;
+      const extras = [...form.querySelectorAll("input[name=extra]:checked")].map(b => b.value);
+      const lines = [[name, money(base)]];
+      if (hours) lines.push([hours + " extra loading hour" + (hours > 1 ? "s" : "") + " × $" + EXTRA_HOUR, money(hours * EXTRA_HOUR)]);
+      extras.forEach(x => lines.push([x, "may add a fee"]));
+      return { svc, ready: true, total: base + hours * EXTRA_HOUR, tax: true, lines, summary: "Hauling: " + name + " (" + money(base) + " + tax)" + (hours ? ", " + hours + " extra loading hour(s) at $40" : "") + (extras.length ? ". In the load: " + extras.join(", ") : "") };
+    }
+    if (svc === "rent") {
+      const days = int(form.elements.days, 1, 30), rate = days >= 2 ? RENT_MULTI : RENT_DAY;
+      return { svc, ready: true, total: days * rate, tax: true, lines: [[days + " day" + (days > 1 ? "s" : "") + " × " + money(rate), money(days * rate)], ["Delivery and pick up", "included"]],
+        summary: "Skid steer rental: " + days + " consecutive day(s) at " + money(rate) + " a day + tax" };
+    }
+    if (svc === "op") {
+      const hrs = int(form.elements.ophours, OP_MIN, OP_MAX), days = int(form.elements.opdays, 1, 30);
+      const lines = [[hrs + " hours × " + days + " day" + (days > 1 ? "s" : "") + " × $" + OP_HOUR, money(hrs * days * OP_HOUR)]];
+      if (days >= 2) lines.push(["Multi day discount", "they'll quote it"]);
+      return { svc, ready: true, total: hrs * days * OP_HOUR, tax: false, lines, summary: "Skid steer with operator: " + hrs + " hours a day for " + days + " day(s) at $100 an hour" };
+    }
+    const j = form.elements.job.value;
+    if (j === "") return { svc, ready: false };
+    if (j === "other") return { svc, ready: true, range: "Ask", lines: [["Something else", "they'll quote it"]], summary: "Handyman: something not on the list" };
+    const [name, price] = HM[+j];
+    return { svc, ready: true, range: price.replace(/ .*/, ""), unit: price.includes(" ") ? price.slice(price.indexOf(" ") + 1) : "", lines: [[name, price]], summary: "Handyman: " + name + " (" + price + ")" };
+  }
+  function message(p) {
+    const v = id => form.elements[id].value.trim();
+    const lines = ["Hi Don and Shawna, I'd like an estimate.", p.summary];
+    if (v("what")) lines.push("Job: " + v("what"));
+    if (v("where")) lines.push("Where: " + v("where"));
+    if (v("when")) lines.push("Best day / time: " + v("when"));
+    const who = [v("name"), v("phone")].filter(Boolean).join(", ");
+    if (who) lines.push("- " + who);
+    return lines.join("\n");
+  }
+  function update() {
+    const s = form.querySelector("input[name=svc]:checked"), svc = s ? s.value : "";
+    ["haul", "rent", "op", "hm"].forEach(k => { $("set-" + k).hidden = svc !== k; });
+    const l = form.querySelector("input[name=load]:checked");
+    $("hours-field").hidden = !(l && l.value === "f");
+    const p = picked();
+    if (!p || !p.ready) {
+      $("total").textContent = "–";
+      $("lines").innerHTML = "<li><span>" + (p ? (svc === "haul" ? "Pick a load size" : "Pick a job") : "Pick a service to start") + "</span></li>";
+    } else {
+      $("total").textContent = p.range ? p.range + (p.unit ? " " + p.unit : "") : money(p.total) + (p.tax ? " + tax" : "");
+      $("lines").innerHTML = p.lines.map(([a, b]) => `<li><span>${a}</span><span>${b}</span></li>`).join("");
+    }
+    $("tnote").textContent = p && p.svc === "hm" ? "Price range from Scout's list. Bundling multiple services gets a discount." :
+      p && p.svc === "haul" ? "Prices vary with the materials and how easy they are to reach; card payments add 3%." :
+      p && p.svc === "rent" ? "Delivery and pick up included in Edgewood, Moriarty, Tijeras and surrounding areas." :
+      "From Scout's posted prices. They confirm the final price before starting.";
+    const body = p && p.ready ? message(p) : "Hi Don and Shawna, I'd like an estimate.";
+    $("send-mail").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Estimate request") + "&body=" + encodeURIComponent(body);
+    $("send-sms").href = "sms:" + PHONE + "?&body=" + encodeURIComponent(body);
+    $("err").textContent = "";
+  }
+  form.addEventListener("input", update);
+  form.addEventListener("change", update);
+  ["send-mail", "send-sms"].forEach(id => $(id).addEventListener("click", e => {
+    const p = picked();
+    if (!p || !p.ready) { e.preventDefault(); $("err").textContent = p ? "Pick a load size or job first." : "Pick a service first."; }
+  }));
+  $("hm-q").addEventListener("input", () => {
+    const q = $("hm-q").value.trim().toLowerCase();
+    let n = 0;
+    document.querySelectorAll("#hm li").forEach(li => { const hit = !q || li.textContent.toLowerCase().includes(q); li.hidden = !hit; n += hit; });
+    $("hm-count").textContent = n + (n === 1 ? " job" : " jobs");
+    $("hm-empty").hidden = n > 0;
+  });
+  update();
+  $("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
