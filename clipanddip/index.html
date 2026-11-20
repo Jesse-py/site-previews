@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Clip &amp; Dip Dog Groomers | Dog Grooming in Natick, MA</title>
+<meta name="description" content="Full service dog grooming at 19 Pond St, Natick, a few steps from Natick Common. Full grooms from $65, baths from $50, nail trims $12. Open Tuesday to Saturday. Call 508-653-7425.">
+<meta name="theme-color" content="#6e3f7a">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clip &amp; Dip Dog Groomers, Natick MA">
+<meta property="og:description" content="Full service grooming, gentle hands, happy dogs! Full grooms from $65, baths from $50. 19 Pond St, Natick. Call 508-653-7425.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Clip & Dip Dog Groomers",
+  "description": "Full service dog grooming salon: full grooms, short-haired grooms, baths, brush-outs, nail trims and other grooming services.",
+  "telephone": "+1-508-653-7425",
+  "email": "clipanddip33@gmail.com",
+  "image": "assets/share.jpg",
+  "address": { "@type": "PostalAddress", "streetAddress": "19 Pond St", "addressLocality": "Natick", "addressRegion": "MA", "postalCode": "01760", "addressCountry": "US" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:30", "closes": "18:00" }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "name": "Full Groom", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "65", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Full Groom - Short Haired Dogs", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "55", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Bath Only", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "50", "priceCurrency": "USD" } },
+    { "@type": "Offer", "name": "Nail Trimming", "price": "12", "priceCurrency": "USD" }
+  ]
+}
+</script>
+<style>
+  /* Colors from their own site and photos (sources in README.md):
+     --grape #9a5ca6 / --grape-d #6e3f7a the purple grooming table in all 12 of their dog photos (sampled, lit and shaded);
+     --slate #537391 their site title color (computed style on Home); --slate-d #3d566d a darker shade of it for text.
+     Fonts: Merriweather (their page titles) and Open Sans (their body and menu). */
+  :root {
+    --grape: #9a5ca6;
+    --grape-d: #6e3f7a;
+    --grape-dd: #4a2a55;
+    --lilac: #e9dcef;
+    --blush: #f8f3fa;
+    --slate: #537391;
+    --slate-d: #3d566d;
+    --ink: #2a2330;
+    --muted: #5d5466;
+    --line: #e3d8e8;
+    --paper: #ffffff;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(74,42,85,.06), 0 10px 26px rgba(74,42,85,.10);
+    --serif: "Merriweather", Georgia, serif;
+    --sans: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 17px/1.65 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--grape-d); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--slate); outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 2px 10px rgba(74,42,85,.06); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 72px; }
+  .lockup { margin-right: auto; text-decoration: none; color: var(--grape-dd); line-height: 1.1; display: flex; align-items: center; gap: 12px; }
+  .lockup img { width: 44px; height: 44px; border-radius: 11px; }
+  .lockup b { font: 900 22px/1.1 var(--serif); display: block; }
+  .lockup small { display: block; font: 700 11px/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--slate); margin-top: 3px; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .nav a:hover { color: var(--grape-d); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 800 16px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: 999px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-grape { background: var(--grape-d); color: #fff; }
+  .btn-grape:hover { background: var(--grape-dd); }
+  .btn-line { border-color: var(--grape-d); color: var(--grape-d); background: #fff; }
+  .btn-line:hover { background: var(--blush); }
+  .btn-white { background: #fff; color: var(--grape-dd); }
+  .btn-white:hover { background: var(--lilac); }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.14); }
+  .head-call { padding: 12px 18px; font-size: 15px; }
+  @media (max-width: 1020px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 64px; } .lockup b { font-size: 19px; } }
+
+  .hero { background: linear-gradient(160deg, var(--blush) 0%, #fff 55%); overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding-top: 56px; padding-bottom: 64px; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; padding-bottom: 44px; } }
+  .kicker { font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--slate-d); margin: 0 0 16px; display: flex; align-items: center; gap: 10px; }
+  .kicker::before { flex: none; content: ""; width: 32px; height: 4px; border-radius: 2px; background: var(--grape); }
+  .hero h1 { font: 900 clamp(34px, 4.6vw, 54px)/1.14 var(--serif); margin: 0 0 18px; color: var(--grape-dd); letter-spacing: -.01em; }
+  .hero h1 em { font-style: normal; color: var(--grape-d); }
+  .hero p.sub { font-size: 19px; margin: 0 0 22px; color: var(--muted); max-width: 560px; }
+  .hero-prices { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; padding: 0; list-style: none; }
+  .hero-prices li { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; font-size: 15px; box-shadow: var(--shadow); }
+  .hero-prices b { color: var(--grape-d); font-size: 18px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .small { margin: 18px 0 0; font-size: 15px; color: var(--muted); }
+  .hero-photo { position: relative; justify-self: center; max-width: 430px; width: 100%; }
+  .hero-photo img { border-radius: 26px; box-shadow: 0 24px 60px rgba(74,42,85,.28); aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 40%; width: 100%; }
+  .hero-photo .tag { position: absolute; left: -16px; bottom: 26px; background: var(--grape-d); color: #fff; border-radius: 14px; padding: 12px 16px; font-size: 14px; line-height: 1.35; box-shadow: var(--shadow); }
+  .hero-photo .tag b { font: 900 22px/1 var(--serif); display: block; }
+  @media (max-width: 860px) { .hero-photo { max-width: 360px; } .hero-photo .tag { left: 10px; } }
+
+  .trust { background: var(--grape-d); color: #fff; }
+  .trust ul { list-style: none; margin: 0 auto; padding: 18px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 12px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; }
+  .trust svg { width: 24px; height: 24px; flex: none; color: var(--lilac); }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+
+  section { padding: 80px 0; }
+  .tint { background: var(--blush); }
+  .eyebrow { font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--slate-d); margin: 0 0 12px; }
+  h2 { font: 900 clamp(28px, 3.4vw, 40px)/1.2 var(--serif); margin: 0 0 14px; color: var(--grape-dd); }
+  .intro { color: var(--muted); max-width: 760px; margin: 0 0 36px; font-size: 18px; }
+  @media (max-width: 640px) { section { padding: 56px 0; } }
+
+  /* Prices */
+  .svc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 26px; }
+  @media (max-width: 860px) { .svc { grid-template-columns: 1fr; } }
+  .svc-card { background: #fff; border: 1px solid var(--line); border-top: 6px solid var(--grape); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow); }
+  .svc-card h3 { font: 900 20px/1.25 var(--serif); margin: 0 0 8px; color: var(--grape-dd); }
+  .svc-card p { margin: 0; font-size: 15.5px; color: var(--muted); }
+  .svc-card p + p { margin-top: 8px; }
+  .svc-card .req { font-size: 14.5px; }
+  .ptable-wrap { overflow-x: auto; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); }
+  .ptable { width: 100%; border-collapse: collapse; min-width: 640px; }
+  .ptable th, .ptable td { padding: 13px 16px; border-bottom: 1px solid var(--line); text-align: center; font-size: 16px; }
+  .ptable thead th { background: var(--grape-dd); color: #fff; font-weight: 800; font-size: 16px; line-height: 1.25; vertical-align: bottom; }
+  .ptable thead th:first-child { text-align: left; }
+  .ptable tbody th { text-align: left; font-weight: 700; }
+  .ptable tbody th small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+  .ptable td { font-weight: 800; color: var(--grape-d); font-size: 17px; }
+  .ptable tbody tr:nth-child(even) { background: var(--blush); }
+  .ptable tr.big th, .ptable tr.big td { font-size: 15px; }
+  .p-note { margin: 16px 0 0; font-size: 15px; color: var(--muted); max-width: 900px; }
+  .others { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 22px; margin-top: 40px; padding: 0; list-style: none; }
+  @media (max-width: 860px) { .others { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .others { grid-template-columns: 1fr; } }
+  .others li { display: flex; justify-content: space-between; gap: 12px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; font-weight: 600; }
+  .others li b { color: var(--grape-d); white-space: nowrap; }
+  .others li small { display: block; font-weight: 400; color: var(--muted); font-size: 13.5px; }
+  h3.sub { font: 900 22px/1.2 var(--serif); color: var(--grape-dd); margin: 44px 0 0; }
+
+  /* Price my visit */
+  .builder { background: linear-gradient(160deg, var(--grape-dd) 0%, #352040 100%); color: #fff; }
+  .builder h2 { color: #fff; }
+  .builder .eyebrow { color: var(--lilac); }
+  .builder .intro { color: #e3d6ea; }
+  .b-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 34px; align-items: start; }
+  @media (max-width: 900px) { .b-grid { grid-template-columns: 1fr; } }
+  .b-card { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 26px; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
+  fieldset { border: 0; margin: 0 0 18px; padding: 0; }
+  legend { font: 900 17px/1.2 var(--serif); color: var(--grape-dd); margin-bottom: 10px; padding: 0; }
+  .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 520px) { .opts { grid-template-columns: 1fr; } }
+  .opt { display: flex; gap: 10px; align-items: center; border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; font-size: 15.5px; }
+  .opt:has(input:checked) { border-color: var(--grape-d); background: var(--blush); }
+  .opt input { width: 18px; height: 18px; accent-color: var(--grape-d); flex: none; }
+  .opt span { flex: 1; }
+  .opt em { font-style: normal; font-weight: 800; color: var(--grape-d); white-space: nowrap; }
+  .opt[hidden], .field[hidden], fieldset[hidden] { display: none; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+  .field input, .field select, .field textarea { width: 100%; font: 16px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #c4b6cc; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--grape-d); outline: none; box-shadow: 0 0 0 3px rgba(110,63,122,.2); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .vax { display: flex; gap: 10px; align-items: flex-start; background: var(--blush); border-radius: 10px; padding: 12px 14px; font-size: 15px; }
+  .vax input { width: 18px; height: 18px; accent-color: var(--grape-d); margin-top: 3px; flex: none; }
+  .total { position: sticky; top: 96px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); padding: 24px; }
+  .total small { display: block; font: 700 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #d6c3df; }
+  .total output { display: block; font: 900 44px/1.1 var(--serif); color: #fff; margin: 10px 0 6px; }
+  .total ul { list-style: none; padding: 0; margin: 0 0 14px; font-size: 15px; color: #eadff0; }
+  .total ul li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,.18); }
+  .total p { font-size: 14.5px; color: #dccbe5; margin: 0 0 14px; }
+  .total .btn { width: 100%; justify-content: center; margin-top: 8px; }
+  .err { color: #ffd5de; font-size: 15px; min-height: 1.2em; margin: 6px 0 0; }
+
+  /* Before you book */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
+  @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
+  .step { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px; border: 1px solid var(--line); }
+  .step h3 { font: 900 19px/1.3 var(--serif); color: var(--grape-dd); margin: 0 0 8px; display: flex; gap: 12px; align-items: center; }
+  .step h3::before { counter-increment: s; content: counter(s); flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--grape-d); color: #fff; font: 800 16px/34px var(--sans); text-align: center; }
+  .step p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  /* Our dogs */
+  .gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .gal { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .gal { grid-template-columns: 1fr 1fr; gap: 10px; } }
+  .gal img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 35%; border-radius: 14px; box-shadow: var(--shadow); }
+  .gal-note { margin: 22px 0 0; color: var(--muted); font-size: 16px; }
+
+  /* Reviews */
+  .revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+  .rev { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 26px 26px 22px; margin: 0; border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .rev blockquote { margin: 0 0 14px; font-size: 16px; color: var(--ink); flex: 1; }
+  .rev blockquote::before { content: "\201C"; display: block; font: 900 54px/0.6 var(--serif); color: var(--grape); margin-bottom: 8px; }
+  .rev figcaption { font-weight: 700; color: var(--slate-d); }
+  .rev-cta { margin: 26px 0 0; }
+
+  /* Hours + visit */
+  .ha { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  @media (max-width: 820px) { .ha { grid-template-columns: 1fr; } }
+  .ha-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 26px 28px; }
+  .ha-card h3 { font: 900 22px/1.2 var(--serif); color: var(--grape-dd); margin: 0 0 14px; display: flex; gap: 10px; align-items: center; }
+  .ha-card h3 svg { width: 24px; height: 24px; color: var(--grape-d); }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours th, .hours td { padding: 10px 0; border-bottom: 1px solid var(--line); text-align: left; font-size: 16px; }
+  .hours td { text-align: right; font-weight: 700; }
+  .hours tr.closed td { color: var(--muted); font-weight: 400; }
+  .ha-card p { color: var(--muted); font-size: 16px; margin: 14px 0 0; }
+  .ha-card address { font-style: normal; font-size: 18px; font-weight: 700; color: var(--ink); }
+
+  /* Contact */
+  .contact { background: linear-gradient(135deg, var(--slate-d) 0%, var(--grape-dd) 100%); color: #fff; text-align: center; }
+  .contact h2 { color: #fff; }
+  .contact .lead { color: #e6dcee; font-size: 19px; margin: 0 auto 28px; max-width: 640px; }
+  .cways { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .contact .email { margin-top: 22px; font-size: 17px; color: #e6dcee; }
+  .contact .email a { color: #fff; font-weight: 700; }
+
+  .site-foot { background: #251729; color: #cbbcd2; font-size: 15px; padding: 40px 0 30px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 24px 56px; align-items: flex-start; justify-content: space-between; }
+  .foot-name { font: 900 24px/1.2 var(--serif); color: #fff; }
+  .site-foot a { color: #f0e6f4; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 6px; font-weight: 800; color: #fff; text-decoration: none; background: var(--grape-d); font-size: 15px; }
+    .callbar a + a { background: var(--grape-dd); }
+    .callbar a:last-child { background: var(--slate-d); }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Clip &amp; Dip Dog Groomers from the text and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></g></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><g fill="currentColor"><ellipse cx="6" cy="10" rx="2.2" ry="2.8"/><ellipse cx="10" cy="6" rx="2.2" ry="2.8"/><ellipse cx="14" cy="6" rx="2.2" ry="2.8"/><ellipse cx="18" cy="10" rx="2.2" ry="2.8"/><path d="M12 11c-3 0-6 4.5-6 7a3 3 0 0 0 3 3c1.2 0 2-.6 3-.6s1.8.6 3 .6a3 3 0 0 0 3-3c0-2.5-3-7-6-7z"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Clip &amp; Dip Dog Groomers, home"><img src="assets/favicon.png" alt="" width="44" height="44"><span><b>Clip &amp; Dip</b><small>Dog Groomers · Natick</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#prices">Prices</a>
+      <a href="#book">Price my visit</a>
+      <a href="#before">Before you book</a>
+      <a href="#dogs">Our dogs</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; parking</a>
+    </nav>
+    <a class="btn btn-grape head-call" href="tel:+15086537425"><svg><use href="#i-phone"/></svg>508-653-7425</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Natick, MA · by Natick Common</p>
+        <h1>Full service grooming, <em>gentle hands, happy dogs!</em></h1>
+        <p class="sub">Clip &amp; Dip brings over 35 years of professional dog grooming experience to every visit, from a simple tidy-up to a full spa treatment, in a calm and caring salon.</p>
+        <ul class="hero-prices" aria-label="Starting prices">
+          <li>Full groom <b>from $65</b></li><li>Bath <b>from $50</b></li><li>Nail trim <b>$12</b></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-grape" href="tel:+15086537425"><svg><use href="#i-phone"/></svg>Call to book</a>
+          <a class="btn btn-line" href="#book">Price my visit</a>
+        </div>
+        <p class="small">Tuesday – Saturday, 7:30 am – 6:00 pm · 19 Pond St, Natick</p>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/golden.webp" srcset="assets/img/golden-800.webp 800w, assets/img/golden.webp 1200w" sizes="(max-width: 860px) 360px, 430px" alt="A golden dog sitting on Clip &amp; Dip's purple grooming table after a groom" width="1200" height="1600">
+        <p class="tag"><b>35+ years</b>of professional grooming</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-heart"/></svg>Gentle, skilled grooming</li>
+      <li><svg><use href="#i-tag"/></svg>Prices posted up front</li>
+      <li><svg><use href="#i-msg"/></svg>A call or text when they're ready</li>
+      <li><svg><use href="#i-pin"/></svg>Steps from Natick Common</li>
+    </ul>
+  </div>
+
+  <section id="prices">
+    <div class="wrap">
+      <p class="eyebrow">Services &amp; prices</p>
+      <h2>Every price, by your dog's size</h2>
+      <p class="intro">Prices start at the amounts shown and depend on your dog's weight and coat. Dogs over 28 lbs, or with long or difficult coats, are assessed on an individual basis.</p>
+      <div class="svc">
+        <div class="svc-card">
+          <h3>Full Groom</h3>
+          <p>Bath, blow-out, brush-out, full hair cut, nail &amp; pad trim.</p>
+          <p class="req">Also includes ear cleaning &amp; plucking, teeth brushing and anal gland expression: ask for them at each visit.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Full Groom, short-haired dogs</h3>
+          <p>Bath, blow-out, brush-out, de-shed, nail &amp; pad trim. For dogs like Bulldogs, Pugs, Chihuahuas, Boxers and Dalmatians.</p>
+          <p class="req">Also includes ear cleaning &amp; plucking, teeth brushing and anal gland expression: ask for them at each visit.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Bath Only</h3>
+          <p>Bath, blow-out, brush-out and nail trim.</p>
+          <p class="req">Also includes a face, feet &amp; sani tidy up: ask for it at each visit.</p>
+        </div>
+      </div>
+      <div class="ptable-wrap" role="region" aria-label="Prices by dog size" tabindex="0">
+        <table class="ptable">
+          <thead>
+            <tr><th scope="col">Your dog's size</th><th scope="col">Full Groom</th><th scope="col">Full Groom<br>short-haired</th><th scope="col">Bath Only</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Extra small <small>1–10 lbs</small></th><td>$65+</td><td>$55+</td><td>$50+</td></tr>
+            <tr><th scope="row">Small <small>10–18 lbs</small></th><td>$70+</td><td>$65+</td><td>$55+</td></tr>
+            <tr><th scope="row">Medium <small>18–22 lbs</small></th><td>$80+</td><td>$70+</td><td>$65+</td></tr>
+            <tr><th scope="row">Large <small>22–25 lbs</small></th><td>$95+</td><td>$75+</td><td>$80+</td></tr>
+            <tr><th scope="row">Extra large <small>25–28 lbs</small></th><td>$100+</td><td>$95+</td><td>$85+</td></tr>
+            <tr class="big"><th scope="row">Bigger dogs <small>assessed individually</small></th><td>$120+</td><td>$100+</td><td>$100+</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="p-note">Prices from Clip &amp; Dip's own list (accurate as of July 2025) and subject to change. Swipe the table sideways on a phone.</p>
+
+      <h3 class="sub">Other services</h3>
+      <ul class="others">
+        <li><span>Brush-out</span><b>from $30</b></li>
+        <li><span>Nail trimming<small>Grinding and pad trim on request</small></span><b>$12</b></li>
+        <li><span>Ear trimming &amp; plucking</span><b>$12</b></li>
+        <li><span>Teeth brushing</span><b>$6</b></li>
+        <li><span>Sanitary trim</span><b>$12</b></li>
+        <li><span>Anal gland expression</span><b>$18</b></li>
+        <li><span>De-skunk treatment<small>Added to a bath or full groom</small></span><b>$30</b></li>
+        <li><span>De-matting</span><b>from $10</b></li>
+        <li><span>Handling fee<small>Difficult or aggressive dogs</small></span><b>from $10</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="book" class="builder">
+    <div class="wrap">
+      <p class="eyebrow">Price my visit</p>
+      <h2>See where your dog's visit starts</h2>
+      <p class="intro">Pick a service and your dog's size to see the starting price from Clip &amp; Dip's list, tick anything you'd like done this visit, then email the request (or call). The groomer confirms the final price once they see your dog's coat.</p>
+      <div class="b-grid">
+        <form class="b-card" id="bform" novalidate>
+          <fieldset>
+            <legend>Service</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="svc" value="full"><span>Full Groom</span><em>$65+</em></label>
+              <label class="opt"><input type="radio" name="svc" value="short"><span>Full Groom, short-haired</span><em>$55+</em></label>
+              <label class="opt"><input type="radio" name="svc" value="bath"><span>Bath Only</span><em>$50+</em></label>
+              <label class="opt"><input type="radio" name="svc" value="brush"><span>Brush-out</span><em>$30+</em></label>
+              <label class="opt"><input type="radio" name="svc" value="nails"><span>Nail trimming</span><em>$12</em></label>
+            </div>
+          </fieldset>
+          <div class="field" id="size-field" hidden>
+            <label for="f-size">Your dog's size</label>
+            <select id="f-size" name="size">
+              <option value="0">Extra small (1–10 lbs)</option><option value="1">Small (10–18 lbs)</option><option value="2">Medium (18–22 lbs)</option>
+              <option value="3">Large (22–25 lbs)</option><option value="4">Extra large (25–28 lbs)</option><option value="5">Bigger than that (assessed individually)</option>
+            </select>
+          </div>
+          <fieldset id="req-set" hidden>
+            <legend>Please also do this visit</legend>
+            <div class="opts">
+              <label class="opt" data-for="full short"><input type="checkbox" name="req" value="Ear cleaning &amp; plucking"><span>Ear cleaning &amp; plucking</span><em>incl.</em></label>
+              <label class="opt" data-for="full short"><input type="checkbox" name="req" value="Teeth brushing"><span>Teeth brushing</span><em>incl.</em></label>
+              <label class="opt" data-for="full short"><input type="checkbox" name="req" value="Anal gland expression"><span>Anal gland expression</span><em>incl.</em></label>
+              <label class="opt" data-for="bath"><input type="checkbox" name="req" value="Face, feet &amp; sani tidy up"><span>Face, feet &amp; sani tidy up</span><em>incl.</em></label>
+              <label class="opt" data-for="full short bath"><input type="checkbox" name="skunk" value="1"><span>De-skunk treatment</span><em>+$30</em></label>
+            </div>
+          </fieldset>
+          <div class="two">
+            <div class="field"><label for="f-dog">Dog's name and breed</label><input id="f-dog" name="dog" type="text" placeholder="e.g. Max, Goldendoodle" autocomplete="off"></div>
+            <div class="field"><label for="f-when">Best day / time</label><input id="f-when" name="when" type="text" placeholder="e.g. Thursday morning"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="f-phone">Your phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field"><label for="f-notes">Anything the groomer should know?</label><textarea id="f-notes" name="notes" rows="3" placeholder="Allergies, sensitive skin, matting, the look you'd like..."></textarea></div>
+          <label class="vax"><input type="checkbox" id="f-vax" name="vax"><span>My dog is up to date on Rabies, Distemper and Bordetella. I'll attach the records to the email or bring them in before the appointment.</span></label>
+        </form>
+        <aside class="total" aria-live="polite">
+          <small>Starting price</small>
+          <output id="total" form="bform">–</output>
+          <ul id="lines"><li><span>Pick a service to start</span></li></ul>
+          <p>From Clip &amp; Dip's posted prices. Coat condition, matting (from $10) or extra handling can add to it; the groomer confirms before starting.</p>
+          <a class="btn btn-white" id="send-mail" href="mailto:clipanddip33@gmail.com"><svg><use href="#i-mail"/></svg>Email this request</a>
+          <a class="btn btn-ghost" href="tel:+15086537425"><svg><use href="#i-phone"/></svg>Or call 508-653-7425</a>
+          <p class="err" id="err" role="alert"></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="before" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Before you book</p>
+      <h2>Three things to know</h2>
+      <div class="steps">
+        <div class="step"><h3>Vaccinations first</h3><p>Every dog must be up to date on Rabies, Distemper and Bordetella. Bring the records in or email them to <a href="mailto:clipanddip33@gmail.com">clipanddip33@gmail.com</a> before you make an appointment.</p></div>
+        <div class="step"><h3>Allow 3 hours</h3><p>Please allow 3 hours for a full groom or bath. You'll get a call or text when your dog is ready to be collected.</p></div>
+        <div class="step"><h3>Ask for the extras</h3><p>Ear cleaning, teeth brushing, anal glands and the face, feet &amp; sani tidy up are done when you ask for them at each visit, not automatically.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dogs">
+    <div class="wrap">
+      <p class="eyebrow">Our dogs</p>
+      <h2>Fresh from the table</h2>
+      <p class="intro">Dogs groomed at Clip &amp; Dip, from the salon's own gallery.</p>
+      <div class="gal">
+        <img src="assets/img/red-doodle-bowtie-800.webp" alt="A red curly-coated dog wearing a bow tie after a groom" width="800" height="1174" loading="lazy">
+        <img src="assets/img/white-poodle-tie-800.webp" alt="A white poodle with a fresh clip and a necktie" width="800" height="1066" loading="lazy">
+        <img src="assets/img/pomeranian-800.webp" alt="A fluffy orange and white dog after a brush-out" width="800" height="1066" loading="lazy">
+        <img src="assets/img/yorkie-blue-bow-800.webp" alt="A small terrier with a blue bow in its hair" width="800" height="1174" loading="lazy">
+        <img src="assets/img/brown-poodle-bow-800.webp" alt="A brown curly dog with a round face trim and a bow" width="800" height="1047" loading="lazy">
+        <img src="assets/img/french-bulldog-800.webp" alt="A fawn French Bulldog after a bath" width="800" height="1048" loading="lazy">
+        <img src="assets/img/black-white-doodle-800.webp" alt="A black and white curly dog with a pink bow" width="800" height="1048" loading="lazy">
+        <img src="assets/img/wheaten-terrier-800.webp" alt="A wheaten terrier with a neat trim" width="800" height="1047" loading="lazy">
+        <img src="assets/img/white-fluffy-800.webp" alt="A white fluffy dog with a pink bow" width="800" height="1174" loading="lazy">
+        <img src="assets/img/black-shaggy-bandana-800.webp" alt="A long-haired black dog wearing a green bandana" width="800" height="1048" loading="lazy">
+        <img src="assets/img/white-terrier-bandana-800.webp" alt="A small white dog wearing a red bandana" width="800" height="1047" loading="lazy">
+        <img src="assets/img/golden-800.webp" alt="A golden dog after a groom" width="800" height="1066" loading="lazy">
+      </div>
+      <p class="gal-note">Love your dog's new cut? Share a photo and tag <b>@clipanddip33</b>. It helps a small business more than you know!</p>
+    </div>
+  </section>
+
+  <section id="reviews" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Testimonials</p>
+      <h2>What owners say</h2>
+      <div class="revs">
+        <figure class="rev"><blockquote>There aren't many places that will take giant breed dogs for grooming, so we were lucky to find Clip and Dip. We were doubly lucky to find such a great groomer: our Newfoundland always enjoys her spa days here, and Clip and Dip does an amazing job in grooming her for both looks and for health (she has sensitive skin and is allergy prone). The owner and employees are super-friendly and professional. Highly recommend!</blockquote><figcaption>~ C</figcaption></figure>
+        <figure class="rev"><blockquote>My Max was treated so well at Clip and Dip!! I loved it!! They listened well to what I wanted and my concerns for Max, as well as were attentive to his allergies and even allowed me to bring his favorite treats to help him feel comfortable!!! I love the added touch of the bow tie and cute picture!!! We feel loved and welcome here and will definitely make this groomer part of our routine!!</blockquote><figcaption>~ P</figcaption></figure>
+        <figure class="rev"><blockquote>So happy that I discovered this shop one day on Google search because the staff here go above and beyond on their services. Mocha dislikes it when I hand him over, but the staff makes it such a great experience for him that he forgets that I even existed once I leave.. Price is also really great here too. I highly recommend if you are looking for a grooming service for your pets! They are very professional and maintain high standards on sanitation and cleanliness.</blockquote><figcaption>~ L</figcaption></figure>
+      </div>
+      <p class="rev-cta"><a class="btn btn-line" href="https://g.page/r/CfhQ1ImkDisDEBM/review">Leave us a Google review</a></p>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <p class="eyebrow">Hours &amp; parking</p>
+      <h2>Visit the salon</h2>
+      <div class="ha">
+        <div class="ha-card">
+          <h3><svg><use href="#i-clock"/></svg>Hours</h3>
+          <table class="hours">
+            <tbody>
+              <tr><th scope="row">Tuesday – Saturday</th><td>7:30 am – 6:00 pm</td></tr>
+              <tr class="closed"><th scope="row">Sunday &amp; Monday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p>Hours may change during holiday periods; please call to confirm.</p>
+        </div>
+        <div class="ha-card">
+          <h3><svg><use href="#i-pin"/></svg>Where we are</h3>
+          <address>19 Pond St, Natick, MA 01760</address>
+          <p>Just a few steps from Natick Common. There is metered street parking and a parking lot just down the street. Press the button on the meter for 15 minutes free parking.</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=19+Pond+St%2C+Natick%2C+MA+01760">Get directions</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Book your dog's next groom</h2>
+      <p class="lead">Call or email to book an appointment. We're looking forward to your visit!</p>
+      <div class="cways">
+        <a class="btn btn-white" href="tel:+15086537425"><svg><use href="#i-phone"/></svg>Call 508-653-7425</a>
+        <a class="btn btn-ghost" href="#book">Price my visit</a>
+      </div>
+      <p class="email">Or email <a href="mailto:clipanddip33@gmail.com">clipanddip33@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-name">Clip &amp; Dip Dog Groomers</div><p>Full service grooming, gentle hands, happy dogs!<br>19 Pond St, Natick, MA 01760</p></div>
+      <div><p><a href="tel:+15086537425">508-653-7425</a><br><a href="mailto:clipanddip33@gmail.com">clipanddip33@gmail.com</a></p>
+        <nav class="foot-links" aria-label="Footer"><a href="#prices">Prices</a><a href="#book">Price my visit</a><a href="#before">Before you book</a><a href="#visit">Hours</a></nav></div>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> Clip &amp; Dip Dog Groomers</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+15086537425"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="#book"><svg><use href="#i-tag"/></svg>Prices</a>
+  <a href="#visit"><svg><use href="#i-pin"/></svg>Directions</a>
+</nav>
+
+<script>
+  // Starting prices from Clip & Dip's own Services page (accurate as of July 2025), by size:
+  // extra small, small, medium, large, extra large, bigger (assessed individually).
+  const PRICES = {
+    full: ["Full Groom", [65, 70, 80, 95, 100, 120]],
+    short: ["Full Groom (short-haired)", [55, 65, 70, 75, 95, 100]],
+    bath: ["Bath Only", [50, 55, 65, 80, 85, 100]]
+  };
+  const FLAT = { brush: ["Brush-out", 30, true], nails: ["Nail trimming", 12, false] };
+  const SKUNK = 30, PHONE = "+15086537425", EMAIL = "clipanddip33@gmail.com";
+  const form = document.getElementById("bform");
+  const $ = id => document.getElementById(id);
+  const sizeName = () => form.elements.size.options[form.elements.size.selectedIndex].textContent;
+
+  function picked() {
+    const s = form.querySelector("input[name=svc]:checked");
+    if (!s) return null;
+    const svc = s.value, sized = !!PRICES[svc];
+    const reqs = [...form.querySelectorAll("input[name=req]:checked")].filter(b => !b.closest(".opt").hidden).map(b => b.value);
+    const skunk = sized && form.elements.skunk.checked;
+    let name, base, from;
+    if (sized) { name = PRICES[svc][0] + ", " + sizeName(); base = PRICES[svc][1][+form.elements.size.value]; from = true; }
+    else { name = FLAT[svc][0]; base = FLAT[svc][1]; from = FLAT[svc][2]; }
+    return { svc, sized, name, base, from, reqs, skunk, total: base + (skunk ? SKUNK : 0) };
+  }
+  function message(p) {
+    const v = id => form.elements[id].value.trim();
+    const lines = ["Hi, I'd like to book an appointment at Clip & Dip."];
+    lines.push("Service: " + p.name + " (" + (p.from ? "starting from $" : "$") + p.base + ")");
+    if (p.reqs.length) lines.push("Please also do: " + p.reqs.join(", "));
+    if (p.skunk) lines.push("Add: De-skunk treatment (+$" + SKUNK + ")");
+    if (v("dog")) lines.push("Dog: " + v("dog"));
+    if (v("when")) lines.push("Best day / time: " + v("when"));
+    if (v("notes")) lines.push("Notes: " + v("notes"));
+    if (form.elements.vax.checked) lines.push("Vaccinations: Rabies, Distemper and Bordetella are up to date. Records attached or I'll bring them in.");
+    const who = [v("name"), v("phone")].filter(Boolean).join(", ");
+    if (who) lines.push("- " + who);
+    return lines.join("\n");
+  }
+  function update() {
+    const s = form.querySelector("input[name=svc]:checked");
+    const svc = s ? s.value : "";
+    $("size-field").hidden = !PRICES[svc];
+    $("req-set").hidden = !PRICES[svc];
+    form.querySelectorAll("#req-set .opt").forEach(o => { o.hidden = !o.dataset.for.split(" ").includes(svc); });
+    const p = picked();
+    $("total").textContent = p ? (p.from ? "$" + p.total + "+" : "$" + p.total) : "–";
+    $("lines").innerHTML = p
+      ? `<li><span>${p.name}</span><span>${p.from ? "from " : ""}$${p.base}</span></li>` + (p.skunk ? `<li><span>De-skunk treatment</span><span>$${SKUNK}</span></li>` : "")
+        + p.reqs.map(r => `<li><span>${r.replace(/&/g, "&amp;")}</span><span>on request</span></li>`).join("")
+      : "<li><span>Pick a service to start</span></li>";
+    const body = encodeURIComponent(p ? message(p) : "Hi, I'd like to book an appointment at Clip & Dip.");
+    $("send-mail").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Grooming appointment request") + "&body=" + body;
+    $("err").textContent = "";
+  }
+  form.addEventListener("input", update);
+  form.addEventListener("change", update);
+  $("send-mail").addEventListener("click", e => {
+    if (!picked()) { e.preventDefault(); $("err").textContent = "Pick a service first."; }
+    else if (!form.elements.vax.checked) { e.preventDefault(); $("err").textContent = "Please confirm your dog's vaccinations are up to date (it's required before booking)."; }
+  });
+  update();
+  $("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
