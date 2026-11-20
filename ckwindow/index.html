@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>CK Window Washing | Window Cleaning in Portland &amp; Salem-Keizer, OR</title>
+<meta name="description" content="Residential and commercial window cleaning in the greater Portland and Salem-Keizer area: inside and out, screens, tracks, skylights, hard water, gutters and solar panels. Free estimates. Call or text (503) 559-7598.">
+<meta name="theme-color" content="#273554">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CK Window Washing: window cleaning in Portland and Salem-Keizer">
+<meta property="og:description" content="Modern methods. Classic quality. Free estimates and virtual quotes. Call or text (503) 559-7598.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CK Window Washing",
+  "description": "Window cleaning for residential homes and low to mid-rise commercial buildings in the greater Portland and Salem-Keizer area.",
+  "telephone": "+1-503-559-7598",
+  "email": "CodyKWW@gmail.com",
+  "image": "assets/share.jpg",
+  "logo": "assets/logo-240.webp",
+  "areaServed": ["Portland, OR", "Salem, OR", "Keizer, OR"],
+  "address": { "@type": "PostalAddress", "addressRegion": "OR", "addressCountry": "US" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }],
+  "sameAs": ["https://www.instagram.com/CK_Window_Washing", "https://www.facebook.com/profile.php?id=100091843749160"]
+}
+</script>
+<style>
+  /* Colors from their own logo and site (sources in README.md):
+     --orange #f09b1b the logo tile; --sky #78b0d8 the "CK'WW" lettering (also their site's hours band); --brown #995e1b the squeegee handle;
+     --ink #273554 the text color on their site; black as in their logo background and nav bar.
+     --orange-d #a85f00 and --sky-d #2a6d9e are the same hues darkened for AA text on white. */
+  :root {
+    --orange: #f09b1b;
+    --orange-2: #f5b048;
+    --orange-d: #a85f00;
+    --sky: #78b0d8;
+    --sky-pale: #eaf3fa;
+    --sky-d: #2a6d9e;
+    --brown: #995e1b;
+    --ink: #273554;
+    --night: #121822;
+    --muted: #4e596b;
+    --line: #dbe4ee;
+    --paper: #ffffff;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(18, 24, 34, .06), 0 8px 24px rgba(39, 53, 84, .11);
+    --head: "Josefin Sans", "Trebuchet MS", sans-serif;
+    --sans: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 18px/1.6 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--sky-d); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  /* Header: black like their nav bar, so the logo tile sits as it was drawn */
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--night); border-bottom: 4px solid var(--orange); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 78px; }
+  .lockup { display: flex; align-items: center; gap: 12px; margin-right: auto; text-decoration: none; color: #fff; }
+  .lockup img { width: 54px; height: 54px; }
+  .lockup b { font: 700 23px/1 var(--head); letter-spacing: .01em; }
+  .lockup span { display: block; font: 500 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--sky); margin-top: 6px; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: #e6edf5; text-decoration: none; font-weight: 500; font-size: 16px; }
+  .nav a:hover { color: var(--orange-2); text-decoration: underline; text-underline-offset: 4px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 700 17px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: 999px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-orange { background: var(--orange); color: var(--night); }
+  .btn-orange:hover { background: var(--orange-2); }
+  .btn-ink { background: var(--ink); color: #fff; }
+  .btn-ink:hover { background: #1c2740; }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: rgba(18,24,34,.3); }
+  .btn-ghost:hover { background: rgba(255,255,255,.14); }
+  .head-call { padding: 12px 18px; font-size: 16px; }
+  @media (max-width: 1060px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 66px; } .lockup img { width: 46px; height: 46px; } .lockup b { font-size: 20px; } }
+
+  /* Hero: the lake-view picture window from their own home page */
+  .hero { position: relative; color: #fff; background: var(--ink); overflow: hidden; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(18,24,34,.94) 0%, rgba(39,53,84,.82) 48%, rgba(39,53,84,.15) 88%); }
+  .hero .wrap { position: relative; z-index: 1; padding-top: 92px; padding-bottom: 100px; }
+  .hero-text { max-width: 620px; }
+  .kicker { font: 500 14px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--orange-2); margin: 0 0 16px; display: flex; align-items: center; gap: 10px; }
+  .kicker::before { content: ""; width: 36px; height: 4px; border-radius: 2px; background: var(--sky); }
+  .hero h1 { font: 700 clamp(40px, 5.4vw, 64px)/1.05 var(--head); margin: 0 0 18px; }
+  .hero h1 em { font-style: normal; color: var(--sky); display: block; }
+  .hero p.sub { font-size: 20px; margin: 0 0 28px; color: #dde6f0; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .small { margin-top: 20px; font-size: 16px; color: #c8d4e2; }
+  @media (max-width: 760px) {
+    .hero::after { background: linear-gradient(180deg, rgba(18,24,34,.9) 0%, rgba(39,53,84,.84) 62%, rgba(39,53,84,.6) 100%); }
+    .hero .wrap { padding-top: 52px; padding-bottom: 64px; }
+  }
+
+  .trust { background: var(--orange); color: var(--night); }
+  .trust ul { list-style: none; margin: 0 auto; padding: 18px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 12px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; }
+  .trust svg { width: 26px; height: 26px; flex: none; }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+
+  section { padding: 84px 0; }
+  .tint { background: var(--sky-pale); }
+  .eyebrow { font: 500 14px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--orange-d); margin: 0 0 12px; }
+  h2 { font: 700 clamp(30px, 3.8vw, 44px)/1.12 var(--head); margin: 0 0 14px; color: var(--ink); }
+  .intro { color: var(--muted); max-width: 720px; margin: 0 0 40px; font-size: 19px; }
+  @media (max-width: 640px) { section { padding: 60px 0; } }
+
+  /* Services: homes and businesses side by side */
+  .two-svc { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 860px) { .two-svc { grid-template-columns: 1fr; } }
+  .svc { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+  .svc > img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; }
+  .svc .body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+  .svc h3 { font: 700 26px/1.15 var(--head); margin: 0 0 12px; color: var(--ink); }
+  .ticks { list-style: none; margin: 0 0 18px; padding: 0; columns: 2; column-gap: 18px; }
+  @media (max-width: 480px) { .ticks { columns: 1; } }
+  .ticks li { break-inside: avoid; display: flex; gap: 8px; align-items: flex-start; font-size: 16px; margin-bottom: 7px; }
+  .ticks svg { width: 18px; height: 18px; color: var(--sky-d); flex: none; margin-top: 4px; }
+  .freq { margin-top: auto; border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; }
+  .freq b { display: block; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips span { background: var(--sky-pale); border: 1px solid #c6dcee; color: var(--ink); border-radius: 999px; padding: 5px 12px; font-weight: 700; font-size: 15px; }
+
+  .extras { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; }
+  @media (max-width: 1000px) { .extras { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .extras { grid-template-columns: 1fr; } }
+  .extra { margin: 0; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+  .extra img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .extra figcaption { padding: 14px 16px 16px; font-size: 15px; color: var(--muted); }
+  .extra figcaption b { display: block; font: 700 19px/1.2 var(--head); color: var(--ink); margin-bottom: 4px; }
+
+  /* How the estimate works */
+  .bid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  @media (max-width: 900px) { .bid { grid-template-columns: 1fr; gap: 28px; } }
+  .qlist { list-style: none; counter-reset: q; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
+  .qlist li { counter-increment: q; display: flex; gap: 14px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; font-size: 17px; }
+  .qlist li::before { content: counter(q); font: 700 17px/28px var(--head); width: 30px; height: 30px; text-align: center; border-radius: 50%; background: var(--orange); color: var(--night); flex: none; }
+  .bid-photo img { border-radius: var(--radius); width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: var(--shadow); }
+  .bid-photo p { font-size: 15px; color: var(--muted); margin: 10px 0 0; }
+
+  /* Reviews */
+  .reviews { background: var(--ink); color: #fff; }
+  .reviews h2 { color: #fff; }
+  .reviews .eyebrow { color: var(--orange-2); }
+  .reviews .intro { color: #cfd9e5; }
+  .stars { display: inline-flex; gap: 3px; color: var(--orange); }
+  .stars svg { width: 20px; height: 20px; }
+  .rev-grid { columns: 3; column-gap: 20px; }
+  @media (max-width: 1000px) { .rev-grid { columns: 2; } }
+  @media (max-width: 640px) { .rev-grid { columns: 1; } }
+  .rev { break-inside: avoid; margin: 0 0 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-left: 4px solid var(--sky); border-radius: 12px; padding: 18px 20px; }
+  .rev blockquote { margin: 0 0 10px; font-size: 17px; line-height: 1.55; color: #eef3f8; }
+  .rev figcaption { font-weight: 700; color: var(--sky); }
+  .rev-more { margin-top: 10px; }
+
+  /* Photos */
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .gallery { grid-template-columns: 1fr 1fr; } }
+  .gallery figure { margin: 0; }
+  .gallery img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow); }
+  .gallery figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+
+  /* Why it matters */
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-card { background: #fff; border-radius: var(--radius); border-top: 5px solid var(--sky); box-shadow: var(--shadow); padding: 22px 24px; }
+  .why-card h3 { font: 700 22px/1.2 var(--head); margin: 0 0 8px; color: var(--ink); }
+  .why-card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  /* About + hours */
+  .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 52px; align-items: start; }
+  @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 28px; } }
+  .about-photo img { border-radius: 16px; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; box-shadow: var(--shadow); }
+  .why-us { list-style: none; padding: 0; margin: 18px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+  @media (max-width: 520px) { .why-us { grid-template-columns: 1fr; } }
+  .why-us li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; }
+  .why-us svg { width: 20px; height: 20px; color: var(--orange-d); flex: none; margin-top: 3px; }
+  .hours { margin-top: 26px; background: var(--sky-pale); border: 1px solid #c6dcee; border-radius: 12px; padding: 16px 20px; }
+  .hours h3 { font: 700 20px/1.2 var(--head); margin: 0 0 8px; color: var(--ink); display: flex; gap: 8px; align-items: center; }
+  .hours h3 svg { width: 22px; height: 22px; color: var(--sky-d); }
+  .hours table { border-collapse: collapse; font-size: 16px; }
+  .hours th { text-align: left; font-weight: 500; padding: 3px 24px 3px 0; }
+  .hours td { font-weight: 700; }
+  .hours p { margin: 8px 0 0; font-size: 15px; color: var(--muted); }
+
+  /* Estimate */
+  .contact { background: var(--night); color: #fff; }
+  .contact h2 { color: #fff; }
+  .contact .eyebrow { color: var(--orange-2); }
+  .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact .lead { color: #d0dae6; font-size: 19px; margin: 0 0 24px; }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .cinfo svg { width: 24px; height: 24px; color: var(--orange); flex: none; margin-top: 2px; }
+  .cinfo small { display: block; font: 500 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #a7b6c8; margin-bottom: 6px; }
+  .cinfo a, .cinfo .val { color: #fff; font-weight: 700; text-decoration: none; font-size: 20px; word-break: break-word; }
+  .cinfo a:hover { text-decoration: underline; }
+  .form-card { background: var(--paper); color: var(--ink); border-radius: var(--radius); padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,.45); border-top: 6px solid var(--orange); }
+  .form-card h3 { font: 700 30px/1.1 var(--head); color: var(--ink); margin: 0 0 4px; }
+  .form-card .hint { color: var(--muted); font-size: 15px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label, .field legend { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; padding: 0; }
+  .field select, .field input[type=text], .field input[type=tel], .field input[type=number], .field textarea { width: 100%; font: 17px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #b6c4d4; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field select:focus, .field input:focus, .field textarea:focus { border-color: var(--sky-d); outline: none; box-shadow: 0 0 0 3px rgba(42,109,158,.2); }
+  fieldset.field { border: 0; margin: 0 0 14px; padding: 0; }
+  .radios, .checks { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .radios label, .checks label { display: flex; gap: 8px; align-items: center; font-size: 16px; cursor: pointer; }
+  .radios input, .checks input { width: 18px; height: 18px; accent-color: var(--sky-d); flex: none; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 80px; resize: vertical; }
+  .form-card .btn { width: 100%; justify-content: center; }
+  .form-note { font-size: 13px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #0a0e14; color: #b6c2d0; font-size: 15px; padding: 44px 0 30px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 28px 56px; align-items: flex-start; justify-content: space-between; }
+  .foot-logo img { width: 84px; height: 84px; }
+  .site-foot a { color: #e8eef5; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 6px; font-weight: 700; color: #fff; text-decoration: none; background: var(--ink); font-size: 16px; }
+    .callbar a + a { background: var(--night); }
+    .callbar a:last-child { background: var(--orange); color: var(--night); }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for CK Window Washing from the text, logo and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.3l-6.1 3.4 1.5-6.7-5.1-4.6 6.8-.7z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></g></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></g></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="CK Window Washing, home"><img src="assets/logo-240.webp" alt="CK Window Washing logo: CK'WW on an orange squeegee tile" width="54" height="54"><div><b>CK Window Washing</b><span>Portland · Salem-Keizer</span></div></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#estimate-how">Estimates</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#photos">Photos</a>
+      <a href="#about">About &amp; hours</a>
+      <a href="#estimate">Free estimate</a>
+    </nav>
+    <a class="btn btn-orange head-call" href="tel:+15035597598"><svg><use href="#i-phone"/></svg>(503) 559-7598</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <img src="assets/img/lake-window.webp" srcset="assets/img/lake-window-800.webp 800w, assets/img/lake-window.webp 1600w" sizes="100vw" alt="A clean picture window looking out over a lake and hills" width="1600" height="1200">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="kicker">Portland &amp; Salem-Keizer · Family owned</p>
+        <h1>Modern methods. <em>Classic quality.</em></h1>
+        <p class="sub">Window cleaning for homes and low to mid-rise commercial buildings. Traditional tools, eco friendly soaps and pure water systems, from a small family owned business.</p>
+        <div class="actions">
+          <a class="btn btn-orange" href="#estimate">Get a free estimate</a>
+          <a class="btn btn-ghost" href="tel:+15035597598"><svg><use href="#i-phone"/></svg>Call or text (503) 559-7598</a>
+        </div>
+        <p class="small">Free estimates · Virtual quotes available · Mon–Fri 9 AM–5 PM</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-shield"/></svg>Fully licensed &amp; insured</li>
+      <li><svg><use href="#i-star"/></svg>5 star rated on Google</li>
+      <li><svg><use href="#i-cam"/></svg>Virtual quotes available</li>
+      <li><svg><use href="#i-home"/></svg>Local small family business</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>Clear glass, inside and out</h2>
+      <p class="intro">Homes and businesses across the greater Portland and Salem-Keizer area, as a one-time cleaning or on a regular schedule.</p>
+      <div class="two-svc">
+        <article class="svc">
+          <img src="assets/img/arched-gable-800.webp" alt="Cleaning a high arched gable window from the ground with a water-fed pole" width="800" height="400" loading="lazy" style="object-position:50% 30%">
+          <div class="body">
+            <h3>For your home</h3>
+            <ul class="ticks">
+              <li><svg><use href="#i-check"/></svg>Interior and exterior glass</li>
+              <li><svg><use href="#i-check"/></svg>Storm windows</li>
+              <li><svg><use href="#i-check"/></svg>Interior partition glass</li>
+              <li><svg><use href="#i-check"/></svg>Mirrors</li>
+              <li><svg><use href="#i-check"/></svg>Skylights</li>
+              <li><svg><use href="#i-check"/></svg>Screen cleaning</li>
+              <li><svg><use href="#i-check"/></svg>Track cleaning</li>
+              <li><svg><use href="#i-check"/></svg>Screen repair</li>
+              <li><svg><use href="#i-check"/></svg>Hard water removal</li>
+              <li><svg><use href="#i-check"/></svg>Post construction cleanup</li>
+              <li><svg><use href="#i-check"/></svg>Gutter cleaning</li>
+              <li><svg><use href="#i-check"/></svg>Tiger stripe removal</li>
+              <li><svg><use href="#i-check"/></svg>Awning cleaning</li>
+              <li><svg><use href="#i-check"/></svg>Pressure washing</li>
+              <li><svg><use href="#i-check"/></svg>Solar panel cleaning</li>
+            </ul>
+            <div class="freq"><b>How often</b><div class="chips"><span>Quarterly</span><span>Semi-annual</span><span>Yearly</span></div></div>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="assets/img/commercial-glass-800.webp" alt="Cleaning the glass front of a commercial building" width="800" height="400" loading="lazy">
+          <div class="body">
+            <h3>For your business</h3>
+            <ul class="ticks">
+              <li><svg><use href="#i-check"/></svg>Interior and exterior glass</li>
+              <li><svg><use href="#i-check"/></svg>Interior partition glass</li>
+              <li><svg><use href="#i-check"/></svg>Mirrors</li>
+              <li><svg><use href="#i-check"/></svg>Cooler doors</li>
+              <li><svg><use href="#i-check"/></svg>Hard water removal</li>
+              <li><svg><use href="#i-check"/></svg>Post construction cleanup</li>
+              <li><svg><use href="#i-check"/></svg>Pressure washing</li>
+              <li><svg><use href="#i-check"/></svg>Solar panel cleaning</li>
+            </ul>
+            <p style="margin:0 0 16px;color:var(--muted);font-size:16px">Low to mid-rise commercial buildings. Each business gets a personalized bid: one-time or regular cleanings, inside and out or outside only, by number of stories and the safety equipment the building needs.</p>
+            <div class="freq"><b>How often</b><div class="chips"><span>Weekly</span><span>Monthly</span><span>Quarterly</span><span>Semi-annual</span><span>Yearly</span></div></div>
+          </div>
+        </article>
+      </div>
+      <div class="extras">
+        <figure class="extra"><img src="assets/img/screens-800.webp" alt="A stack of cleaned window screens" width="800" height="600" loading="lazy"><figcaption><b>Screens &amp; tracks</b>Clean screens help airflow and keep bugs outside; clean tracks keep mold and mildew down.</figcaption></figure>
+        <figure class="extra"><img src="assets/img/scraper-800.webp" alt="A gloved hand working a scraper across glass" width="800" height="600" loading="lazy" style="object-position:50% 40%"><figcaption><b>Hard water &amp; post construction</b>Hard water spots and post construction mess cleaned off the glass.</figcaption></figure>
+        <figure class="extra"><img src="assets/img/gutter-vac-800.webp" alt="A gutter vacuum on a lawn covered in fall leaves" width="800" height="600" loading="lazy"><figcaption><b>Gutter cleaning</b>Leaves and twigs cleared so water flows away from your siding and foundation.</figcaption></figure>
+        <figure class="extra"><img src="assets/img/solar-800.webp" alt="Rooftop solar panels being cleaned" width="800" height="600" loading="lazy"><figcaption><b>Solar panels &amp; skylights</b>Skylights and solar panels cleaned along with your windows.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate-how" class="tint">
+    <div class="wrap bid">
+      <div>
+        <p class="eyebrow">Free estimates</p>
+        <h2>A bid built for your home</h2>
+        <p class="intro" style="margin-bottom:24px">Every client gets a personalized bid with package options. On the free estimate visit (or a virtual quote), these are the things that set the price:</p>
+        <ol class="qlist">
+          <li>How many windows your home has</li>
+          <li>The styles: single or double hung, sliders, storms, picture, casement, French pane</li>
+          <li>Outside only, or inside and outside</li>
+          <li>Extras like screen and track cleaning, and any skylights</li>
+          <li>The tools, techniques and safety steps your home needs</li>
+        </ol>
+        <a class="btn btn-ink" href="#estimate">Start your free estimate</a>
+      </div>
+      <div class="bid-photo">
+        <img src="assets/img/three-story-800.webp" alt="Cleaning third-story windows from the ground with a water-fed pole" width="800" height="1000" loading="lazy">
+        <p>Upper-story windows, cleaned from the ground with a pole.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <p class="eyebrow">Reviews</p>
+      <h2>What clients say about Cody</h2>
+      <p class="intro"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><br>5 star rated on Google. Happy clients consistently refer CK to friends and family.</p>
+      <div class="rev-grid">
+        <figure class="rev"><blockquote>"Cody was excellent! Very reasonable, on time, scrubbed the windows, not once but twice, before finishing. The last couple of times, we had someone else we were lucky to get one time. I've never seen such clean, sparkling windows with Cody. We have lots of flowers and shrubs around the windows, and he used such care to avoid them. We couldn't be happier. We will definitely call CK Window Washing next time."</blockquote><figcaption>Linda M.</figcaption></figure>
+        <figure class="rev"><blockquote>"Cody cleaned our 3 story, 100 year old, multi-mullioned windows carefully and treated our enormous 2nd story leaded glass window with kid gloves. Views are now sparklingly clear and we give Cody 10/10 stars!"</blockquote><figcaption>Susan B.</figcaption></figure>
+        <figure class="rev"><blockquote>"CK Window Washing is our go to place for making the windows in our home shine. We like to do inside and outside early summer and outside in the fall. Cody is excellent to work with as well."</blockquote><figcaption>Scott S.</figcaption></figure>
+        <figure class="rev"><blockquote>"Cody did an amazing job. Leaded windows with huge wooden storms. Courteous, professional, was able to reschedule when we needed to due to illness. Couldn't be happier with the work."</blockquote><figcaption>Jeanne F.</figcaption></figure>
+        <figure class="rev"><blockquote>"Cody does an excellent job cleaning our windows and screens. He is conscientious with our things, always upbeat and has done better than any other window cleaning service we've had. I highly recommend him."</blockquote><figcaption>Linda M.</figcaption></figure>
+        <figure class="rev"><blockquote>"Cody was very professional, worked hard, did a great job and advised us on window and screen issues that might come up in the future."</blockquote><figcaption>Anne Marie P.</figcaption></figure>
+        <figure class="rev"><blockquote>"Absolutely the best. I've used Cody for years and will never consider another window washing service!"</blockquote><figcaption>Karen F.</figcaption></figure>
+      </div>
+      <p class="rev-more"><a class="btn btn-orange" href="https://www.google.com/maps/place/CK+Window+Washing/@45.168361,-122.4161689,9z/data=!3m1!4b1!4m6!3m5!1s0x2ca41867d512f86d:0x7430af896b470aa6!8m2!3d45.168361!4d-122.4161689!16s%2Fg%2F11rv0d28vs" rel="noopener">Read more reviews on Google Maps</a></p>
+    </div>
+  </section>
+
+  <section id="photos">
+    <div class="wrap">
+      <p class="eyebrow">Our work</p>
+      <h2>Homes and businesses around Portland &amp; Salem</h2>
+      <p class="intro">Projects CK's window washers have done, residential and commercial.</p>
+      <div class="gallery">
+        <figure><img src="assets/img/arched-squeegee-800.webp" alt="Squeegeeing a tall arched window from inside" width="800" height="800" loading="lazy"><figcaption>Arched window, inside</figcaption></figure>
+        <figure><img src="assets/img/skylight-800.webp" alt="A pole reaching a skylight in a vaulted ceiling" width="800" height="800" loading="lazy"><figcaption>Skylight</figcaption></figure>
+        <figure><img src="assets/img/lake-pair-800.webp" alt="Two clean windows looking out over a lake" width="800" height="800" loading="lazy"><figcaption>Living room windows</figcaption></figure>
+        <figure><img src="assets/img/high-interior-800.webp" alt="Cleaning high interior windows in a vaulted room" width="800" height="800" loading="lazy"><figcaption>High interior glass</figcaption></figure>
+        <figure><img src="assets/img/ivy-house-800.webp" alt="Water-fed pole reaching upper windows on an ivy-covered house" width="800" height="800" loading="lazy"><figcaption>Upper windows from the ground</figcaption></figure>
+        <figure><img src="assets/img/balcony-lake-800.webp" alt="Clean balcony doors looking out on a lake" width="800" height="800" loading="lazy"><figcaption>Balcony doors</figcaption></figure>
+        <figure><img src="assets/img/tracks-800.webp" alt="Window tracks before and after cleaning" width="800" height="800" loading="lazy"><figcaption>Window tracks</figcaption></figure>
+        <figure><img src="assets/img/tub-view-800.webp" alt="A clean window above a bathtub with a city view" width="800" height="800" loading="lazy"><figcaption>Bathroom window</figcaption></figure>
+        <figure><img src="assets/img/squeegee-trees-800.webp" alt="A squeegee on an outside window, trees reflected" width="800" height="800" loading="lazy"><figcaption>Exterior glass</figcaption></figure>
+        <figure><img src="assets/img/hydrangea-window-800.webp" alt="A window behind hydrangea bushes" width="800" height="800" loading="lazy"><figcaption>Careful around the garden</figcaption></figure>
+        <figure><img src="assets/img/pole-tree-800.webp" alt="Water-fed pole reaching windows above a tree" width="800" height="800" loading="lazy"><figcaption>Tall windows behind trees</figcaption></figure>
+        <figure><img src="assets/img/squeegee-corner-800.webp" alt="Detailing the corner of a window pane" width="800" height="800" loading="lazy"><figcaption>Detail work</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Why it matters</p>
+      <h2>More than a nice view</h2>
+      <div class="why-grid">
+        <div class="why-card"><h3>Prevents damage</h3><p>Regular cleaning keeps dirt, hard water and moss from building up on the glass. On new windows, a cleaning can reveal defects or broken seals while they're still under warranty.</p></div>
+        <div class="why-card"><h3>Healthier tracks and screens</h3><p>Here in Oregon, mold and mildew grow quickly, so clean tracks matter for your family's health. Clean, repaired screens help airflow and keep the bugs outside.</p></div>
+        <div class="why-card"><h3>Gutters that drain</h3><p>Gutters keep water away from your siding and foundation. Clogged with leaves and twigs, water backs up and causes damage; CK clears the debris.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="about-photo">
+        <img src="assets/img/yard-sign-800.webp" alt="A CK Window Washing yard sign with the phone number and email" width="800" height="680" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>A small family owned business</h2>
+        <p>CK Window Washing has industry experience since 2012 and serves the greater Portland and Salem-Keizer area. We understand how important it is to provide high value while keeping our services affordable, and it's one reason we're well liked in our community. At CK we make sure your glass sparkles.</p>
+        <ul class="why-us">
+          <li><svg><use href="#i-check"/></svg>Fully licensed &amp; insured</li>
+          <li><svg><use href="#i-check"/></svg>Enrolled in a monthly safety training program</li>
+          <li><svg><use href="#i-check"/></svg>Reliable &amp; punctual</li>
+          <li><svg><use href="#i-check"/></svg>Clean &amp; non-smoker</li>
+          <li><svg><use href="#i-check"/></svg>Easy payment methods</li>
+          <li><svg><use href="#i-check"/></svg>Various packages to match your needs</li>
+        </ul>
+        <div class="hours" id="hours">
+          <h3><svg><use href="#i-clock"/></svg>Hours</h3>
+          <table>
+            <tbody>
+              <tr><th scope="row">Monday – Friday</th><td>9 AM – 5 PM</td></tr>
+              <tr><th scope="row">Saturday – Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p>Feel free to call anytime and leave a message; we'll get back to you ASAP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Free estimate</p>
+        <h2>Get your free window cleaning estimate</h2>
+        <p class="lead">Send a few details and Cody will put together a personalized bid. Virtual quotes are available, or call or text directly.</p>
+        <ul class="cinfo">
+          <li><svg><use href="#i-phone"/></svg><div><small>Call</small><a href="tel:+15035597598">(503) 559-7598</a></div></li>
+          <li><svg><use href="#i-text"/></svg><div><small>Text</small><a href="sms:+15035597598">(503) 559-7598</a></div></li>
+          <li><svg><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:CodyKWW@gmail.com">CodyKWW@gmail.com</a></div></li>
+          <li><svg><use href="#i-pin"/></svg><div><small>Service area</small><span class="val">Greater Portland &amp; Salem-Keizer, OR</span></div></li>
+        </ul>
+      </div>
+      <form class="form-card" id="quote" novalidate>
+        <h3>Free estimate</h3>
+        <p class="hint">Takes about a minute. The more you tell us, the closer the first number.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-type">Property</label>
+            <select id="f-type" name="type"><option>Home</option><option>Business</option></select>
+          </div>
+          <div class="field"><label for="f-city">City</label><input type="text" id="f-city" name="city" required autocomplete="address-level2" placeholder="Portland, Salem, Keizer..."></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-windows">About how many windows?</label><input type="number" id="f-windows" name="windows" min="1" inputmode="numeric"></div>
+          <div class="field"><label for="f-stories">Stories</label>
+            <select id="f-stories" name="stories"><option>1</option><option>2</option><option>3</option><option>4 or more</option></select>
+          </div>
+        </div>
+        <fieldset class="field">
+          <legend>Cleaning</legend>
+          <div class="radios">
+            <label><input type="radio" name="sides" value="Inside and outside" checked>Inside and outside</label>
+            <label><input type="radio" name="sides" value="Outside only">Outside only</label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Add-ons</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="extra" value="Screens">Screens</label>
+            <label><input type="checkbox" name="extra" value="Tracks">Tracks</label>
+            <label><input type="checkbox" name="extra" value="Skylights">Skylights</label>
+            <label><input type="checkbox" name="extra" value="Storm windows">Storm windows</label>
+            <label><input type="checkbox" name="extra" value="Hard water removal">Hard water</label>
+            <label><input type="checkbox" name="extra" value="Gutters">Gutters</label>
+            <label><input type="checkbox" name="extra" value="Solar panels">Solar panels</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-freq">How often?</label>
+          <select id="f-freq" name="frequency"><option>One time</option><option>Quarterly</option><option>Semi-annual</option><option>Yearly</option></select>
+        </div>
+        <div class="field"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="details" placeholder="Window styles, best days, a virtual quote..."></textarea></div>
+        <button class="btn btn-ink" type="submit">Send estimate request</button>
+        <p class="form-note" id="f-note">Opens your email app with the request filled in. Or call or text (503) 559-7598.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="foot-logo" href="#top" aria-label="CK Window Washing, back to top"><img src="assets/logo-240.webp" alt="CK Window Washing" width="84" height="84"></a>
+      <div>CK Window Washing · Residential &amp; commercial window cleaning · Greater Portland &amp; Salem-Keizer, OR<br>Call or text <a href="tel:+15035597598">(503) 559-7598</a> · <a href="mailto:CodyKWW@gmail.com">CodyKWW@gmail.com</a><br><a href="https://www.instagram.com/CK_Window_Washing" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100091843749160" rel="noopener">Facebook</a></div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#services">Services</a><a href="#estimate-how">Estimates</a><a href="#reviews">Reviews</a><a href="#photos">Photos</a><a href="#about">About &amp; hours</a><a href="#estimate">Free estimate</a>
+      </nav>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> CK Window Washing</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+15035597598"><svg><use href="#i-phone"/></svg>Call</a><a href="sms:+15035597598"><svg><use href="#i-text"/></svg>Text</a><a href="#estimate">Estimate</a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Business frequencies are their Services page's business list; homes get the residential list.
+const FREQ = { Home: ["One time", "Quarterly", "Semi-annual", "Yearly"], Business: ["One time", "Weekly", "Monthly", "Quarterly", "Semi-annual", "Yearly"] };
+$("f-type").addEventListener("change", () => {
+  $("f-freq").innerHTML = FREQ[$("f-type").value].map(o => `<option>${o}</option>`).join("");
+});
+// Estimate form: opens the visitor's email app addressed to CK. Swap for a form service when the site goes live.
+function quoteMailto(f) {
+  const v = id => $(id).value.trim();
+  const extras = [...f.querySelectorAll("input[name=extra]:checked")].map(x => x.value);
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Property: ${v("f-type")}`, `City: ${v("f-city")}`,
+    `Windows: ${v("f-windows") || "not sure"}`, `Stories: ${v("f-stories")}`, `Cleaning: ${f.querySelector("input[name=sides]:checked").value}`,
+    `Add-ons: ${extras.length ? extras.join(", ") : "none"}`, `How often: ${v("f-freq")}`];
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  const subject = `Estimate request: ${v("f-type")} window cleaning (${v("f-name")})`;
+  return "mailto:CodyKWW@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("quote").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  for (const el of f.querySelectorAll("[required]")) {
+    if (!el.value.trim()) { el.focus(); $("f-note").textContent = "Please add your " + el.labels[0].textContent.toLowerCase() + "."; return; }
+  }
+  location.href = quoteMailto(f);
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
