@@ -1,0 +1,113 @@
+/* The Portage Cafe menu sample. Palette from their own menu PDF and site: the teal sign panel and section boxes, the orange
+   pages and checkerboard trim, the cream sunburst, the black of their neon-sign photo. Darkened only as far as WCAG AA needs. */
+:root {
+  --teal: #167f78;       /* SKILLETS / SENIORS boxes */
+  --teal-dark: #14524c;  /* text-safe teal */
+  --teal-light: #8bbfb5; /* logo panel, CLASSICS box */
+  --orange: #e2732c;     /* menu pages, checkerboard (backgrounds only) */
+  --orange-text: #b04f12;/* orange for text on cream, AA */
+  --cream: #f4efe3;      /* sunburst cream */
+  --ink: #222;
+  --muted: #4f4f4f;
+  --line: #d9d0bd;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 150px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.5 Jost, system-ui, sans-serif; padding-bottom: 64px; }
+a { color: var(--teal-dark); }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.skip { position: absolute; left: -999px; top: 0; background: #fff; padding: 8px 12px; z-index: 50; }
+.skip:focus { left: 8px; }
+.mock-note { background: #ffd84d; color: #222; text-align: center; font-size: 14px; padding: 6px 12px; }
+
+.hero { background: #000; color: #fff; text-align: center; padding: 8px 16px 20px; position: relative; }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px;
+  background: repeating-linear-gradient(90deg, var(--orange) 0 12px, #fff 12px 24px); }
+.sign { display: block; width: 86vw; max-width: 420px; height: auto; margin: 0 auto; }
+.welcome { font-family: Yellowtail, cursive; font-size: 32px; line-height: 1.15; margin: 2px 0 0; color: #fff; }
+.since { margin: 2px 0 10px; color: #d6e8e4; font-size: 15px; }
+.status { margin: 0 auto 14px; display: inline-flex; gap: 8px; align-items: center; font-weight: 600; background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .22); border-radius: 999px; padding: 4px 14px; font-size: 15px; min-height: 30px; }
+.status:empty { display: none; }
+.status .dot { width: 10px; height: 10px; border-radius: 50%; background: #9aa; }
+.status.open .dot { background: #5fe0a8; box-shadow: 0 0 8px #5fe0a8; }
+.actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; text-decoration: none; font-weight: 600; padding: 10px 18px; border-radius: 999px; border: 2px solid currentColor; color: #fff; }
+.btn.call { background: var(--orange); border-color: var(--orange); color: #1a0f05; }
+
+.today { max-width: 980px; margin: 30px auto 0; padding: 16px 18px 12px; background: var(--teal-light); border-radius: var(--radius); color: #0c2f2b;
+  box-shadow: 6px 6px 0 var(--teal); width: calc(100% - 28px); }
+.today h2 { margin: 0; font-size: 22px; text-transform: uppercase; letter-spacing: .04em; color: #0c2f2b; }
+.today .script { font-family: Yellowtail, cursive; text-transform: none; letter-spacing: 0; font-size: 32px; font-weight: 400; margin-right: 4px; }
+.today-list { margin: 4px 0 6px; }
+.today-list p { margin: 4px 0; font-size: 18px; font-weight: 600; display: flex; justify-content: space-between; gap: 12px; }
+.today-list small { display: block; font-weight: 400; font-size: 14px; }
+details summary { cursor: pointer; font-weight: 600; font-size: 15px; padding: 4px 0; }
+.sp-week { display: grid; gap: 4px 20px; margin-top: 6px; }
+@media (min-width: 760px) { .sp-week { grid-template-columns: 1fr 1fr; } }
+.sp-day h3 { margin: 6px 0 0; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; }
+.sp-day ul { margin: 0; padding: 0; list-style: none; font-size: 15px; }
+.sp-day li { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed rgba(12, 47, 43, .3); padding: 2px 0; }
+.sp-day.is-today { font-weight: 700; }
+
+.toolbar { position: sticky; top: 0; z-index: 20; background: var(--cream); border-bottom: 1px solid var(--line); padding: 10px 16px 0; margin-top: 14px;
+  box-shadow: 0 6px 14px -12px rgba(0, 0, 0, .35); }
+.search input { width: 100%; font: inherit; padding: 10px 14px; border: 2px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); }
+.search input:focus { border-color: var(--teal); outline: none; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chips a { flex: none; text-decoration: none; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px;
+  font-size: 15px; white-space: nowrap; }
+.chips a.on { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+
+main { max-width: 980px; margin: 0 auto; }
+.none { margin: 16px; font-weight: 600; }
+.sec { padding: 22px 16px 6px; }
+.kicker { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--orange-text); }
+.sec h2 { font-family: Yellowtail, cursive; font-weight: 400; font-size: 40px; line-height: 1.1; margin: 0 0 2px; color: var(--teal-dark);
+  border-bottom: 3px solid var(--teal-light); padding-bottom: 4px; }
+.note { margin: 6px 0 4px; color: var(--muted); font-style: italic; font-size: 15px; }
+.items { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 0 28px; }
+@media (min-width: 760px) { .items { grid-template-columns: 1fr 1fr; } .grid-compact { grid-template-columns: 1fr 1fr 1fr; } }
+.item { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.item.compact { padding: 8px 0; }
+.item.starred { background: var(--teal-dark); color: #fff; border-radius: 10px; padding: 10px 12px; border: 0; margin: 4px 0; }
+.item.starred .desc { color: #dcefeb; }
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.item h3 { font-weight: 700; font-size: 16px; letter-spacing: .05em; text-transform: uppercase; margin: 0; }
+.star { color: var(--orange-text); font-weight: 400; }
+.starred .star { color: #ffc89e; }
+.price { font-weight: 600; font-size: 17px; white-space: nowrap; }
+.sizes { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 10px; font-weight: 600; white-space: nowrap; }
+.size small { font-weight: 400; color: var(--muted); font-size: 13px; }
+.desc { margin: 2px 0 0; color: var(--muted); font-size: 15.5px; }
+.photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 22px 10px 0; }
+.photos figure { margin: 0; }
+.photos img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; display: block; }
+.photos figcaption { font-size: 13px; color: var(--muted); margin-top: 3px; }
+@media (max-width: 520px) { .photos { grid-template-columns: 1fr 1fr; } .photos figure:first-child { grid-column: 1 / -1; } }
+
+.g-kids h2 { color: var(--orange-text); }
+.reviews h2, .visit h2 { color: var(--teal-dark); }
+.revs { display: grid; gap: 12px; margin-top: 10px; }
+@media (min-width: 760px) { .revs { grid-template-columns: repeat(3, 1fr); } }
+.revs figure { margin: 0; background: #fff; border-radius: var(--radius); border: 1px solid var(--line); padding: 14px 16px; }
+blockquote { margin: 0; font-size: 16px; }
+.revs figcaption { margin-top: 6px; color: var(--muted); font-size: 14px; }
+.visit-grid { display: grid; gap: 10px 30px; }
+@media (min-width: 760px) { .visit-grid { grid-template-columns: 1fr 1fr; } }
+.hours { border-collapse: collapse; width: 100%; max-width: 360px; }
+.hours th, .hours td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--line); }
+.hours th { width: 60px; }
+.hours tr.today-row { background: #fff; font-weight: 700; }
+.more { color: var(--muted); font-size: 15px; }
+footer { max-width: 980px; margin: 18px auto 0; padding: 12px 16px 24px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: repeat(3, 1fr); background: var(--teal-dark);
+  border-top: 3px solid var(--orange); }
+.dock a { color: #fff; text-decoration: none; text-align: center; padding: 13px 4px; font-weight: 600; }
+.dock a:first-child { background: var(--orange); color: #1a0f05; }
+@media (min-width: 900px) { .dock { display: none; } body { padding-bottom: 0; } }
+[hidden] { display: none !important; }
