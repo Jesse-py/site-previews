@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag, the .mock-note banner and the .pv-note under Hours when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Horton Repair &amp; Service | Small Engine &amp; Auto Repair in Mansfield, OH</title>
+<meta name="description" content="Mower, snowblower, generator and small engine repair plus light auto repair in Mansfield, Ohio. Local pick-up and delivery for a flat $25. Call or text (419) 405-5613.">
+<meta name="theme-color" content="#383838">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Horton Repair &amp; Service: small engine and auto repair in Mansfield, Ohio">
+<meta property="og:description" content="Mowers, snowblowers, generators and light auto repair, with $25 local pick-up and delivery.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Horton Repair & Service",
+  "description": "Small engine and light auto repair in Mansfield, Ohio: mowers, snowblowers, trimmers, generators, tillers, pressure washers and cars, with local pick-up and delivery.",
+  "founder": { "@type": "Person", "name": "Fred Horton" },
+  "telephone": "+1-419-405-5613",
+  "email": "HortonRepairService@gmail.com",
+  "url": "https://www.hortonrepairandservice.com/",
+  "image": "assets/share.jpg",
+  "logo": "assets/img/logo.webp",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mansfield", "addressRegion": "OH", "addressCountry": "US" },
+  "areaServed": "Mansfield, OH and surrounding communities"
+}
+</script>
+<style>
+  /* Colors from their HRS logo (sources in README.md): --char #383838 the gray of "HRS" (sampled); --red #b01828 the logo's red
+     (sampled rgb(176,24,40)). Fonts: Barlow Condensed italic to echo the logo's slanted racing letters; Barlow for text. */
+  :root {
+    --char: #383838;
+    --char-d: #242424;
+    --red: #b01828;
+    --red-d: #8e1320;
+    --red-l: #ff9aa3;
+    --cream: #f5f3f1;
+    --ink: #1f1f1f;
+    --muted: #55514e;
+    --line: #e2dedb;
+    --paper: #ffffff;
+    --radius: 10px;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .10);
+    --head: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+    --sans: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 17px/1.6 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--red-d); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid #f2b705; outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 4px solid var(--red); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+  .bar { display: flex; align-items: center; gap: 26px; height: 74px; }
+  .lockup { margin-right: auto; display: block; }
+  .lockup img { height: 58px; width: auto; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: var(--char); text-decoration: none; font-weight: 700; font-size: 16px; }
+  .nav a:hover { color: var(--red); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 700 17px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: 8px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-red { background: var(--red); color: #fff; }
+  .btn-red:hover { background: var(--red-d); }
+  .btn-ghost { border-color: rgba(255,255,255,.8); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 12px 16px; font-size: 16px; }
+  @media (max-width: 980px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 64px; } .lockup img { height: 50px; } }
+
+  .hero { background: var(--char-d); color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: center; padding-top: 56px; padding-bottom: 56px; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 28px; padding-top: 36px; padding-bottom: 36px; } }
+  .kicker { font: 700 14px/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--red-l); margin: 0 0 14px; }
+  .hero h1 { font: italic 800 clamp(40px, 5.6vw, 66px)/1 var(--head); text-transform: uppercase; margin: 0 0 18px; }
+  .hero h1 em { color: var(--red-l); }
+  .hero p.sub { font-size: 19px; margin: 0 0 26px; color: #dedad6; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero figure { margin: 0; }
+  .hero figure img { border-radius: var(--radius); box-shadow: 0 20px 50px rgba(0,0,0,.45); border: 4px solid #fff; }
+
+  .trust { background: var(--red); color: #fff; }
+  .trust ul { list-style: none; margin: 0 auto; padding: 16px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 10px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; }
+  .trust svg { width: 24px; height: 24px; flex: none; color: #ffd6da; }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 420px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 76px 0; }
+  .tint { background: var(--cream); }
+  .eyebrow { font: 700 14px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--red-d); margin: 0 0 10px; }
+  h2 { font: italic 800 clamp(34px, 4vw, 48px)/1.02 var(--head); text-transform: uppercase; margin: 0 0 14px; color: var(--char); }
+  h2::after { content: ""; display: block; width: 72px; height: 5px; background: var(--red); margin-top: 12px; transform: skewX(-20deg); }
+  .intro { color: var(--muted); max-width: 720px; margin: 0 0 34px; font-size: 18px; }
+  @media (max-width: 640px) { section { padding: 54px 0; } }
+  h3 { font: italic 700 25px/1.1 var(--head); text-transform: uppercase; margin: 0 0 8px; color: var(--char); }
+
+  /* Off-season band */
+  .season { background: var(--char); color: #fff; padding: 26px 0; }
+  .season .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: space-between; }
+  .season p { margin: 0; font-size: 18px; color: #e6e2de; max-width: 720px; }
+  .season p b { display: block; font: italic 800 30px/1.05 var(--head); text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+
+  /* Services */
+  .svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--red); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px; }
+  .svc svg { width: 34px; height: 34px; color: var(--red); margin-bottom: 8px; }
+  .svc p { margin: 0 0 10px; font-size: 16px; color: var(--muted); }
+  .svc ul { margin: 0 0 10px; padding-left: 18px; font-size: 16px; color: var(--muted); }
+  .svc li { margin-bottom: 3px; }
+  .svc .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  @media (max-width: 480px) { .svc .cols { grid-template-columns: 1fr; } }
+  .svc h4 { margin: 4px 0 6px; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .price { display: inline-block; background: var(--red); color: #fff; font: italic 800 26px/1 var(--head); padding: 8px 14px; border-radius: 6px; margin: 2px 0 12px; }
+
+  /* Good to know */
+  .know { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  @media (max-width: 980px) { .know { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .know { grid-template-columns: 1fr; } }
+  .k { background: #fff; border-left: 5px solid var(--red); border-radius: 6px; padding: 18px 20px; box-shadow: var(--shadow); }
+  .k svg { width: 28px; height: 28px; color: var(--red); margin-bottom: 6px; }
+  .k p { margin: 0; font-size: 16px; color: var(--muted); }
+  .k p b { color: var(--ink); }
+
+  /* Tips */
+  .tips { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  @media (max-width: 860px) { .tips { grid-template-columns: 1fr; } }
+  .tip { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; }
+  .tip .lead { color: var(--muted); font-size: 16px; margin: 0 0 14px; }
+  .tip ol { margin: 0; padding: 0; list-style: none; counter-reset: n; }
+  .tip li { counter-increment: n; position: relative; padding: 0 0 12px 46px; font-size: 16px; color: var(--muted); }
+  .tip li::before { content: counter(n); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--char); color: #fff; font: italic 800 18px/32px var(--head); text-align: center; }
+  .tip li b { display: block; color: var(--ink); font-size: 17px; }
+  .tip .end { margin: 6px 0 0; font-size: 15px; color: var(--ink); background: var(--cream); padding: 10px 14px; border-radius: 6px; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: center; }
+  @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 26px; } }
+  .logo-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px; }
+  .about p { font-size: 18px; margin: 0 0 14px; }
+  .quote { font: italic 700 26px/1.2 var(--head); color: var(--red-d); border-left: 5px solid var(--red); padding: 4px 0 4px 18px; margin: 18px 0 0; text-transform: uppercase; }
+
+  /* Contact */
+  .contact { background: var(--char-d); color: #fff; }
+  .contact h2 { color: #fff; }
+  .contact .eyebrow { color: var(--red-l); }
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 48px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact .lead { color: #dedad6; font-size: 18px; margin: 0 0 20px; }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { display: flex; gap: 14px; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .cinfo svg { width: 24px; height: 24px; color: var(--red-l); flex: none; margin-top: 2px; }
+  .cinfo small { display: block; font: 700 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #bdb8b3; margin-bottom: 6px; }
+  .cinfo a, .cinfo .val { color: #fff; font-weight: 700; text-decoration: none; font-size: 19px; word-break: break-word; }
+  .cinfo a:hover { text-decoration: underline; }
+  .hours { width: 100%; border-collapse: collapse; font-size: 17px; }
+  .hours td { padding: 3px 0; }
+  .hours td + td { text-align: right; font-weight: 700; }
+  .pv-note { font-size: 13px; color: #5c4400; background: #fff4d6; border-radius: 6px; padding: 7px 10px; margin: 8px 0 0; }
+  .form-card { background: var(--paper); color: var(--ink); border-radius: 14px; padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,.4); border-top: 6px solid var(--red); }
+  .form-card h3 { font-size: 32px; margin: 0 0 4px; }
+  .form-card .hint { color: var(--muted); font-size: 15px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label, .field legend { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; padding: 0; }
+  .field select, .field input[type=text], .field input[type=tel], .field textarea { width: 100%; font: 16px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #bdb6b0; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field select:focus, .field input:focus, .field textarea:focus { border-color: var(--red-d); outline: none; box-shadow: 0 0 0 3px rgba(176,24,40,.2); }
+  fieldset.field { border: 0; margin: 0 0 14px; padding: 0; }
+  .radios { display: flex; flex-direction: column; gap: 6px; }
+  .radios label { display: flex; gap: 8px; align-items: center; font-size: 16px; cursor: pointer; }
+  .radios input { width: 18px; height: 18px; accent-color: var(--red-d); flex: none; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 80px; resize: vertical; }
+  .form-card .btn { width: 100%; justify-content: center; }
+  .form-note { font-size: 13px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #161616; color: #bdb8b3; font-size: 15px; padding: 40px 0 26px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 24px 52px; align-items: flex-start; justify-content: space-between; }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 9px 4px; font-weight: 700; color: #fff; text-decoration: none; background: var(--red-d); font-size: 15px; line-height: 1.2; }
+    .callbar a small { font-weight: 400; font-size: 12px; opacity: .9; }
+    .callbar a + a { background: var(--red); }
+    .callbar a:last-child { background: var(--char); }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Horton Repair &amp; Service from the text and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2zM8 9h8M8 13h5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></g></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h13v12H1zM14 9h4l4 4v3h-8z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18" cy="18.5" r="2"/></g></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h14l2 5v5h-2"/><path d="M3 12h18"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5"/></g></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></g></symbol>
+  <symbol id="i-mower" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l6 9M5 12h13l2 4H4z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Horton Repair &amp; Service, home"><img src="assets/img/logo.webp" alt="HRS Horton Repair &amp; Service logo" width="600" height="392"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#know">Good to know</a>
+      <a href="#tips">Tips</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-red head-call" href="tel:+14194055613"><svg><use href="#i-phone"/></svg>(419) 405-5613</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Small engine &amp; light auto repair · Mansfield, Ohio</p>
+        <h1>From lawn to road, <em>we keep your engines running.</em></h1>
+        <p class="sub">Mowers, snowblowers, trimmers, generators and cars. Quality work at fair prices, with hometown honesty you can count on, and local pick-up and delivery for a flat $25.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="#contact"><svg><use href="#i-wrench"/></svg>Request service</a>
+          <a class="btn btn-ghost" href="tel:+14194055613"><svg><use href="#i-phone"/></svg>Call (419) 405-5613</a>
+          <a class="btn btn-ghost" href="sms:+14194055613"><svg><use href="#i-text"/></svg>Text us</a>
+        </div>
+      </div>
+      <figure><img src="assets/img/hero.webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero.webp 1536w" sizes="(max-width: 900px) 100vw, 560px" alt="The Horton Repair &amp; Service shop: a gray garage with red trim and an HRS sign, with mowers, a zero-turn, a chainsaw and a blower out front" width="1536" height="1024"></figure>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-truck"/></svg>$25 local pick-up &amp; delivery</li>
+      <li><svg><use href="#i-mower"/></svg>Small engines + light auto</li>
+      <li><svg><use href="#i-user"/></svg>Owner Fred Horton</li>
+      <li><svg><use href="#i-text"/></svg>Call or text (419) 405-5613</li>
+    </ul>
+  </div>
+
+  <div class="season">
+    <div class="wrap">
+      <p><b>Beat the spring rush</b>To avoid in-season downtime, schedule your equipment service and repairs during November, December, January and February.</p>
+      <a class="btn btn-red" href="#contact"><svg><use href="#i-cal"/></svg>Book off-season service</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>What we fix</h2>
+      <p class="intro">A wide range of repair and maintenance for small engines and automobiles. Whether it's a simple tune-up or a full rebuild, you get quality work, honest pricing and friendly service every time.</p>
+      <div class="svc-grid">
+        <article class="svc"><svg><use href="#i-mower"/></svg><h3>Small engine repair</h3><p>Keep your outdoor equipment running like new. We service most makes and models.</p>
+          <div class="cols">
+            <div><h4>Equipment</h4><ul><li>Lawn mowers (riding &amp; push)</li><li>Snowblowers</li><li>Trimmers &amp; blowers</li><li>Generators</li><li>Tillers &amp; pressure washers</li></ul></div>
+            <div><h4>Services</h4><ul><li>Tune-ups &amp; oil changes</li><li>Carburetor cleaning &amp; rebuilds</li><li>Belt, blade and spark plug replacement</li><li>Engine gasket &amp; seal repairs</li><li>Fuel system diagnostics</li></ul></div>
+          </div></article>
+        <article class="svc"><svg><use href="#i-car"/></svg><h3>Auto repair &amp; maintenance</h3><p>From daily drivers to light work vehicles, dependable service at fair prices.</p><ul><li>Oil changes &amp; filter replacements</li><li>Brake service &amp; inspection</li><li>Tune-ups &amp; general repairs</li><li>Engine diagnostics &amp; maintenance</li><li>Minor electrical repair</li></ul></article>
+        <article class="svc"><svg><use href="#i-snow"/></svg><h3>Seasonal equipment prep</h3><p>Get ready for the changing seasons.</p><ul><li><b>Fall &amp; winter:</b> snowblower tune-ups and repairs</li><li><b>Spring &amp; summer:</b> mower maintenance and blade sharpening</li><li>Equipment storage prep &amp; cleanup</li></ul></article>
+        <article class="svc"><svg><use href="#i-truck"/></svg><h3>Pick-up &amp; delivery</h3><span class="price">$25 flat</span><p>Local pick-up and delivery in the Mansfield area for small engines and equipment, so you don't have to haul anything. Pick-ups and deliveries are mostly on Mondays and Fridays. Call or text to schedule.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="know" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Good to know</p>
+      <h2>Before you bring it in</h2>
+      <div class="know">
+        <div class="k"><svg><use href="#i-mower"/></svg><p><b>Spring and summer:</b> plan on a spare mower while yours is in the shop, just in case it takes longer than usual.</p></div>
+        <div class="k"><svg><use href="#i-clock"/></svg><p><b>Peak season:</b> we can't give an exact timeline for completion, as there are simply too many variables.</p></div>
+        <div class="k"><svg><use href="#i-text"/></svg><p><b>Checking on your machine?</b> Text us at <a href="sms:+14194055613">(419) 405-5613</a>.</p></div>
+        <div class="k"><svg><use href="#i-cal"/></svg><p><b>Skip the wait:</b> schedule service and repairs in November, December, January or February.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="wrap">
+      <p class="eyebrow">From the shop blog</p>
+      <h2>Tips from the shop</h2>
+      <div class="tips">
+        <article class="tip"><h3>Get your snowblower ready for winter</h3><p class="lead">A properly tuned snowblower makes all the difference when the first snowfall hits.</p>
+          <ol>
+            <li><b>Check fuel and spark plug</b>Old fuel can gum up your engine. Drain last season's gas or use fresh fuel with stabilizer. A clean, properly gapped plug starts reliably.</li>
+            <li><b>Inspect belts and auger</b>Check belts for cracks or fraying and make sure the auger spins freely.</li>
+            <li><b>Lubricate moving parts</b>Grease the chute, auger bearings and other moving parts to prevent rust.</li>
+            <li><b>Test start and run</b>Run it before the first snowfall to catch issues early.</li>
+            <li><b>Professional tune-up</b>Sometimes it's easier and safer to let a pro handle the prep.</li>
+          </ol>
+          <p class="end">Snowblower tune-ups, repairs and maintenance, with $25 pick-up and delivery in Mansfield.</p></article>
+        <article class="tip"><h3>5 signs your mower needs a tune-up</h3><p class="lead">Many problems are easy to spot early, before they turn into costly repairs.</p>
+          <ol>
+            <li><b>Hard starting or won't start</b>Often a dirty spark plug, stale fuel or carburetor issues.</li>
+            <li><b>Rough idling or stalling</b>Shaking, sputtering or stalling usually means the carburetor, air filter or worn parts need attention.</li>
+            <li><b>Uneven cutting</b>Dull blades or a misaligned deck leave the lawn patchy.</li>
+            <li><b>Excessive smoke or oil leaks</b>Often worn gaskets or a needed oil change.</li>
+            <li><b>Unusual noises</b>Grinding, squealing or rattling can mean loose belts, worn bearings or engine trouble.</li>
+          </ol>
+          <p class="end">Regular tune-ups every season save time and money and extend the life of your mower.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tint">
+    <div class="wrap about">
+      <div class="logo-card"><img src="assets/img/logo.webp" alt="HRS Horton Repair &amp; Service logo" width="600" height="392" loading="lazy"></div>
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Fred Horton's shop</h2>
+        <p>At Horton Repair &amp; Service, quality work and honest service come first. Founded and operated by Fred Horton, the shop was built on a simple idea: give customers the kind of dependable, affordable repairs they deserve.</p>
+        <p>With years of hands-on experience in small engine repair, automotive work and electrical systems, Fred knows how important reliable equipment and vehicles are for daily life and work. From mowers and snowblowers to cars and light trucks, every job is handled with care and attention to detail.</p>
+        <p>Working right out of our garage in Mansfield, we give you a personal touch you won't find at big chain shops: fast turnaround, fair pricing and friendly local service.</p>
+        <p class="quote">Tune-up, troubleshooting or a complete repair: we keep your engines running strong, season after season.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Get it fixed</h2>
+        <p class="lead">Call or text, or send a request and we'll get back to you to set it up. Check our hours before coming.</p>
+        <ul class="cinfo">
+          <li><svg><use href="#i-phone"/></svg><div><small>Call or text</small><a href="tel:+14194055613">(419) 405-5613</a></div></li>
+          <li><svg><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:HortonRepairService@gmail.com">HortonRepairService@gmail.com</a></div></li>
+          <li><svg><use href="#i-pin"/></svg><div><small>Serving</small><span class="val">Mansfield, OH and surrounding communities</span></div></li>
+          <li><svg><use href="#i-clock"/></svg><div style="flex:1"><small>Shop hours</small>
+            <table class="hours"><tbody>
+              <tr><td>Monday</td><td>4:00 – 6:00 PM</td></tr>
+              <tr><td>Tuesday – Thursday</td><td>2:00 – 6:00 PM</td></tr>
+              <tr><td>Friday</td><td>Closed</td></tr>
+              <tr><td>Saturday</td><td>By appointment</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </tbody></table>
+            <p class="pv-note">Preview note: these are the hours on your Contact page. Your Home page says Monday – Friday, 2:00 – 6:00 PM. Tell us which is current and we'll use that one everywhere.</p></div></li>
+        </ul>
+      </div>
+      <form class="form-card" id="req" novalidate>
+        <h3>Service request</h3>
+        <p class="hint">Takes about a minute.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-item">What needs work?</label>
+          <select id="f-item" name="item"><option>Riding mower</option><option>Push mower</option><option>Snowblower</option><option>Trimmer or blower</option><option>Generator</option><option>Tiller or pressure washer</option><option>Car or light truck</option><option>Something else</option></select>
+        </div>
+        <div class="field"><label for="f-model">Make and model</label><input type="text" id="f-model" name="model" required placeholder="Craftsman 42&quot; rider, Toro 824..."></div>
+        <div class="field"><label for="f-msg">What's it doing?</label><textarea id="f-msg" name="details" placeholder="Won't start, runs rough, needs a tune-up, blades need sharpening..."></textarea></div>
+        <fieldset class="field">
+          <legend>Getting it to the shop</legend>
+          <div class="radios">
+            <label><input type="radio" name="drop" value="I'll drop it off" checked>I'll drop it off</label>
+            <label><input type="radio" name="drop" value="Pick-up and delivery ($25, Mansfield area)">Pick it up and bring it back ($25, Mansfield area)</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-town">Town or street (for pick-up)</label><input type="text" id="f-town" name="town" autocomplete="address-line1"></div>
+        <button class="btn btn-red" type="submit">Send service request</button>
+        <p class="form-note" id="f-note">Opens your email app with the request filled in. Or call or text (419) 405-5613.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><b style="color:#fff">Horton Repair &amp; Service</b> · Fred Horton · Mansfield, Ohio<br>Call or text <a href="tel:+14194055613">(419) 405-5613</a><br><a href="mailto:HortonRepairService@gmail.com">HortonRepairService@gmail.com</a></div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#services">Services</a><a href="#know">Good to know</a><a href="#tips">Tips</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> Horton Repair &amp; Service · Small engine and light auto repair in Mansfield, OH</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+14194055613"><svg><use href="#i-phone"/></svg>Call<small>(419) 405-5613</small></a><a href="sms:+14194055613"><svg><use href="#i-text"/></svg>Text<small>us</small></a><a href="#contact"><svg><use href="#i-wrench"/></svg>Request<small>service</small></a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Service request: opens the visitor's email app addressed to Horton. Swap for a form service when the site goes live.
+function reqMailto(f) {
+  const v = id => $(id).value.trim();
+  const item = $("f-item").value;
+  const drop = f.querySelector("input[name=drop]:checked").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Equipment: ${item}`, `Make and model: ${v("f-model")}`, `Getting it there: ${drop}`];
+  if (v("f-town")) lines.push(`Town or street: ${v("f-town")}`);
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  const subject = `${item} service: ${v("f-model")} (${v("f-name")})`;
+  return "mailto:HortonRepairService@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("req").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  for (const el of f.querySelectorAll("[required]")) {
+    if (!el.value.trim()) { el.focus(); $("f-note").textContent = "Please add your " + el.labels[0].textContent.toLowerCase() + "."; return; }
+  }
+  if (f.querySelector("input[name=drop]:checked").value.startsWith("Pick-up") && !$("f-town").value.trim()) {
+    $("f-town").focus(); $("f-note").textContent = "Please add where we should pick it up."; return;
+  }
+  location.href = reqMailto(f);
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
