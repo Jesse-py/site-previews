@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Lucky Duck's Chimney Sweep | Bergen &amp; Passaic County Chimney Sweep since 1980</title>
+<meta name="description" content="Chimney cleaning, chimney repair, caps, animal removal and dryer vent cleaning in Bergen and Passaic Counties, NJ. Owner Keith Donaldson, since 1980. River Edge (201) 265-6638, West Milford (973) 657-0707.">
+<meta name="theme-color" content="#1c1c1c">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lucky Duck's Chimney Sweep: North Jersey chimney care since 1980">
+<meta property="og:description" content="Chimney cleaning, repairs, caps, animal removal and dryer vents in Bergen and Passaic Counties.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Text&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lucky Duck's Chimney Sweep",
+  "description": "Family-run chimney sweep serving Bergen and Passaic Counties, NJ since 1980: chimney cleaning, chimney repair, chimney caps, animal removal and dryer vent cleaning.",
+  "founder": { "@type": "Person", "name": "Keith Donaldson" },
+  "foundingDate": "1980",
+  "telephone": "+1-201-265-6638",
+  "email": "luckyduckschimneysweep@gmail.com",
+  "image": "assets/share.jpg",
+  "areaServed": ["Bergen County, NJ", "Passaic County, NJ"],
+  "department": [
+    { "@type": "LocalBusiness", "name": "Lucky Duck's Chimney Sweep, River Edge", "telephone": "+1-201-265-6638" },
+    { "@type": "LocalBusiness", "name": "Lucky Duck's Chimney Sweep, West Milford", "telephone": "+1-973-657-0707" }
+  ]
+}
+</script>
+<style>
+  /* Colors and fonts from their own site and banner photo (sources in README.md):
+     --char #1c1c1c their nav panel and heading color; --brick #a8472a the brick in their banner photo (avg #c98953) darkened for AA;
+     --sand #947254 the sign boards in that photo; --sky #67bcf9 its sky. Fonts: DM Serif Text + DM Sans, as on their site. */
+  :root {
+    --char: #1c1c1c;
+    --char-2: #2b2b2b;
+    --brick: #a8472a;
+    --brick-d: #8a3a22;
+    --sand: #947254;
+    --cream: #f8f2ea;
+    --sky: #67bcf9;
+    --ink: #1c1c1c;
+    --muted: #55504b;
+    --line: #e4dbd0;
+    --paper: #ffffff;
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(28, 28, 28, .06), 0 8px 24px rgba(28, 28, 28, .10);
+    --serif: "DM Serif Text", Georgia, serif;
+    --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 17px/1.65 var(--sans); color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--brick-d); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--char); color: #fff; }
+  .bar { display: flex; align-items: center; gap: 24px; height: 70px; }
+  .lockup { display: flex; align-items: center; gap: 12px; margin-right: auto; text-decoration: none; color: #fff; }
+  .lockup svg { width: 40px; height: 40px; color: #e08a5e; flex: none; }
+  .lockup b { font: 400 23px/1 var(--serif); }
+  .lockup span { display: block; font: 700 12px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: #c9c3bc; margin-top: 6px; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; }
+  .nav a:hover { color: #f0b08f; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font: 700 16px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: 8px; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-brick { background: var(--brick); color: #fff; }
+  .btn-brick:hover { background: var(--brick-d); }
+  .btn-ghost { border-color: rgba(255,255,255,.8); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 11px 16px; font-size: 15px; }
+  @media (max-width: 980px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 62px; } .lockup b { font-size: 20px; } .lockup span { font-size: 10.5px; letter-spacing: .05em; } }
+
+  .hero { background: var(--char); color: #fff; }
+  .hero .wrap { padding-top: 60px; padding-bottom: 40px; }
+  @media (max-width: 640px) { .hero .wrap { padding-top: 38px; padding-bottom: 30px; } }
+  .kicker { font: 700 14px/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #f0b08f; margin: 0 0 16px; }
+  .hero h1 { font: 400 clamp(38px, 5.4vw, 64px)/1.06 var(--serif); margin: 0 0 18px; max-width: 900px; }
+  .hero h1 em { font-style: italic; color: #f0b08f; }
+  .hero p.sub { font-size: 19px; margin: 0 0 28px; color: #e2ddd7; max-width: 680px; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .banner { margin: 0; background: var(--char); }
+  .banner img { width: 100%; max-height: 460px; object-fit: cover; }
+
+  .trust { background: var(--brick); color: #fff; }
+  .trust ul { list-style: none; margin: 0 auto; padding: 16px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 10px 20px; }
+  .trust li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; }
+  .trust svg { width: 24px; height: 24px; flex: none; color: #f6d9c8; }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 420px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 78px 0; }
+  .tint { background: var(--cream); }
+  .eyebrow { font: 700 14px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--brick-d); margin: 0 0 12px; }
+  h2 { font: 400 clamp(32px, 3.8vw, 44px)/1.12 var(--serif); margin: 0 0 14px; color: var(--char); }
+  h2::after { content: ""; display: block; width: 64px; height: 4px; background: var(--brick); margin-top: 14px; }
+  .intro { color: var(--muted); max-width: 720px; margin: 0 0 36px; font-size: 18px; }
+  @media (max-width: 640px) { section { padding: 56px 0; } }
+
+  /* Services */
+  .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--brick); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px; }
+  .svc svg { width: 34px; height: 34px; color: var(--brick); margin-bottom: 10px; }
+  .svc h3 { font: 400 24px/1.2 var(--serif); margin: 0 0 8px; color: var(--char); }
+  .svc p { margin: 0 0 8px; font-size: 16px; color: var(--muted); }
+  .svc ul { margin: 0; padding-left: 18px; font-size: 16px; color: var(--muted); }
+  .svc li { margin-bottom: 4px; }
+  .svc b { color: var(--ink); }
+  .svc-cta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; background: var(--char); color: #fff; border-radius: var(--radius); padding: 22px 26px; }
+  .svc-cta p { margin: 0; font-size: 18px; }
+  .svc-cta p b { font: 400 24px/1.2 var(--serif); display: block; }
+
+  /* Why */
+  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 26px; }
+  @media (max-width: 760px) { .why-grid { grid-template-columns: 1fr; } }
+  .why { background: var(--paper); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 24px 22px 76px; position: relative; }
+  .why .n { position: absolute; left: 22px; top: 22px; width: 38px; height: 38px; border-radius: 50%; background: var(--brick); color: #fff; font: 400 20px/38px var(--serif); text-align: center; }
+  .why h3 { font: 400 22px/1.2 var(--serif); margin: 0 0 6px; }
+  .why p { margin: 0 0 6px; font-size: 16px; color: var(--muted); }
+  .why p:last-child { margin: 0; }
+  .note-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .note-row { grid-template-columns: 1fr; } }
+  .note { background: #fff; border-left: 5px solid var(--sand); border-radius: 6px; padding: 18px 22px; }
+  .note h3 { font: 400 21px/1.2 var(--serif); margin: 0 0 6px; }
+  .note p { margin: 0 0 6px; font-size: 16px; color: var(--muted); }
+  .note p:last-child { margin: 0; }
+
+  /* Tips */
+  .tips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  @media (max-width: 980px) { .tips { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .tips { grid-template-columns: 1fr; } }
+  .tip { border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+  .tip svg { width: 30px; height: 30px; color: var(--brick); margin-bottom: 8px; }
+  .tip h3 { font: 400 21px/1.2 var(--serif); margin: 0 0 6px; }
+  .tip p { margin: 0; font-size: 16px; color: var(--muted); }
+
+  /* About */
+  .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
+  @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 30px; } }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .photos figure { margin: 0; }
+  .photos img { border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 1; object-fit: cover; width: 100%; }
+  .photos figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; text-align: center; }
+  .about p { font-size: 18px; margin: 0 0 14px; }
+  .quote { font: 400 24px/1.35 var(--serif); color: var(--brick-d); border-left: 4px solid var(--brick); padding: 4px 0 4px 18px; margin: 20px 0 0; }
+
+  /* Request */
+  .contact { background: var(--char); color: #fff; }
+  .contact h2 { color: #fff; }
+  .contact .eyebrow { color: #f0b08f; }
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 48px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact .lead { color: #e2ddd7; font-size: 18px; margin: 0 0 22px; }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { display: flex; gap: 14px; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .cinfo svg { width: 24px; height: 24px; color: #f0b08f; flex: none; margin-top: 2px; }
+  .cinfo small { display: block; font: 700 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #c9c3bc; margin-bottom: 6px; }
+  .cinfo a, .cinfo .val { color: #fff; font-weight: 700; text-decoration: none; font-size: 19px; word-break: break-word; }
+  .cinfo a:hover { text-decoration: underline; }
+  .form-card { background: var(--paper); color: var(--ink); border-radius: 14px; padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,.4); border-top: 6px solid var(--brick); }
+  .form-card h3 { font: 400 30px/1.1 var(--serif); color: var(--char); margin: 0 0 4px; }
+  .form-card .hint { color: var(--muted); font-size: 15px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label, .field legend { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; padding: 0; }
+  .field select, .field input[type=text], .field input[type=tel], .field textarea { width: 100%; font: 16px/1.3 var(--sans); padding: 12px 13px; border: 1.5px solid #bfb5aa; border-radius: 8px; background: #fff; color: var(--ink); }
+  .field select:focus, .field input:focus, .field textarea:focus { border-color: var(--brick-d); outline: none; box-shadow: 0 0 0 3px rgba(168,71,42,.22); }
+  fieldset.field { border: 0; margin: 0 0 14px; padding: 0; }
+  .radios { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .radios label { display: flex; gap: 8px; align-items: center; font-size: 16px; cursor: pointer; }
+  .radios input { width: 18px; height: 18px; accent-color: var(--brick-d); flex: none; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 80px; resize: vertical; }
+  .form-card .btn { width: 100%; justify-content: center; }
+  .form-note { font-size: 13px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #111; color: #c9c3bc; font-size: 15px; padding: 40px 0 26px; }
+  .foot-grid { display: flex; flex-wrap: wrap; gap: 24px 52px; align-items: flex-start; justify-content: space-between; }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.25); }
+    .callbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 9px 4px; font-weight: 700; color: #fff; text-decoration: none; background: var(--brick-d); font-size: 15px; line-height: 1.2; }
+    .callbar a small { font-weight: 400; font-size: 12px; opacity: .9; }
+    .callbar a + a { background: var(--brick); }
+    .callbar a:last-child { background: var(--char-2); }
+    .callbar svg { width: 18px; height: 18px; }
+    body { padding-bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Lucky Duck's Chimney Sweep from the text and photos on their current site. Not live yet.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chimney" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 22V11h10v11M5.5 11h13M10 11V8h4v3M7 15h10M7 19h10"/><path d="M13 5.5c0-1.4 1.6-1.6 1.6-3"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></g></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22c4 0 7-2.7 7-6.6 0-3.4-2.3-5.6-4-7.4-.4 2-1.4 3-2.6 3.4C13 8 12 5 9.5 2.5 9.5 6 5 8.6 5 15.4 5 19.3 8 22 12 22z"/></symbol>
+  <symbol id="i-brick" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M2 12h20M12 5v7M7 12v7M17 12v7"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-3-5H6z"/><path d="M6 9v6h12V9M9 9v6M12 9v6M15 9v6M8 15v6h8v-6"/></g></symbol>
+  <symbol id="i-bird" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.3-2.3L2 20"/><path d="m20 7 2 .5-2 .5M10 18v3M14 17.8V21"/></g></symbol>
+  <symbol id="i-vent" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="5"/><path d="M12 7v10M7 12h10"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-7h6v7"/></g></symbol>
+  <symbol id="i-wood" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="12" rx="3" ry="5"/><path d="M6 7h13a3 5 0 0 1 0 10H6"/><circle cx="6" cy="12" r="1"/></g></symbol>
+  <symbol id="i-alarm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></g></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Lucky Duck's Chimney Sweep, home"><svg><use href="#i-chimney"/></svg><div><b>Lucky Duck's Chimney Sweep</b><span>Bergen &amp; Passaic Counties · Since 1980</span></div></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why sweep?</a>
+      <a href="#tips">Safety tips</a>
+      <a href="#about">Meet the Duck</a>
+      <a href="#request">Contact</a>
+    </nav>
+    <a class="btn btn-brick head-call" href="tel:+12012656638"><svg><use href="#i-phone"/></svg>(201) 265-6638</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <p class="kicker">Chimney sweep · Bergen &amp; Passaic Counties, NJ</p>
+      <h1>Honest chimney care for North Jersey, <em>since 1980.</em></h1>
+      <p class="sub">Chimney cleaning, repairs, caps, animal removal and dryer vents. When you call Lucky Duck's, you get owner Keith Donaldson and over 40 years of hands-on experience, not a random subcontractor.</p>
+      <div class="actions">
+        <a class="btn btn-brick" href="#request"><svg><use href="#i-cal"/></svg>Book a sweep</a>
+        <a class="btn btn-ghost" href="tel:+12012656638"><svg><use href="#i-phone"/></svg>River Edge (201) 265-6638</a>
+        <a class="btn btn-ghost" href="tel:+19736570707"><svg><use href="#i-phone"/></svg>West Milford (973) 657-0707</a>
+      </div>
+    </div>
+    <figure class="banner">
+      <img src="assets/img/hero.webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero.webp 1280w" sizes="100vw" alt="Brick chimneys on a rooftop with Lucky Ducks Chimney Sweep signs: 201-265-6638 and 973-657-0707" width="1280" height="523">
+    </figure>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><svg><use href="#i-cal"/></svg>Over 45 years in business</li>
+      <li><svg><use href="#i-user"/></svg>Owner-operator, no subcontractors</li>
+      <li><svg><use href="#i-home"/></svg>Family-run</li>
+      <li><svg><use href="#i-pin"/></svg>Bergen &amp; Passaic Counties</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>What we do</h2>
+      <p class="intro">From the yearly sweep to a full rebuild, plus the uninvited guests that move into a warm flue.</p>
+      <div class="svc-grid">
+        <article class="svc"><svg><use href="#i-chimney"/></svg><h3>Chimney cleaning</h3><p>Annual cleaning removes the creosote that fuels chimney fires and clears the flue so smoke and carbon monoxide go up and out. A professional cleaning usually includes a basic inspection.</p></article>
+        <article class="svc"><svg><use href="#i-brick"/></svg><h3>Chimney repair</h3><ul><li><b>Structural:</b> masonry, crowns, rebuilds</li><li><b>Safety:</b> relining, firebox repair, smoke chamber parging</li><li><b>Preventative:</b> waterproofing, cap installation, flashing repair</li></ul></article>
+        <article class="svc"><svg><use href="#i-cap"/></svg><h3>Chimney caps installed</h3><p>Heavy-duty stainless steel or copper caps, custom fitted. The mesh lets smoke out and keeps even the smallest critters out, the cap keeps rain and snow from eroding the mortar and rusting the damper, and the spark arrestor keeps embers off your roof.</p></article>
+        <article class="svc"><svg><use href="#i-bird"/></svg><h3>Animal removal</h3><p>Scratching, chirping or rustling behind the damper? We inspect, safely and humanely remove the animals and their nests, then clean, sanitize and deodorize. We clear:</p><ul><li>Birds &amp; chimney swifts</li><li>Raccoons &amp; squirrels</li><li>Bats &amp; small rodents</li></ul></article>
+        <article class="svc"><svg><use href="#i-vent"/></svg><h3>Dryer vent cleaning</h3><p>Lint gets past the trap and builds up in the duct until the dryer overheats, a leading cause of home fires. We clean the whole length of the duct, not just the parts a vacuum reaches. It lowers your energy bill and extends the life of your dryer, too.</p></article>
+        <article class="svc"><svg><use href="#i-search"/></svg><h3>Safety evaluations</h3><p>If your fireplace isn't drafting correctly, call us right away. We check for structural integrity, blockages and dangerous deposits, so your fireplace runs safely all winter.</p></article>
+        <div class="svc-cta"><p><b>Hearing something in the chimney?</b>Don't wait until you light a fire.</p><a class="btn btn-brick" href="#request">Book a visit</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Why sweep every year?</p>
+      <h2>A clean chimney is a safe chimney</h2>
+      <p class="intro">The NFPA recommends an annual chimney inspection. Here's what a yearly sweep protects you from.</p>
+      <div class="why-grid">
+        <article class="why"><span class="n">1</span><h3>Creosote fires</h3><p>Burning wood leaves creosote, a sticky, oily, highly flammable coating inside the chimney. If it builds up and gets too hot, it can start a chimney fire that spreads to the rest of the house in minutes. Annual cleaning removes the fuel.</p></article>
+        <article class="why"><span class="n">2</span><h3>Carbon monoxide</h3><p>When soot, bird nests or debris clog the flue, odorless, invisible CO "back-puffs" into your living room instead of going up the flue. A clear flue keeps a proper draft.</p></article>
+        <article class="why"><span class="n">3</span><h3>Better heat</h3><p>When air flows freely, the fire gets the oxygen it needs to burn hotter and more completely. You use less wood for the same heat.</p></article>
+        <article class="why"><span class="n">4</span><h3>Damage you can't see</h3><p>The inspection catches cracked flue tiles, which can let heat reach your home's wooden frame, and damaged caps that let rain and snow in, leading to mold and expensive masonry rot.</p></article>
+      </div>
+      <div class="note-row">
+        <div class="note"><h3>Gas fireplaces need checks too</h3><p>Gas burns much cleaner than wood, but spider webs or small debris can still clog the pilot or burner. That's often why a gas fireplace takes a few tries to stay lit.</p></div>
+        <div class="note"><h3>Signs your dryer vent is clogged</h3><p>Clothes take more than one cycle to dry, or the top of the dryer feels hot to the touch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="wrap">
+      <p class="eyebrow">Safety tips</p>
+      <h2>Keep your home safe this winter</h2>
+      <div class="tips">
+        <article class="tip"><svg><use href="#i-search"/></svg><h3>Inspect every year</h3><p>The NFPA recommends an annual chimney inspection before the burning season. It prevents fires and keeps your fireplace working at its best.</p></article>
+        <article class="tip"><svg><use href="#i-fire"/></svg><h3>Know your creosote</h3><p>Creosote is the primary cause of chimney fires. Professional removal protects your flue and gives you peace of mind every time you light a fire.</p></article>
+        <article class="tip"><svg><use href="#i-wood"/></svg><h3>Burn seasoned wood</h3><p>Use wood dried for at least six months. Green wood smokes and builds creosote faster. Seasoned wood is dark, cracked at the ends, and sounds hollow when knocked together.</p></article>
+        <article class="tip"><svg><use href="#i-alarm"/></svg><h3>CO detectors on every level</h3><p>Along with regular sweeping, install carbon monoxide detectors on every level of your home.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tint">
+    <div class="wrap about">
+      <div class="photos">
+        <figure><img src="assets/img/keith-then.webp" alt="Black-and-white photo of a young chimney sweep in a top hat on a ladder against a brick chimney" width="800" height="800" loading="lazy"><figcaption>Then</figcaption></figure>
+        <figure><img src="assets/img/keith-now.webp" alt="A chimney sweep on a rooftop with a brush over his shoulder and a toolbox" width="800" height="800" loading="lazy"><figcaption>Now</figcaption></figure>
+      </div>
+      <div>
+        <p class="eyebrow">Meet the Duck</p>
+        <h2>Keith Donaldson, the man behind the brush</h2>
+        <p>Lucky Duck's was founded in 1980 to give the North Jersey community honest, high-quality chimney care that homeowners can rely on season after season. As a local owner-operator, Keith has personally serviced thousands of homes across West Milford, River Edge and the surrounding areas.</p>
+        <p>His reputation is built on an old-school work ethic and modern safety standards. Whether he's sweeping a flue, installing a custom cap or clearing a dryer vent, the goal is the same: your family sleeps soundly, knowing your home is safe from fire hazards.</p>
+        <p>Today it's still a true family-run business, with many multi-generational customers.</p>
+        <p class="quote">In folklore, meeting a chimney sweep brings good luck. We think the luck is the peace of mind you get when the job is done right the first time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Book an appointment</h2>
+        <p class="lead">Call the office nearest you, or send a request and we'll call you back to set a time.</p>
+        <ul class="cinfo">
+          <li><svg><use href="#i-phone"/></svg><div><small>River Edge · Bergen County</small><a href="tel:+12012656638">(201) 265-6638</a></div></li>
+          <li><svg><use href="#i-phone"/></svg><div><small>West Milford · Passaic County</small><a href="tel:+19736570707">(973) 657-0707</a></div></li>
+          <li><svg><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:luckyduckschimneysweep@gmail.com">luckyduckschimneysweep@gmail.com</a></div></li>
+          <li><svg><use href="#i-pin"/></svg><div><small>Serving</small><span class="val">Bergen and Passaic Counties</span></div></li>
+        </ul>
+      </div>
+      <form class="form-card" id="book" novalidate>
+        <h3>Appointment request</h3>
+        <p class="hint">Takes about a minute.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-town">Town</label><input type="text" id="f-town" name="town" required placeholder="River Edge, West Milford..." autocomplete="address-level2"></div>
+        <div class="field"><label for="f-service">What do you need?</label>
+          <select id="f-service" name="service"><option>Chimney cleaning</option><option>Chimney repair</option><option>Chimney cap</option><option>Animal in the chimney</option><option>Dryer vent cleaning</option><option>Fireplace not drafting / safety check</option><option>Not sure yet</option></select>
+        </div>
+        <fieldset class="field">
+          <legend>What do you burn?</legend>
+          <div class="radios">
+            <label><input type="radio" name="fuel" value="Wood" checked>Wood</label>
+            <label><input type="radio" name="fuel" value="Gas">Gas</label>
+            <label><input type="radio" name="fuel" value="Oil">Oil</label>
+            <label><input type="radio" name="fuel" value="Nothing / not sure">Not sure</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-when">Best days or times</label><input type="text" id="f-when" name="when" placeholder="Weekday mornings, next week..."></div>
+        <div class="field"><label for="f-msg">Anything we should know?</label><textarea id="f-msg" name="details" placeholder="Last sweep, smoke coming into the room, noises in the flue, a missing cap..."></textarea></div>
+        <button class="btn btn-brick" type="submit">Send appointment request</button>
+        <p class="form-note" id="f-note">Opens your email app with the request filled in. Or call (201) 265-6638.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><b style="color:#fff">Lucky Duck's Chimney Sweep</b> · Keith Donaldson · Since 1980<br>River Edge <a href="tel:+12012656638">(201) 265-6638</a> · West Milford <a href="tel:+19736570707">(973) 657-0707</a><br><a href="mailto:luckyduckschimneysweep@gmail.com">luckyduckschimneysweep@gmail.com</a></div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#services">Services</a><a href="#why">Why sweep?</a><a href="#tips">Safety tips</a><a href="#about">Meet the Duck</a><a href="#request">Contact</a>
+      </nav>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> Lucky Duck's Chimney Sweep · Serving Bergen and Passaic Counties, NJ</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+12012656638"><svg><use href="#i-phone"/></svg>Call<small>River Edge</small></a><a href="tel:+19736570707"><svg><use href="#i-phone"/></svg>Call<small>West Milford</small></a><a href="#request"><svg><use href="#i-cal"/></svg>Book<small>online</small></a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Request form: opens the visitor's email app addressed to Lucky Duck's. Swap for a form service when the site goes live.
+function bookMailto(f) {
+  const v = id => $(id).value.trim();
+  const svc = $("f-service").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Town: ${v("f-town")}`, `Service: ${svc}`,
+    `Burns: ${f.querySelector("input[name=fuel]:checked").value}`, `Best days or times: ${v("f-when") || "any"}`];
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  const subject = `${svc}: ${v("f-town")} (${v("f-name")})`;
+  return "mailto:luckyduckschimneysweep@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("book").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  for (const el of f.querySelectorAll("[required]")) {
+    if (!el.value.trim()) { el.focus(); $("f-note").textContent = "Please add your " + el.labels[0].textContent.toLowerCase() + "."; return; }
+  }
+  location.href = bookMailto(f);
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
