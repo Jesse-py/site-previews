@@ -1,6 +1,6 @@
 // Visit counter for previews (GoatCounter, no cookies). Does nothing until CODE is set.
 (function () {
-  var CODE = '';
+  var CODE = 'jessepreviews';
   if (!CODE || location.hostname !== 'jesse-py.github.io') return;
   try { if (localStorage.getItem('skipgc') === 't') return; } catch (e) {}
   var s = document.createElement('script');
