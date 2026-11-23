@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag, the .mock-note banner and the .pv-note under Hours when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>SF Upholstery | Furniture Upholstery &amp; Refinishing in San Francisco</title>
+<meta name="description" content="Furniture and auto upholstery plus wood refinishing at 1442 Sanchez Street, San Francisco. Free estimates, pickup and delivery. Call (415) 282-2256.">
+<meta name="theme-color" content="#161616">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SF Upholstery: furniture upholstery and refinishing in San Francisco">
+<meta property="og:description" content="Sofas, chairs, cushions, car interiors, walls and wood refinishing. Free estimates, pickup and delivery.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "SF Upholstery",
+  "description": "Furniture and automobile upholstery, wood refinishing, and upholstered walls and ceilings in San Francisco.",
+  "founder": { "@type": "Person", "name": "Jorge Meraz-Baca" },
+  "telephone": "+1-415-282-2256",
+  "email": "sfupholstery@gmail.com",
+  "url": "https://sfupholstery.com/",
+  "image": "assets/share.jpg",
+  "address": { "@type": "PostalAddress", "streetAddress": "1442 Sanchez Street", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94131", "addressCountry": "US" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "19:00" }]
+}
+</script>
+<style>
+  /* Colors and fonts from their live site (computed styles, README.md): --org #ff4c00 nav band and photo frames; --ink #161616 dark bands.
+     Archivo Black headings + Montserrat text, as on their site. --org-d is the same orange darkened for AA text on white. */
+  :root {
+    --org: #ff4c00;
+    --org-d: #b83500;
+    --ink: #161616;
+    --ink-2: #262626;
+    --cream: #f6f3f0;
+    --text: #1d1d1d;
+    --muted: #55504b;
+    --line: #e3ded9;
+    --radius: 6px;
+    --head: "Archivo Black", "Arial Black", system-ui, sans-serif;
+    --sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 500 16px/1.65 var(--sans); color: var(--text); background: #fff; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--org-d); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid #ffb000; outline-offset: 3px; }
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--ink); border-bottom: 5px solid var(--org); }
+  .bar { display: flex; align-items: center; gap: 26px; height: 70px; }
+  .lockup { margin-right: auto; color: #fff; text-decoration: none; font: 22px/1 var(--head); letter-spacing: .01em; white-space: nowrap; }
+  .lockup span { color: var(--org); }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; }
+  .nav a:hover { color: var(--org); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font: 700 16px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: var(--radius); border: 2px solid transparent; cursor: pointer; }
+  .btn-org { background: var(--org); color: var(--ink); }
+  .btn-org:hover { background: #ff6a29; }
+  .btn-ghost { border-color: rgba(255,255,255,.8); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 11px 15px; font-size: 15px; white-space: nowrap; }
+  @media (max-width: 1000px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 60px; } }
+
+  .hero { background: var(--ink); color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: center; padding-top: 56px; padding-bottom: 56px; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 28px; padding-top: 34px; padding-bottom: 36px; } }
+  .kicker { font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #ff8a57; margin: 0 0 14px; }
+  h1 { font: clamp(34px, 4.8vw, 56px)/1.06 var(--head); margin: 0 0 18px; }
+  .hero p.sub { font-size: 18px; margin: 0 0 26px; color: #dcd8d4; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero figure { margin: 0; border: 6px solid var(--org); }
+
+  .trust { background: var(--org); color: var(--ink); }
+  .trust ul { list-style: none; margin: 0 auto; padding: 15px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 8px 20px; font-weight: 700; font-size: 15px; }
+  @media (max-width: 900px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 440px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 72px 0; }
+  @media (max-width: 640px) { section { padding: 52px 0; } }
+  .tint { background: var(--cream); }
+  .eyebrow { font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--org-d); margin: 0 0 10px; }
+  h2 { font: clamp(28px, 3.4vw, 40px)/1.1 var(--head); margin: 0 0 14px; color: var(--ink); }
+  h3 { font: 20px/1.2 var(--head); margin: 0 0 8px; color: var(--ink); }
+  .intro { color: var(--muted); max-width: 740px; margin: 0 0 32px; font-size: 17px; }
+
+  .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  @media (max-width: 1000px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { background: #fff; border: 1px solid var(--line); border-bottom: 5px solid var(--org); border-radius: var(--radius); overflow: hidden; }
+  .svc img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .svc div { padding: 18px 18px 16px; }
+  .svc p { margin: 0; font-size: 15px; color: var(--muted); }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 28px; } }
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0; }
+  .chips li { background: #fff; border: 1px solid var(--line); border-radius: 99px; padding: 5px 13px; font-size: 14px; font-weight: 700; }
+  .note { border-left: 5px solid var(--org); background: #fff; padding: 14px 18px; margin: 0; font-size: 15px; color: var(--muted); }
+  .note + .note { margin-top: 12px; }
+  .note b { color: var(--ink); }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .steps img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 4px solid var(--org); }
+  .steps span { display: block; font-size: 13px; font-weight: 700; margin-top: 6px; line-height: 1.3; }
+
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 860px) { .gallery { grid-template-columns: 1fr 1fr; } }
+  .gallery figure { margin: 0; position: relative; border: 4px solid var(--org); background: var(--ink); }
+  .gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+  .gallery figcaption { position: absolute; left: 0; bottom: 0; background: rgba(22,22,22,.86); color: #fff; font-size: 12px; font-weight: 700; padding: 3px 8px; }
+
+  .about { display: grid; grid-template-columns: 380px 1fr; gap: 44px; align-items: center; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 24px; } .about img { max-width: 380px; } }
+  .about img { border: 6px solid var(--org); }
+  .about p { margin: 0 0 13px; font-size: 17px; }
+
+  .reviews { background: var(--ink); color: #fff; }
+  .reviews h2 { color: #fff; }
+  .reviews .eyebrow { color: #ff8a57; }
+  .q-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .q-grid { grid-template-columns: 1fr; } }
+  blockquote { margin: 0; background: var(--ink-2); border-top: 5px solid var(--org); padding: 22px; font-size: 15px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; }
+  blockquote p { margin: 0; }
+  blockquote footer { font-weight: 700; color: #ff8a57; }
+  .yelp { margin: 24px 0 0; }
+  .yelp a { color: #fff; font-weight: 700; }
+
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cinfo small { display: block; font-weight: 700; font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .cinfo a, .cinfo .val { color: var(--ink); font-weight: 700; text-decoration: none; font-size: 18px; word-break: break-word; }
+  .cinfo a:hover { color: var(--org-d); }
+  .pv-note { font-size: 13px; color: #5c4400; background: #fff4d6; border-radius: 5px; padding: 7px 10px; margin: 8px 0 0; }
+  .form-card { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 28px; border-top: 6px solid var(--org); }
+  .form-card h3 { color: #fff; font-size: 26px; margin: 0 0 4px; }
+  .form-card .hint { color: #cfcac5; font-size: 15px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label, .field legend { display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; padding: 0; }
+  .field select, .field input[type=text], .field input[type=tel], .field textarea { width: 100%; font: 500 16px/1.3 var(--sans); padding: 12px; border: 1.5px solid #8a847e; border-radius: 5px; background: #fff; color: var(--text); }
+  fieldset.field { border: 0; margin: 0 0 14px; padding: 0; }
+  .radios { display: flex; flex-direction: column; gap: 6px; }
+  .radios label { display: flex; gap: 8px; align-items: center; font-size: 15px; cursor: pointer; }
+  .radios input { width: 18px; height: 18px; accent-color: var(--org); flex: none; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 80px; resize: vertical; }
+  .form-card .btn { width: 100%; }
+  .form-note { font-size: 13px; color: #cfcac5; margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #0e0e0e; color: #c4bfba; font-size: 14px; padding: 34px 0 24px; }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.3); }
+    .callbar a { display: block; text-align: center; padding: 14px 4px; font-weight: 700; text-decoration: none; background: var(--ink); color: #fff; }
+    .callbar a + a { background: var(--org); color: var(--ink); }
+    body { padding-bottom: 52px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for SF Upholstery from the text and photos on their current site. Not live yet.</div>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="SF Upholstery, home">SF <span>UPHOLSTERY</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#upholstery">Upholstery</a>
+      <a href="#work">Our work</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-org head-call" href="tel:+14152822256">(415) 282-2256</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">1442 Sanchez Street · San Francisco</p>
+        <h1>Upholstery and wood refinishing in San Francisco</h1>
+        <p class="sub">Sofas, chairs, cushions, car interiors and more, from Jorge Meraz-Baca's shop. Free estimates, pickup, and delivery.</p>
+        <div class="actions">
+          <a class="btn btn-org" href="#contact">Get a free quote</a>
+          <a class="btn btn-ghost" href="tel:+14152822256">Call (415) 282-2256</a>
+        </div>
+      </div>
+      <figure><img src="assets/img/hero.webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero.webp 1440w" sizes="(max-width: 900px) 100vw, 590px" alt="A long window seat with dark gray cushions and pillows under white shutters" width="1440" height="1080"></figure>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li>Free estimates</li>
+      <li>Pickup and delivery</li>
+      <li>Household and office furniture</li>
+      <li>Open Monday – Saturday</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>What we do</h2>
+      <p class="intro">Furniture, wood, cars and even whole rooms.</p>
+      <div class="svc-grid">
+        <article class="svc"><img src="assets/img/tufted.webp" alt="A cream tufted sofa with a carved wood frame" width="640" height="480" loading="lazy"><div><h3>Furniture upholstery</h3><p>Replacing or retying springs, replacing worn webbing, re-stuffing, repairs, and recovering with new fabric.</p></div></article>
+        <article class="svc"><img src="assets/img/hutch.webp" alt="A dark wood china hutch with arched glass doors" width="800" height="678" loading="lazy"><div><h3>Wood refinishing</h3><p>From the feet of a sofa or chair up to bookshelves, desks and tables. Carefully stripped and sanded, then stained and sealed.</p></div></article>
+        <article class="svc"><img src="assets/img/car.webp" alt="A convertible with upholstered seats" width="800" height="600" loading="lazy"><div><h3>Automobile upholstery</h3><p>Leather, vinyl, suede, and fabric. We can restore the inside with foam if it needs it, and we help you with the design.</p></div></article>
+        <article class="svc"><img src="assets/img/wallpaper.webp" alt="A room with upholstered patterned and striped walls" width="800" height="600" loading="lazy"><div><h3>Ceilings and walls</h3><p>Change the whole feeling of a room, or hide a crumbling or unsightly plaster wall in an easy, inexpensive way.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="upholstery" class="tint">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Upholstery</p>
+        <h2>All types of household and office furniture</h2>
+        <ul class="chips">
+          <li>Headboards</li><li>Sofas</li><li>Ottomans</li><li>Dining chairs</li><li>Window seats</li><li>Cushions</li><li>Throw pillows</li><li>Living room chairs</li><li>Chaise lounges</li><li>Love seats</li><li>Chiropractic tables</li>
+        </ul>
+        <p class="note"><b>Custom pillows and cushions</b> of any shape and size, filled with feathers and down or synthetic fillers.</p>
+        <p class="note"><b>Your fabric or ours.</b> We have a resale license and can buy wholesale fabrics directly from designers, or you can purchase your own fabric at the store of your choice.</p>
+      </div>
+      <div>
+        <h3>The steps, from the frame up</h3>
+        <ol class="steps">
+          <li><img src="assets/img/springs.webp" alt="An antique sofa opened up to show its tied springs" width="640" height="480" loading="lazy"><span>Springs and webbing</span></li>
+          <li><img src="assets/img/frame.webp" alt="A chair partly stripped, showing its frame and padding" width="800" height="600" loading="lazy"><span>Frame and padding</span></li>
+          <li><img src="assets/img/leather.webp" alt="A finished burgundy club chair" width="800" height="800" loading="lazy"><span>Recovered and finished</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="eyebrow">Our work</p>
+      <h2>From the shop</h2>
+      <div class="gallery">
+        <figure><img src="assets/img/cushion.webp" alt="A seat cushion in a bright floral fabric" width="480" height="640" loading="lazy"><figcaption>Custom cushion</figcaption></figure>
+        <figure><img src="assets/img/banquette.webp" alt="A corner bench with gray cushions" width="640" height="480" loading="lazy"><figcaption>Corner bench</figcaption></figure>
+        <figure><img src="assets/img/floral.webp" alt="A wood armchair with a bright floral seat and back" width="480" height="640" loading="lazy"><figcaption>Armchair</figcaption></figure>
+        <figure><img src="assets/img/settee.webp" alt="A dark wood settee covered in gray fabric" width="800" height="600" loading="lazy"><figcaption>Settee</figcaption></figure>
+        <figure><img src="assets/img/curved.webp" alt="A long curved sofa in patterned fabric" width="800" height="600" loading="lazy"><figcaption>Curved sofa</figcaption></figure>
+        <figure><img src="assets/img/cabinet.webp" alt="A wood cabinet with open shelves" width="800" height="600" loading="lazy"><figcaption>Wood cabinet</figcaption></figure>
+        <figure><img src="assets/img/striped.webp" alt="A loveseat in pink, green and gold stripes" width="800" height="600" loading="lazy"><figcaption>Loveseat</figcaption></figure>
+        <figure><img src="assets/img/work.webp" alt="Fitting white fabric on a sofa in the shop" width="800" height="600" loading="lazy"><figcaption>In the shop</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tint">
+    <div class="wrap about">
+      <img src="assets/img/about.webp" alt="Portrait from the SF Upholstery About page" width="431" height="300" loading="lazy">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Jorge Meraz-Baca</h2>
+        <p>I began learning my craft in 1996 in Palo Alto, CA, where I took upholstery classes for 18 months. I learned to convert a damaged piece of furniture into something beautiful and useful. I worked for two different upholstery shops to gain experience.</p>
+        <p>These experiences helped me open my own business. I love my work because of the level of detail that it requires. I am a perfectionist and want to leave my customers extremely satisfied with their furniture and my services.</p>
+        <p>On a personal note, I am originally from Honduras in Central America. I live in San Francisco, California. I hope to be able to work on your furniture in the not-so-distant future!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <p class="eyebrow">Testimonials</p>
+      <h2>What clients say</h2>
+      <div class="q-grid">
+        <blockquote><p>I'm an interior designer and have worked with Jorge on two projects involving recovering and refinishing dining chairs. They were very different - one design was wood framed with velvet and trim detail and the other chrome frames with slung leather. Jorge got frame refinishers on the projects and did an excellent job for both styles! He is warm, patient and committed to a beautiful outcome. I highly recommend him!</p><footer>Caroline D., San Francisco, CA</footer></blockquote>
+        <blockquote><p>As an Interior Designer it is imperative the professionals I work with strive for the best quality workmanship possible. Jorge is that kind of pro. He has completed several projects for me recovering club chairs, ottomans, and dining chairs. All where done with the upmost care and eye for detail. If you have questions he has answers and is willing to go the extra mile to assure satisfaction for me and my clients. I recommend him highly.</p><footer>Kevin S., San Francisco, CA</footer></blockquote>
+        <blockquote><p>Excellent workmanship! Jorge is not only a very good craftsman, but is also a very good person. He was very helpful in selecting the fabric. I am very pleased with the results and I have no hesitation in recommending him.</p><footer>Pearl S., San Francisco, CA</footer></blockquote>
+      </div>
+      <p class="yelp"><a href="https://www.yelp.com/biz/jorge-meraz-baca-upholstery-san-francisco" rel="noopener">Check out our reviews on Yelp</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Get a free quote</h2>
+        <ul class="cinfo">
+          <li><small>Call</small><a href="tel:+14152822256">(415) 282-2256</a></li>
+          <li><small>Email</small><a href="mailto:sfupholstery@gmail.com">sfupholstery@gmail.com</a></li>
+          <li><small>Shop</small><a href="https://www.google.com/maps/search/?api=1&amp;query=1442+Sanchez+Street+San+Francisco+CA+94131" rel="noopener">1442 Sanchez Street, San Francisco, California 94131</a></li>
+          <li><small>Hours</small><span class="val">Monday – Saturday: 9am – 7pm<br>Sunday: Closed</span>
+            <p class="pv-note">Preview note: these are the hours on your site. Your Yelp listing, as Google shows it, has Monday and Tuesday as 8:30 am – 5:00 pm. Tell us which is current and we'll use it everywhere.</p></li>
+        </ul>
+      </div>
+      <form class="form-card" id="req" novalidate>
+        <h3>Request a quote</h3>
+        <p class="hint">Takes about a minute. Photos help: you can add them in your email before sending.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-item">What's the piece?</label>
+          <select id="f-item" name="item"><option>Sofa or love seat</option><option>Chair or ottoman</option><option>Dining chairs</option><option>Headboard</option><option>Window seat</option><option>Cushions or pillows</option><option>Wood refinishing</option><option>Car interior</option><option>Walls or ceiling</option><option>Something else</option></select>
+        </div>
+        <div class="field"><label for="f-msg">What would you like done?</label><textarea id="f-msg" name="details" placeholder="Worn fabric, sagging seat, new color, how many pieces..."></textarea></div>
+        <fieldset class="field">
+          <legend>Fabric</legend>
+          <div class="radios">
+            <label><input type="radio" name="fabric" value="I'd like help choosing" checked>I'd like help choosing</label>
+            <label><input type="radio" name="fabric" value="I have my own">I have my own</label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Getting it to the shop</legend>
+          <div class="radios">
+            <label><input type="radio" name="drop" value="Pickup and delivery" checked>Pickup and delivery</label>
+            <label><input type="radio" name="drop" value="I'll bring it in">I'll bring it in</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-area">Neighborhood or street (for pickup)</label><input type="text" id="f-area" name="area" autocomplete="address-line1"></div>
+        <button class="btn btn-org" type="submit">Send quote request</button>
+        <p class="form-note" id="f-note">Opens your email app with the request filled in. Or call (415) 282-2256.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b style="color:#fff">SF Upholstery</b> · 1442 Sanchez Street, San Francisco, CA 94131<br><a href="tel:+14152822256">(415) 282-2256</a> · <a href="mailto:sfupholstery@gmail.com">sfupholstery@gmail.com</a></div>
+    <nav class="foot-links" aria-label="Footer"><a href="#services">Services</a><a href="#upholstery">Upholstery</a><a href="#work">Our work</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+    <div class="copy">© <span id="yr">2026</span> SF Upholstery</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+14152822256">Call (415) 282-2256</a><a href="#contact">Free quote</a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Quote request: opens the visitor's email app addressed to SF Upholstery. Swap for a form service when the site goes live.
+function reqMailto(f) {
+  const v = id => $(id).value.trim();
+  const item = $("f-item").value;
+  const fabric = f.querySelector("input[name=fabric]:checked").value;
+  const drop = f.querySelector("input[name=drop]:checked").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Piece: ${item}`, `Fabric: ${fabric}`, `Getting it there: ${drop}`];
+  if (v("f-area")) lines.push(`Neighborhood or street: ${v("f-area")}`);
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  return "mailto:sfupholstery@gmail.com?subject=" + encodeURIComponent(`Quote request: ${item} (${v("f-name")})`) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("req").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, note = $("f-note");
+  if (!$("f-name").value.trim()) { note.textContent = "Please add your name."; $("f-name").focus(); return; }
+  if (!$("f-phone").value.trim()) { note.textContent = "Please add a phone number so we can reach you."; $("f-phone").focus(); return; }
+  if (f.querySelector("input[name=drop]:checked").value === "Pickup and delivery" && !$("f-area").value.trim()) { note.textContent = "Where should we pick it up? Add a neighborhood or street."; $("f-area").focus(); return; }
+  note.textContent = "Opening your email app...";
+  window.location.href = reqMailto(f);
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+<script defer src="../count.js"></script>
+</body>
+</html>
