@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>GJ Carpet Cleaners | Carpet &amp; Upholstery Cleaning in Grand Junction</title>
+<meta name="description" content="Father and son carpet cleaning in Grand Junction and the Grand Valley. Carpet, stairs, couches, rugs, tile, cars, RVs and boats. Call 970-250-5717.">
+<meta name="theme-color" content="#1b1b1b">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GJ Carpet Cleaners: detailed carpet cleaning you can count on">
+<meta property="og:description" content="A father and son team, natives of the Grand Valley. Carpet, upholstery, tile, RV and boat cleaning.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GJ Carpet Cleaners",
+  "description": "Family owned carpet, upholstery, tile, RV and boat cleaning in Grand Junction and the Grand Valley.",
+  "telephone": "+1-970-250-5717",
+  "email": "GJcarpetclean@gmail.com",
+  "url": "https://gjcarpetclean.com/",
+  "image": "assets/share.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Grand Junction", "addressRegion": "CO", "addressCountry": "US" },
+  "areaServed": ["Grand Junction, CO", "Fruita, CO", "Palisade, CO"],
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" }]
+}
+</script>
+<style>
+  /* Colors and fonts from their live site (computed styles, README.md): --ink #1b1b1b headings and logo black; --slate #6d768c their accent.
+     --slate-d is the same slate darkened for AA text on white. Playfair Display headings + Open Sans text, as on their site. */
+  :root {
+    --ink: #1b1b1b;
+    --ink-2: #2b2d33;
+    --slate: #6d768c;
+    --slate-d: #515a70;
+    --slate-l: #c9cfdc;
+    --pale: #f1f3f7;
+    --text: #23252a;
+    --muted: #555a66;
+    --line: #dfe2e9;
+    --radius: 6px;
+    --head: "Playfair Display", Georgia, serif;
+    --sans: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 400 16.5px/1.65 var(--sans); color: var(--text); background: #fff; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--slate-d); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid #e0a82e; outline-offset: 3px; }
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: var(--ink); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 72px; }
+  .lockup { margin-right: auto; display: flex; align-items: center; gap: 11px; color: #fff; text-decoration: none; font: 700 23px/1 var(--head); }
+  .lockup img { width: 52px; height: 52px; border-radius: 4px; }
+  .nav { display: flex; gap: 20px; }
+  .nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 15px; }
+  .nav a:hover { color: var(--slate-l); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font: 700 16px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: var(--radius); border: 2px solid transparent; cursor: pointer; }
+  .btn-light { background: #fff; color: var(--ink); }
+  .btn-light:hover { background: var(--slate-l); }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 12px 15px; font-size: 15px; white-space: nowrap; }
+  @media (max-width: 940px) { .nav { display: none; } }
+  @media (max-width: 560px) { .head-call { display: none; } .bar { height: 64px; } .lockup { font-size: 20px; } .lockup img { width: 44px; height: 44px; } }
+
+  .hero { background: var(--ink); color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 44px; align-items: center; padding-top: 46px; padding-bottom: 56px; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 26px; padding-top: 28px; padding-bottom: 36px; } }
+  .kicker { font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--slate-l); margin: 0 0 12px; }
+  h1 { font: 700 clamp(34px, 4.6vw, 54px)/1.12 var(--head); margin: 0 0 16px; }
+  .hero p.sub { font-size: 18.5px; margin: 0 0 26px; color: #e2e4ea; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero figure { margin: 0; border: 6px solid #fff; border-radius: 3px; }
+  .hero figure img { width: 100%; }
+
+  .trust { background: var(--slate-d); color: #fff; }
+  .trust ul { list-style: none; margin: 0 auto; padding: 14px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 8px 20px; font-weight: 700; font-size: 15px; }
+  @media (max-width: 960px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 460px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 68px 0; }
+  @media (max-width: 640px) { section { padding: 48px 0; } }
+  .tint { background: var(--pale); }
+  .eyebrow { font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--slate-d); margin: 0 0 8px; }
+  h2 { font: 700 clamp(28px, 3.4vw, 40px)/1.16 var(--head); margin: 0 0 14px; color: var(--ink); }
+  h3 { font: 700 20px/1.25 var(--head); margin: 0 0 6px; color: var(--ink); }
+  .intro { color: var(--muted); max-width: 740px; margin: 0 0 30px; font-size: 17.5px; }
+
+  .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--slate); border-radius: var(--radius); padding: 16px 18px; }
+  .svc p { margin: 0; font-size: 15px; color: var(--muted); }
+  .svc .time { margin-top: 6px; font-weight: 600; color: var(--slate-d); font-size: 14px; }
+
+  .ba { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 860px) { .ba { grid-template-columns: 1fr 1fr; } }
+  .ba figure { margin: 0; background: var(--ink); border-radius: 4px; overflow: hidden; }
+  .ba img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 24px; } }
+  .about img { border-radius: var(--radius); }
+  .about p { margin: 0 0 13px; }
+
+  .reviews { background: var(--ink); color: #fff; text-align: center; }
+  .reviews h2 { color: #fff; }
+  .reviews .eyebrow { color: var(--slate-l); }
+  blockquote { margin: 18px auto 16px; max-width: 760px; font: 600 clamp(20px, 2.4vw, 26px)/1.4 var(--head); }
+  blockquote footer { margin-top: 12px; font: 700 15px/1.3 var(--sans); color: var(--slate-l); }
+  .reviews .fb { font-weight: 700; color: #fff; }
+
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cinfo small { display: block; font-weight: 700; font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .cinfo a, .cinfo .val { color: var(--ink); font-weight: 700; text-decoration: none; font-size: 18px; word-break: break-word; }
+  .form-card { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 28px; border-top: 6px solid var(--slate); }
+  .form-card h3 { color: #fff; font-size: 27px; margin: 0 0 4px; }
+  .form-card .hint { color: #d5d8df; font-size: 15.5px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label { display: block; font-weight: 700; font-size: 14.5px; margin-bottom: 6px; }
+  .field select, .field input[type=text], .field input[type=tel], .field textarea { width: 100%; font: 400 16px/1.3 var(--sans); padding: 12px; border: 1.5px solid #848a97; border-radius: 5px; background: #fff; color: var(--text); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 84px; resize: vertical; }
+  .form-card .btn { width: 100%; }
+  .form-note { font-size: 14px; color: #d5d8df; margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #101012; color: #c5c8d0; font-size: 15px; padding: 32px 0 24px; }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.3); }
+    .callbar a { display: block; text-align: center; padding: 14px 4px; font-weight: 700; text-decoration: none; background: var(--ink); color: #fff; }
+    .callbar a + a { background: var(--slate-d); color: #fff; }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for GJ Carpet Cleaners from the text and photos on their current site. Not live yet.</div>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="GJ Carpet Cleaners, home"><img src="assets/img/logo.webp" alt="" width="160" height="160">GJ Carpet Cleaners</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Recent work</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-light head-call" href="tel:+19702505717">970-250-5717</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Grand Junction · The Grand Valley</p>
+        <h1>Detailed carpet cleaning you can count on</h1>
+        <p class="sub">A father and son team, natives of the Grand Valley. Carpet, stairs, couches, rugs, tile, cars, RVs and boats.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="tel:+19702505717">Call 970-250-5717</a>
+          <a class="btn btn-ghost" href="#contact">Request a quote</a>
+        </div>
+      </div>
+      <figure><img src="assets/img/van.webp" alt="Two men standing beside the white GJ Carpet Cleaning van in the snow" width="598" height="499"></figure>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li>Family owned</li>
+      <li>Father and son team</li>
+      <li>Truck mount steam cleaning</li>
+      <li>Not a franchise</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Cleaning services</p>
+      <h2>What we clean</h2>
+      <p class="intro">Call us today for more detailed information.</p>
+      <div class="svc-grid">
+        <article class="svc"><h3>Carpet cleaning</h3><p class="time">Duration varies</p></article>
+        <article class="svc"><h3>Stairs</h3><p>All reachable surfaces</p><p class="time">30 minutes and up</p></article>
+        <article class="svc"><h3>Couch</h3><p>All reachable surfaces</p><p class="time">45 minutes and up</p></article>
+        <article class="svc"><h3>Loveseat</h3><p class="time">30 minutes and up</p></article>
+        <article class="svc"><h3>Rug cleaning</h3><p>Includes the top surface of the rug, for small rugs up to or under 36 sq. feet</p><p class="time">30 minutes and up</p></article>
+        <article class="svc"><h3>Car upholstery</h3><p>Includes seats, floor, and any accessible upholstered area</p><p class="time">30 minutes and up</p></article>
+        <article class="svc"><h3>Tile cleaning</h3></article>
+        <article class="svc"><h3>Water extraction</h3></article>
+        <article class="svc"><h3>RV and boat cleaning</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Recent work</p>
+      <h2>See the difference</h2>
+      <div class="ba">
+        <figure><img src="assets/img/side.webp" alt="A carpet shown before and after cleaning, side by side" width="750" height="750" loading="lazy"></figure>
+        <figure><img src="assets/img/tile.webp" alt="A tile hallway shown before and after cleaning" width="800" height="515" loading="lazy"></figure>
+        <figure><img src="assets/img/fabric.webp" alt="A maroon upholstered cushion shown before and after cleaning" width="699" height="699" loading="lazy"></figure>
+        <figure><img src="assets/img/split.webp" alt="A stained carpet next to the same carpet after cleaning" width="800" height="500" loading="lazy"></figure>
+        <figure><img src="assets/img/stripes.webp" alt="A freshly cleaned carpet with clean vacuum stripes" width="780" height="520" loading="lazy"></figure>
+        <figure><img src="assets/img/wand.webp" alt="A steam cleaning wand and blue hose working across a carpet" width="800" height="593" loading="lazy"></figure>
+        <figure><img src="assets/img/couch.webp" alt="Cleaning the arm of a brown couch with an upholstery tool" width="800" height="800" loading="lazy"></figure>
+        <figure><img src="assets/img/outdoor.webp" alt="Cleaning a row of chairs and an armchair outside a building" width="800" height="800" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <img src="assets/img/cleaning.webp" alt="A GJ Carpet Cleaners technician steam cleaning a bedroom carpet" width="800" height="800" loading="lazy">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>A small mom and pop shop</h2>
+        <p>GJ Carpet Cleaning is a family owned business operated by a father and son team. We have taken care of the floor cleaning needs of our extended family's rental business for years. In February 2020 we purchased a new truck mount steam cleaning machine to focus on providing a service to the general public, just like what we would want for our own homes.</p>
+        <p>We pride ourselves on being natives of the Grand Valley. Fourth and fifth generations to be exact. We have spent our lives training and honing our skills to be able to provide the best cleaning experience for our customers. We are a small mom and pop shop not controlled by a franchise. We are able to treat people how we want to be treated. We utilize a "whatever it takes" approach to all our tasks.</p>
+        <p><b>What makes us unique:</b> our approach to quality and satisfaction. We take the time to do it right.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <p class="eyebrow">Reviews</p>
+      <h2>100% recommend, based on the opinion of 13 people</h2>
+      <blockquote>Very professional and reasonable priced. I have hired MANY carpet cleaners over the years, and GJ Carpet Cleaners out preformed them all.<footer>Gary LaBounty, 8/28/2026, on Facebook</footer></blockquote>
+      <a class="fb" href="https://www.facebook.com/GJCarpetCleaning/reviews/" rel="noopener">Read all our reviews on Facebook</a>
+    </div>
+  </section>
+
+  <section id="contact" class="tint">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h2>Let us take care of all your carpet cleaning needs</h2>
+        <ul class="cinfo">
+          <li><small>Call</small><a href="tel:+19702505717">970-250-5717</a></li>
+          <li><small>Email</small><a href="mailto:GJcarpetclean@gmail.com">GJcarpetclean@gmail.com</a></li>
+          <li><small>Hours</small><span class="val">Monday – Friday: 8:00 am – 5:00 pm<br>Saturday and Sunday: Closed</span></li>
+        </ul>
+      </div>
+      <form class="form-card" id="req" novalidate>
+        <h3>Request a quote</h3>
+        <p class="hint">Takes about a minute. Photos help: you can add them in your email before sending.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-item">What needs cleaning?</label>
+          <select id="f-item" name="item"><option>Carpet</option><option>Stairs</option><option>Couch</option><option>Loveseat</option><option>Rug</option><option>Tile</option><option>Car upholstery</option><option>Water extraction</option><option>RV</option><option>Boat</option><option>Something else</option></select>
+        </div>
+        <div class="field"><label for="f-area">Your city or neighborhood</label><input type="text" id="f-area" name="area" autocomplete="address-level2"></div>
+        <div class="field"><label for="f-msg">Tell us about the job</label><textarea id="f-msg" name="details" placeholder="How many rooms, any stains or pets..."></textarea></div>
+        <button class="btn btn-light" type="submit">Send quote request</button>
+        <p class="form-note" id="f-note">Opens your email app with the request filled in. Or call 970-250-5717.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b style="color:#fff">GJ Carpet Cleaners</b> · Grand Junction and the Grand Valley<br><a href="tel:+19702505717">970-250-5717</a> · <a href="mailto:GJcarpetclean@gmail.com">GJcarpetclean@gmail.com</a></div>
+    <nav class="foot-links" aria-label="Footer"><a href="#services">Services</a><a href="#work">Recent work</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+    <div class="copy">© <span id="yr">2026</span> GJ Carpet Cleaners</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+19702505717">Call 970-250-5717</a><a href="#contact">Free quote</a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Quote request: opens the visitor's email app addressed to GJ Carpet. Swap for a form service when the site goes live.
+function reqMailto(f) {
+  const v = id => $(id).value.trim();
+  const item = $("f-item").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Needs cleaning: ${item}`];
+  if (v("f-area")) lines.push(`City or neighborhood: ${v("f-area")}`);
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  return "mailto:GJcarpetclean@gmail.com?subject=" + encodeURIComponent(`Quote request: ${item} (${v("f-name")})`) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("req").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, note = $("f-note");
+  if (!$("f-name").value.trim()) { note.textContent = "Please add your name."; $("f-name").focus(); return; }
+  if (!$("f-phone").value.trim()) { note.textContent = "Please add a phone number so we can reach you."; $("f-phone").focus(); return; }
+  note.textContent = "Opening your email app...";
+  window.location.href = reqMailto(f);
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+<script defer src="../count.js"></script>
+</body>
+</html>
