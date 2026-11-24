@@ -1,4 +1,4 @@
-﻿// Visit counter for previews (GoatCounter, no cookies). Does nothing until CODE is set.
+// Visit counter for previews (GoatCounter, no cookies). Does nothing until CODE is set.
 (function () {
   var CODE = 'jessepreviews';
   var HOSTS = ['jesse-py.github.io', 'simpletoolshop.com', 'www.simpletoolshop.com'];
