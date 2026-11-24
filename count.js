@@ -1,7 +1,7 @@
-// Visit counter for previews (GoatCounter, no cookies). Does nothing until CODE is set.
+﻿// Visit counter for previews (GoatCounter, no cookies). Does nothing until CODE is set.
 (function () {
   var CODE = 'jessepreviews';
-  var HOSTS = ['jesse-py.github.io', 'freshstorefront.com', 'www.freshstorefront.com'];
+  var HOSTS = ['jesse-py.github.io', 'simpletoolshop.com', 'www.simpletoolshop.com'];
   if (!CODE || HOSTS.indexOf(location.hostname) < 0) return;
   try { if (localStorage.getItem('skipgc') === 't') return; } catch (e) {}
   var s = document.createElement('script');
