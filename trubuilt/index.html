@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>TruBuilt Builders | Post Frame Buildings &amp; General Contracting in Sheridan, WY</title>
+<meta name="description" content="Post frame construction and general contracting since 1999: shops, garages, horse barns, arenas, homes and commercial buildings around Sheridan, Wyoming. Free estimates: 307.673.0327.">
+<meta name="theme-color" content="#5e5d1d">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TruBuilt Builders, Inc.: post frame construction in Sheridan, WY">
+<meta property="og:description" content="Shops, barns, arenas, homes and commercial buildings since 1999. Where honesty, courtesy, excellence &amp; savings meet.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "TruBuilt Builders, Inc.",
+  "description": "Post frame construction and general contracting: residential homes, residential buildings, commercial and agricultural buildings. Est. 1999.",
+  "slogan": "Where honesty, courtesy, excellence & savings meet",
+  "foundingDate": "1999",
+  "telephone": "+1-307-673-0327",
+  "faxNumber": "+1-307-673-0295",
+  "email": "jhtrubuilt@fiberpipe.net",
+  "url": "https://trubuiltbuilders.com/",
+  "image": "assets/share.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Sheridan", "addressRegion": "WY", "postalCode": "82801", "addressCountry": "US" },
+  "areaServed": "Sheridan, Wyoming and surrounding area"
+}
+</script>
+<style>
+  /* Colors from their logo GIF (README.md): --field #aaa966 the logo's olive field; --olive #5e5d1d its lettering (AA on white);
+     --ink #2e2d0c that olive darkened for the header band and footer. Open Sans for text, an italic serif for the "TruBuilt" lockup. */
+  :root {
+    --ink: #2e2d0c;
+    --ink-2: #3d3c12;
+    --olive: #5e5d1d;
+    --field: #aaa966;
+    --field-l: #d9d8b0;
+    --pale: #f6f5ec;
+    --text: #23221a;
+    --muted: #55543f;
+    --line: #e2e0cc;
+    --radius: 6px;
+    --sans: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Libre Baskerville", Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 400 16.5px/1.65 var(--sans); color: var(--text); background: #fff; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--olive); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid #f5b400; outline-offset: 3px; }
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 4px solid var(--field); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 72px; }
+  .lockup { margin-right: auto; display: flex; align-items: center; text-decoration: none; }
+  .lockup svg { height: 52px; width: auto; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 15px; }
+  .nav a:hover { color: var(--olive); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font: 800 16px/1 var(--sans); text-decoration: none; padding: 15px 22px; border-radius: var(--radius); border: 2px solid transparent; cursor: pointer; }
+  .btn-olive { background: var(--olive); color: #fff; }
+  .btn-olive:hover { background: #4a4916; }
+  .btn-field { background: var(--field); color: var(--ink); }
+  .btn-field:hover { background: #bcbb7c; }
+  .btn-dark { background: var(--ink); color: #fff; }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 12px 15px; font-size: 15px; white-space: nowrap; }
+  @media (max-width: 940px) { .nav { display: none; } }
+  @media (max-width: 560px) { .bar { height: 64px; } .lockup svg { height: 42px; } .head-call { padding: 11px 12px; font-size: 14px; } }
+
+  .hero { background: var(--ink); color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 44px; align-items: center; padding-top: 46px; padding-bottom: 54px; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 26px; padding-top: 28px; padding-bottom: 36px; } }
+  .kicker { font-weight: 800; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--field-l); margin: 0 0 12px; }
+  h1 { font: 800 clamp(32px, 4.4vw, 50px)/1.1 var(--sans); margin: 0 0 16px; }
+  .hero p.sub { font-size: 18.5px; margin: 0 0 26px; color: #e8e7d3; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero figure { margin: 0; border: 5px solid #fff; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero figure img { width: 100%; }
+  .hero figcaption { background: #fff; color: var(--olive); text-align: center; font: italic 15px/1.3 var(--serif); padding: 9px 6px 4px; }
+
+  .trust { background: var(--field); color: var(--ink); }
+  .trust ul { list-style: none; margin: 0 auto; padding: 14px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 8px 20px; font-weight: 800; font-size: 15px; }
+  .trust li::before { content: "\2713  "; }
+  @media (max-width: 960px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 460px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 68px 0; }
+  @media (max-width: 640px) { section { padding: 48px 0; } }
+  .tint { background: var(--pale); }
+  .eyebrow { font-weight: 800; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--olive); margin: 0 0 8px; }
+  h2 { font: 800 clamp(28px, 3.4vw, 40px)/1.15 var(--sans); margin: 0 0 14px; color: var(--ink); }
+  h3 { font: 800 19px/1.25 var(--sans); margin: 0 0 6px; color: var(--ink); }
+  .intro { color: var(--muted); max-width: 760px; margin: 0 0 30px; font-size: 17.5px; }
+
+  .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 1000px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+  .svc img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+  .svc div { padding: 14px 16px 16px; border-top: 5px solid var(--field); flex: 1; }
+  .svc p { margin: 0 0 10px; font-size: 15px; color: var(--muted); }
+  .svc a { font-weight: 800; font-size: 15px; }
+
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+  .tabs button { font: 700 15px/1 var(--sans); padding: 10px 16px; border-radius: 999px; border: 2px solid var(--olive); background: #fff; color: var(--olive); cursor: pointer; }
+  .tabs button[aria-pressed="true"] { background: var(--olive); color: #fff; }
+  .gal { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 860px) { .gal { grid-template-columns: 1fr 1fr; } }
+  .gal figure { margin: 0; border-radius: 4px; overflow: hidden; background: var(--ink); }
+  .gal img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+  .quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 820px) { .quotes { grid-template-columns: 1fr; } }
+  .quotes blockquote { margin: 0; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--field); border-radius: var(--radius); padding: 18px 20px; }
+  .quotes p { margin: 0 0 10px; }
+  .quotes cite { font-style: normal; font-weight: 800; color: var(--ink); }
+  .quotes cite span { font-weight: 600; color: var(--muted); }
+
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 24px; } }
+  .about img { border-radius: var(--radius); width: 100%; }
+  .about p { margin: 0 0 13px; }
+  .motto { font: italic 20px/1.45 var(--serif); color: var(--olive); border-left: 5px solid var(--field); padding-left: 14px; }
+
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cinfo small { display: block; font-weight: 800; font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .cinfo a, .cinfo .val { color: var(--ink); font-weight: 800; text-decoration: none; font-size: 18px; word-break: break-word; }
+  .form-card { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 28px; border-top: 6px solid var(--field); }
+  .form-card h3 { color: #fff; font-size: 26px; margin: 0 0 4px; }
+  .form-card .hint { color: #e1e0c8; font-size: 15.5px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label { display: block; font-weight: 700; font-size: 14.5px; margin-bottom: 6px; }
+  .field select, .field input[type=text], .field input[type=tel], .field input[type=email], .field textarea { width: 100%; font: 400 16px/1.3 var(--sans); padding: 12px; border: 1.5px solid #8a8970; border-radius: 5px; background: #fff; color: var(--text); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 92px; resize: vertical; }
+  .form-card .btn { width: 100%; }
+  .form-note { font-size: 14px; color: #e1e0c8; margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #1e1d07; color: #d5d4bd; font-size: 15px; padding: 32px 0 24px; }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.3); }
+    .callbar a { display: block; text-align: center; padding: 14px 4px; font-weight: 800; text-decoration: none; background: var(--olive); color: #fff; }
+    .callbar a + a { background: var(--field); color: var(--ink); }
+    body { padding-bottom: 54px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for TruBuilt Builders from the text and photos on their current site. Not live yet.</div>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="TruBuilt Builders, Inc., home">
+      <svg viewBox="0 0 220 70" role="img" aria-label="TruBuilt Builders, Inc."><rect width="220" height="70" fill="#aaa966"/>
+        <text x="110" y="38" text-anchor="middle" font-family="'Libre Baskerville',Georgia,serif" font-style="italic" font-size="31" fill="#5e5d1d">TruBuilt</text>
+        <text x="110" y="61" text-anchor="middle" font-family="'Open Sans',Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="2.4" fill="#5e5d1d">BUILDERS, INC</text></svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#buildings">Buildings</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Customers</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-olive head-call" href="tel:+13076730327">307.673.0327</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Sheridan, Wyoming · Est. 1999</p>
+        <h1>Post frame construction &amp; general contracting.</h1>
+        <p class="sub">Shops, garages, horse barns, arenas, homes and commercial buildings, custom designed to suit your needs. Give us a call for a free estimate on your project.</p>
+        <div class="actions">
+          <a class="btn btn-field" href="#estimate">Free estimate</a>
+          <a class="btn btn-ghost" href="tel:+13076730327">Call 307.673.0327</a>
+        </div>
+      </div>
+      <figure><img src="assets/img/main-1.webp" alt="A red gambrel-roof barn with dormers and three garage doors" width="646" height="386"><figcaption>Where honesty, courtesy, excellence &amp; savings meet</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li>Building since 1999</li>
+      <li>Residential, commercial &amp; ag</li>
+      <li>Custom designed for you</li>
+      <li>Free estimates</li>
+    </ul>
+  </div>
+
+  <section id="buildings">
+    <div class="wrap">
+      <p class="eyebrow">What we build</p>
+      <h2>No matter the size or look you want to achieve</h2>
+      <p class="intro">No matter what building you need, commercial, residential or agricultural, a TruBuilt building can be custom designed to suit your needs.</p>
+      <div class="svc-grid">
+        <article class="svc"><img src="assets/img/residential-03.webp" alt="A single-story home with a blue metal roof and a covered porch" width="480" height="360" loading="lazy">
+          <div><h3>Residential homes</h3><p>With so many floor plan options and building materials, we work with you to make it happen, and make sure your building meets the highest standards in our industry.</p><a href="#gallery" data-show="residential">See homes</a></div></article>
+        <article class="svc"><img src="assets/img/buildings-05.webp" alt="A tan shop building with three overhead doors and green trim" width="480" height="360" loading="lazy">
+          <div><h3>Residential buildings</h3><p>Shops, garages and outbuildings for your property. A residential building will add value and style to your residence.</p><a href="#gallery" data-show="buildings">See buildings</a></div></article>
+        <article class="svc"><img src="assets/img/commercial-03.webp" alt="A commercial building with an office front and four overhead doors" width="480" height="360" loading="lazy">
+          <div><h3>Commercial</h3><p>All phases of the commercial building process, from an industrial building to a complete office building to a simple commercial building.</p><a href="#gallery" data-show="commercial">See commercial</a></div></article>
+        <article class="svc"><img src="assets/img/agricultural-09.webp" alt="A red horse barn with white X-brace doors" width="480" height="360" loading="lazy">
+          <div><h3>Agricultural</h3><p>Many diversified plans, from an elite horse barn, arena, hay shed or machine shed to a simple shop.</p><a href="#gallery" data-show="agricultural">See ag buildings</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Our work</p>
+      <h2>Buildings we've put up</h2>
+      <div class="tabs" role="group" aria-label="Show buildings by type">
+        <button type="button" data-cat="agricultural" aria-pressed="true">Agricultural</button>
+        <button type="button" data-cat="buildings" aria-pressed="false">Shops &amp; garages</button>
+        <button type="button" data-cat="commercial" aria-pressed="false">Commercial</button>
+        <button type="button" data-cat="residential" aria-pressed="false">Homes</button>
+      </div>
+      <div class="gal" id="gal">
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-01.webp" alt="A gray and white barn behind a white rail fence" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-07.webp" alt="A tan building with a covered porch beside a tall radio mast" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-05.webp" alt="A long open-front loafing shed beside a corral" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-09.webp" alt="A red horse barn with white X-brace doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-11.webp" alt="A barn with a green roof and an open lean-to" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="agricultural"><img src="assets/img/agricultural-15.webp" alt="A white barn with cupolas and attached stalls" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-01.webp" alt="A three-door garage building with a brown roof" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-03.webp" alt="A tan shop with a green roof and a cupola" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-05.webp" alt="A tan shop with three tall overhead doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-07.webp" alt="A two-door shop with a gray roof" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-11.webp" alt="A blue metal shop with a wide overhead door" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="buildings" hidden><img src="assets/img/buildings-13.webp" alt="A gray garage with a blue roof and three doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-03.webp" alt="A commercial building with an office front and four overhead doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-05.webp" alt="An office building with red roofs and a patio" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-07.webp" alt="A metal commercial building with a stone-front entry" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-09.webp" alt="A white commercial building with a brown roof edge" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-13.webp" alt="A long white commercial building with teal trim and overhead doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="commercial" hidden><img src="assets/img/commercial-15.webp" alt="A tan commercial building with a tall overhead door" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-01.webp" alt="A home entry with log siding, stone and double doors" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-03.webp" alt="A single-story home with a blue metal roof" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-07.webp" alt="A red home with large windows" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-11.webp" alt="A two-story home with wood siding and a stone base" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-13.webp" alt="A tan home with a green roof among young trees" width="480" height="360" loading="lazy"></figure>
+        <figure data-cat="residential" hidden><img src="assets/img/residential-15.webp" alt="A tan two-story home with a triangle window" width="480" height="360" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <p class="eyebrow">What our customers say</p>
+      <h2>Built right, and they stand behind it</h2>
+      <div class="quotes">
+        <blockquote><p>"TruBuilt Builders built my pole barn shop in 2002 and I have been very pleased with it.  They called and told me they were coming to put it up and two and a half days later I had a very nice shop.  I had elected to finish the inside myself and it couldn't have been any easier the building was perfectly square, plumb, and true.  I would recommend TruBuilt Builders to anybody that needs a shop building.  They were fast, safe and kept the work site very clean.  If I ever have another shop built it will be by TruBuilt Builders for sure!"</p><cite>Jerry Jones <span>· Upton, WY</span></cite></blockquote>
+        <blockquote><p>"TruBuilt Builders was extremely professional to work with.  Not only did they do everything they were contracted to do, they did it with efficiency and in the timeframe we were promised.  We are very happy with the final product!  One exceptional thing we were most impressed with is that we received a refund check when we made some modifications to the size of the building.  We did not catch the error and probably would never have realized the overcharge.  However, TruBuilt caught the error and their honesty and integrity are something we will never forget.  We would highly recommend TruBuilt to our friends!!"</p><cite>Greg &amp; Diana Heinrich <span>· Story, WY</span></cite></blockquote>
+        <blockquote><p>"Thank you for our lovely  barn and indoor arena.  We will be sending email photos if you like. Many of our Andalusia horse buyers and friends &amp; neighbors who have stopped all agree....such fine work and job well done!  We appreciate your promptness in all you have done and the workmanship is unsurpassed. It has been a pleasure to do business with you."</p><cite>Michael &amp; Lillian Markovsky, M Spear Ranch <span>· Buffalo, WY</span></cite></blockquote>
+        <blockquote><p>"Jim &amp; Brenda built a fabulous building for me, everything went as planned, within budget and on schedule.  I highly recommend TruBuilt and will hire them again in the event I need another building."</p><cite>Lance Reed, H&amp;H Properties <span>· Sheridan, WY</span></cite></blockquote>
+        <blockquote><p>"We have been very satisfied with our buildings.  1st building was built in 1994 pole steel building.  We now have 8 buildings.  They all have been well built. We were and have been treated very well from Jim &amp; Brenda"</p><cite>Carol Mahoney <span>· Buffalo, WY</span></cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tint">
+    <div class="wrap about">
+      <img src="assets/img/main-2.webp" alt="A large white building with a wraparound covered porch and a curved drive" width="646" height="386" loading="lazy">
+      <div>
+        <p class="eyebrow">About TruBuilt</p>
+        <h2>Post frame construction &amp; general contracting since 1999</h2>
+        <p>TruBuilt Builders, Inc. takes pride in our work to make sure your building meets the highest standards in our industry and will be a building that all of us will be proud of for years to come.</p>
+        <p>We handle all phases of the building process specific to the customer's needs, and we've built for customers in Sheridan, Buffalo, Big Horn, Story and Upton.</p>
+        <p class="motto">Where honesty, courtesy, excellence &amp; savings meet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h2>Free estimates on your project</h2>
+        <p>Just give us a call, or send the details and we'll get back to you.</p>
+        <ul class="cinfo">
+          <li><small>Call</small><a href="tel:+13076730327">307.673.0327</a></li>
+          <li><small>Email</small><a href="mailto:jhtrubuilt@fiberpipe.net">jhtrubuilt@fiberpipe.net</a></li>
+          <li><small>Fax</small><span class="val">307.673.0295</span></li>
+          <li><small>Based in</small><span class="val">Sheridan, WY 82801</span></li>
+        </ul>
+      </div>
+      <form class="form-card" id="estimate" novalidate>
+        <h3>Request a free estimate</h3>
+        <p class="hint">Tell us what you'd like to build. A rough size and where it's going is plenty to start.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-item">Building</label>
+            <select id="f-item" name="item"><option>Shop or garage</option><option>Horse barn or arena</option><option>Hay or machine shed</option><option>Home</option><option>Commercial building</option><option>Something else</option></select>
+          </div>
+          <div class="field"><label for="f-size">Rough size</label><input type="text" id="f-size" name="size" placeholder="e.g. 40 x 60"></div>
+        </div>
+        <div class="field"><label for="f-area">Where it's going</label><input type="text" id="f-area" name="area" placeholder="Sheridan, Big Horn, Buffalo..." autocomplete="address-level2"></div>
+        <div class="field"><label for="f-msg">Tell us about it</label><textarea id="f-msg" name="details" placeholder="Doors, stalls, insulation, colors, timing..."></textarea></div>
+        <button class="btn btn-field" type="submit">Send estimate request</button>
+        <p class="form-note" id="f-note">Opens your email app with the details filled in. Or call 307.673.0327.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b style="color:#fff">TruBuilt Builders, Inc.</b> · Post frame construction &amp; general contracting · Sheridan, WY 82801<br><a href="tel:+13076730327">307.673.0327</a> · <a href="mailto:jhtrubuilt@fiberpipe.net">jhtrubuilt@fiberpipe.net</a></div>
+    <nav class="foot-links" aria-label="Footer"><a href="#buildings">Buildings</a><a href="#gallery">Gallery</a><a href="#reviews">Customers</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="copy">© <span id="yr">2026</span> TruBuilt Builders, Inc.</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+13076730327">Call 307.673.0327</a><a href="#estimate">Free estimate</a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Gallery tabs: one building type at a time. The "See ..." links on the cards pick a tab too.
+const tabs = [...document.querySelectorAll(".tabs button")], figs = [...document.querySelectorAll("#gal figure")];
+function show(cat) {
+  tabs.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
+  figs.forEach(f => { f.hidden = f.dataset.cat !== cat; });
+}
+tabs.forEach(b => b.addEventListener("click", () => show(b.dataset.cat)));
+document.querySelectorAll("[data-show]").forEach(a => a.addEventListener("click", () => show(a.dataset.show)));
+
+// Estimate request: opens the visitor's email app addressed to TruBuilt. Swap for a form service when the site goes live.
+function reqMailto() {
+  const v = id => $(id).value.trim();
+  const item = $("f-item").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Building: ${item}`];
+  if (v("f-size")) lines.push(`Rough size: ${v("f-size")}`);
+  if (v("f-area")) lines.push(`Where: ${v("f-area")}`);
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  return "mailto:jhtrubuilt@fiberpipe.net?subject=" + encodeURIComponent(`Estimate request: ${item} (${v("f-name")})`) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("estimate").addEventListener("submit", e => {
+  e.preventDefault();
+  const note = $("f-note");
+  if (!$("f-name").value.trim()) { note.textContent = "Please add your name."; $("f-name").focus(); return; }
+  if (!$("f-phone").value.trim()) { note.textContent = "Please add a phone number so we can reach you."; $("f-phone").focus(); return; }
+  note.textContent = "Opening your email app...";
+  window.location.href = reqMailto();
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+<script defer src="../count.js"></script>
+</body>
+</html>
