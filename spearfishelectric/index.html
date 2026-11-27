@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW: remove this robots tag and the .mock-note banner when the site goes live. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Spearfish Electric | Electrical Contractor in Spearfish, SD &amp; the Northern Black Hills</title>
+<meta name="description" content="Residential, commercial and industrial electrical work since 1983: new construction, remodels, repairs, lighting, generators and well controls. Licensed in SD and WY. (605) 642-2983.">
+<meta name="theme-color" content="#b01834">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spearfish Electric: your full service electrical contractor">
+<meta property="og:description" content="Residential, commercial and industrial electrical work in the Northern Black Hills since 1983.">
+<meta property="og:image" content="assets/share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Spearfish Electric",
+  "description": "Residential, commercial and industrial electrical contractor, licensed and insured in South Dakota and Wyoming. In business since 1983.",
+  "foundingDate": "1983",
+  "telephone": "+1-605-642-2983",
+  "email": "info@spearfishelectric.com",
+  "url": "http://www.spearfishelectric.com/",
+  "image": "assets/share.jpg",
+  "address": { "@type": "PostalAddress", "streetAddress": "530 West Jackson Blvd", "addressLocality": "Spearfish", "addressRegion": "SD", "postalCode": "57783", "addressCountry": "US" },
+  "areaServed": "Northern Black Hills",
+  "sameAs": ["https://www.facebook.com/SpearfishElectric/"]
+}
+</script>
+<style>
+  /* Colors from their logo (README.md): --red #b01834 the logo's red lettering and fist; --bolt #e8c830 its yellow bolt.
+     --ink #1d1a1b is the logo's black outline, warmed slightly, for the header band and footer. Condensed bold heads echo the logo's ELECTRIC bar. */
+  :root {
+    --ink: #1d1a1b;
+    --ink-2: #2b2627;
+    --red: #b01834;
+    --red-d: #8e1229;
+    --bolt: #e8c830;
+    --bolt-l: #f7e9a8;
+    --pale: #faf6ec;
+    --text: #232022;
+    --muted: #5a5356;
+    --line: #e8e1d3;
+    --radius: 6px;
+    --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --head: "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font: 400 17px/1.6 var(--sans); color: var(--text); background: #fff; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--red); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+  @media (max-width: 480px) { .wrap { padding: 0 16px; } }
+  .skip { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+  :focus-visible { outline: 3px solid var(--bolt); outline-offset: 3px; }
+  .mock-note { background: #fff4d6; color: #5c4400; font-size: 14px; text-align: center; padding: 7px 16px; border-bottom: 1px solid #ecd9a0; }
+
+  .site-head { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 4px solid var(--red); }
+  .bar { display: flex; align-items: center; gap: 24px; height: 76px; }
+  .lockup { margin-right: auto; display: flex; align-items: center; }
+  .lockup img { height: 60px; width: auto; }
+  .nav { display: flex; gap: 22px; }
+  .nav a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 16px; }
+  .nav a:hover { color: var(--red); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font: 800 17px/1 var(--head); letter-spacing: .02em; text-decoration: none; padding: 15px 22px; border-radius: var(--radius); border: 2px solid transparent; cursor: pointer; }
+  .btn-red { background: var(--red); color: #fff; }
+  .btn-red:hover { background: var(--red-d); }
+  .btn-bolt { background: var(--bolt); color: var(--ink); }
+  .btn-bolt:hover { background: #f0d655; }
+  .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .head-call { padding: 12px 15px; font-size: 16px; white-space: nowrap; }
+  @media (max-width: 960px) { .nav { display: none; } }
+  @media (max-width: 560px) { .bar { height: 66px; } .lockup img { height: 46px; } .head-call { padding: 11px 12px; font-size: 15px; } }
+
+  .hero { background: var(--ink); color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 44px; align-items: center; padding-top: 48px; padding-bottom: 54px; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 26px; padding-top: 28px; padding-bottom: 36px; } }
+  .kicker { font: 800 14px/1.2 var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--bolt); margin: 0 0 12px; }
+  h1 { font: 800 clamp(34px, 4.6vw, 54px)/1.05 var(--head); margin: 0 0 16px; }
+  .hero p.sub { font-size: 19px; margin: 0 0 26px; color: #ece7e8; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero figure { margin: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.45); border-bottom: 6px solid var(--bolt); }
+  .hero figure img { width: 100%; }
+
+  .trust { background: var(--bolt); color: var(--ink); }
+  .trust ul { list-style: none; margin: 0 auto; padding: 14px 20px; display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 8px 20px; font: 800 16px/1.3 var(--head); }
+  .trust li::before { content: "\26A1\FE0E  "; color: var(--red); }
+  @media (max-width: 960px) { .trust ul { grid-template-columns: 1fr 1fr; justify-content: stretch; } }
+  @media (max-width: 460px) { .trust ul { grid-template-columns: 1fr; } }
+
+  section { padding: 68px 0; }
+  @media (max-width: 640px) { section { padding: 48px 0; } }
+  .tint { background: var(--pale); }
+  .eyebrow { font: 800 14px/1.2 var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
+  h2 { font: 800 clamp(30px, 3.6vw, 42px)/1.1 var(--head); margin: 0 0 14px; color: var(--ink); }
+  h3 { font: 800 20px/1.2 var(--head); margin: 0 0 6px; color: var(--ink); }
+  .intro { color: var(--muted); max-width: 760px; margin: 0 0 30px; font-size: 18px; }
+
+  .types { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+  @media (max-width: 860px) { .types { grid-template-columns: 1fr; } }
+  .type { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .type img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+  .type div { padding: 14px 16px 16px; border-top: 5px solid var(--red); }
+  .type p { margin: 0; color: var(--muted); font-size: 16px; }
+  .svc-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 16px; }
+  @media (max-width: 860px) { .svc-list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .svc-list { grid-template-columns: 1fr; } }
+  .svc-list li { background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--bolt); border-radius: var(--radius); padding: 12px 14px; font-weight: 700; }
+  .svc-note { margin: 18px 0 0; color: var(--muted); }
+
+  .gal { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 860px) { .gal { grid-template-columns: 1fr 1fr; } }
+  .gal figure { margin: 0; border-radius: 4px; overflow: hidden; background: var(--ink); }
+  .gal img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .onjob { margin-top: 26px; }
+  .onjob h3 { margin-bottom: 12px; }
+  .thumbs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+  @media (max-width: 860px) { .thumbs { grid-template-columns: repeat(3, 1fr); } }
+  .thumbs img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
+
+  .quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 820px) { .quotes { grid-template-columns: 1fr; } }
+  .quotes blockquote { margin: 0; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: var(--radius); padding: 18px 20px; }
+  .quotes p { margin: 0 0 10px; font-size: 17.5px; }
+  .quotes cite { font-style: normal; font-weight: 700; color: var(--ink); }
+
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 24px; } }
+  .about img { border-radius: var(--radius); width: 100%; }
+  .about p { margin: 0 0 13px; }
+  .sig { font-weight: 700; color: var(--ink); }
+
+  .jobs { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: start; }
+  @media (max-width: 860px) { .jobs { grid-template-columns: 1fr; gap: 20px; } }
+  .jobs ul { margin: 0 0 14px; padding-left: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-top: 6px solid var(--bolt); border-radius: var(--radius); padding: 22px; }
+  .card h3 { margin-bottom: 10px; }
+  .benefits { columns: 2; column-gap: 20px; }
+  @media (max-width: 420px) { .benefits { columns: 1; } }
+
+  .pay { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 760px) { .pay { grid-template-columns: 1fr; } }
+  .pay .card p { margin: 0; }
+
+  .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .cinfo { list-style: none; padding: 0; margin: 0; }
+  .cinfo li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cinfo small { display: block; font: 800 13px/1.2 var(--head); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .cinfo a, .cinfo .val { color: var(--ink); font-weight: 700; text-decoration: none; font-size: 18px; word-break: break-word; }
+  .cinfo .who { display: block; font-size: 15px; color: var(--muted); font-weight: 400; }
+  .form-card { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 28px; border-top: 6px solid var(--bolt); }
+  .form-card h3 { color: #fff; font-size: 28px; margin: 0 0 4px; }
+  .form-card .hint { color: #e3dcdd; font-size: 16px; margin: 0 0 18px; }
+  .field { margin-bottom: 14px; }
+  .field > label { display: block; font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+  .field select, .field input[type=text], .field input[type=tel], .field textarea { width: 100%; font: 400 16px/1.3 var(--sans); padding: 12px; border: 1.5px solid #8d8487; border-radius: 5px; background: #fff; color: var(--text); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .two { grid-template-columns: 1fr; } }
+  .form-card textarea { min-height: 92px; resize: vertical; }
+  .form-card .btn { width: 100%; }
+  .form-note { font-size: 14.5px; color: #e3dcdd; margin: 10px 0 0; text-align: center; }
+
+  .site-foot { background: #121011; color: #d9d2d4; font-size: 15.5px; padding: 32px 0 24px; border-top: 6px solid var(--red); }
+  .site-foot a { color: #fff; white-space: nowrap; }
+  .foot-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+  .foot-links a { text-decoration: none; }
+  .copy { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
+
+  .callbar { display: none; }
+  @media (max-width: 760px) {
+    .callbar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; box-shadow: 0 -4px 16px rgba(0,0,0,.3); }
+    .callbar a { display: block; text-align: center; padding: 14px 4px; font: 800 17px/1.2 var(--head); text-decoration: none; background: var(--red); color: #fff; }
+    .callbar a + a { background: var(--bolt); color: var(--ink); }
+    body { padding-bottom: 56px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mock-note">Preview made for Spearfish Electric from the text and photos on their current site. Not live yet.</div>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="lockup" href="#top" aria-label="Spearfish Electric, home"><img src="assets/img/logo.webp" alt="Spearfish Electric" width="269" height="109"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#careers">Careers</a>
+      <a href="#pay">Pay bill</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-red head-call" href="tel:+16056422983">(605) 642-2983</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Spearfish, SD · Since 1983</p>
+        <h1>Your full service electrical contractor.</h1>
+        <p class="sub">Residential, commercial and industrial electrical work across the Northern Black Hills. We'll take the time to go through every detail of your project, so the end product is exactly what you want and need.</p>
+        <div class="actions">
+          <a class="btn btn-bolt" href="#estimate">Request an estimate</a>
+          <a class="btn btn-ghost" href="tel:+16056422983">Call (605) 642-2983</a>
+        </div>
+      </div>
+      <figure><img src="assets/img/counter.webp" alt="The Spearfish Electric front counter with stools, a corrugated metal bar and pendant lights" width="669" height="402"></figure>
+    </div>
+  </div>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li>In business since 1983</li>
+      <li>Licensed &amp; insured in SD and WY</li>
+      <li>Residential · Commercial · Industrial</li>
+      <li>Serving the Northern Hills</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>Any electrical service you might need</h2>
+      <p class="intro">We are a South Dakota and Wyoming licensed and insured electrical contractor serving the Northern Black Hills. Dedicated to fast, friendly customer service, we'll do everything we can to ensure your project progresses smoothly.</p>
+      <div class="types">
+        <article class="type"><img src="assets/img/home-1.webp" alt="A new single-story home with a three-car garage and stone accents" width="640" height="480" loading="lazy">
+          <div><h3>Residential</h3><p>New homes, remodels and additions, lighting, and repairs.</p></div></article>
+        <article class="type"><img src="assets/img/store.webp" alt="A large retail store front with brick columns" width="640" height="480" loading="lazy">
+          <div><h3>Commercial</h3><p>Stores and apartment buildings, from new construction to maintenance and repair.</p></div></article>
+        <article class="type"><img src="assets/img/job-lift.webp" alt="Two electricians on a scissor lift running conduit up a metal building wall" width="206" height="206" loading="lazy">
+          <div><h3>Industrial</h3><p>Metal buildings, pole lighting, generators, and well and sewage controls.</p></div></article>
+      </div>
+      <ul class="svc-list">
+        <li>New construction</li>
+        <li>Remodel / addition</li>
+        <li>Maintenance / repair</li>
+        <li>Audio systems</li>
+        <li>Specialty lighting</li>
+        <li>Security / fire alarm</li>
+        <li>Cummins backup power generators</li>
+        <li>Water well / sewage control systems</li>
+        <li>Pole lighting installation, maintenance and repair</li>
+      </ul>
+      <p class="svc-note">Don't see it here? Feel free to contact us with any request you might have. We'd love to give you our professional recommendation for the best products to meet your needs.</p>
+    </div>
+  </section>
+
+  <section id="work" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Project gallery</p>
+      <h2>Work we've wired</h2>
+      <div class="gal">
+        <figure><img src="assets/img/home-4.webp" alt="A modern two-story home with a shed roof and wood siding" width="640" height="480" loading="lazy"></figure>
+        <figure><img src="assets/img/kitchen.webp" alt="A finished kitchen with pendant lights over the island" width="640" height="480" loading="lazy"></figure>
+        <figure><img src="assets/img/home-3.webp" alt="A new home with a two-door garage and stone wainscot" width="640" height="480" loading="lazy"></figure>
+        <figure><img src="assets/img/bath.webp" alt="A finished bathroom with a light over the vanity" width="480" height="640" loading="lazy"></figure>
+        <figure><img src="assets/img/framing.webp" alt="A framed and insulated wall with new windows during rough-in" width="480" height="640" loading="lazy"></figure>
+        <figure><img src="assets/img/apartments.webp" alt="A new apartment building with a stone sign out front" width="480" height="640" loading="lazy"></figure>
+        <figure><img src="assets/img/home-2.webp" alt="A new home with a wide front lawn and three garage doors" width="640" height="480" loading="lazy"></figure>
+        <figure><img src="assets/img/store.webp" alt="A large retail store front with brick columns and a long canopy" width="640" height="480" loading="lazy"></figure>
+        <figure><img src="assets/img/home-1.webp" alt="A new single-story home with a three-car garage" width="640" height="480" loading="lazy"></figure>
+      </div>
+      <div class="onjob">
+        <h3>On the job</h3>
+        <div class="thumbs">
+          <img src="assets/img/job-meters.webp" alt="A bank of new electric meters being installed on a building" width="206" height="206" loading="lazy">
+          <img src="assets/img/job-lift.webp" alt="Electricians on a scissor lift at a metal building" width="206" height="206" loading="lazy">
+          <img src="assets/img/job-steel.webp" alt="A steel-framed building under construction" width="206" height="206" loading="lazy">
+          <img src="assets/img/job-pole.webp" alt="A tall light pole being installed" width="206" height="206" loading="lazy">
+          <img src="assets/img/job-truck.webp" alt="A Spearfish Electric service truck with ladders at a job" width="206" height="206" loading="lazy">
+          <img src="assets/img/job-light.webp" alt="A new wall light on a brick building" width="206" height="206" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <p class="eyebrow">Customer testimonials</p>
+      <h2>What our customers say</h2>
+      <div class="quotes">
+        <blockquote><p>"Many thanks for your exceptional service. I don't recall the name of the repair man but wanted to let you know he was knowledgable, professional and friendly. We were so pleased that we received a reasonably priced service. We will certainly use your business again for our heating and cooling needs."</p><cite>Terry and Wendy</cite></blockquote>
+        <blockquote><p>"A small army came and transformed my small house into a functioning abode! Thank you for your prompt and wonderful attention. (Now able to shower!)"</p><cite>Elaine</cite></blockquote>
+        <blockquote><p>"We appreciate the discount on the work in our cat impaired air exchange. It has made a big difference for our feline residents."</p><cite>Western Hills Humane Society</cite></blockquote>
+        <blockquote><p>"Thank you- the downstairs lighting really looks nice! :)"</p><cite>Linda</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tint">
+    <div class="wrap about">
+      <img src="assets/img/crew.webp" alt="The Spearfish Electric crew standing in front of their shop and a company truck" width="436" height="345" loading="lazy">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>A family owned contractor since 1983</h2>
+        <p>Spearfish Electric has been in business since 1983, with James Leonhardt as the SD Electrical Contractor license holder since 2006.</p>
+        <p>Here at Spearfish Electric we are your full service electrical contractor. We'll take the time to go through every detail of your project, ensuring that the end product is exactly what you want and need.</p>
+        <p>Serving the Northern Hills and surrounding areas.</p>
+        <p class="sig">James Leonhardt, President</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers">
+    <div class="wrap jobs">
+      <div>
+        <p class="eyebrow">Careers</p>
+        <h2>We're hiring electricians</h2>
+        <p>We are a family owned, fast-paced company that has been in business for over 30 years, and we are looking to expand our team. Current full time positions:</p>
+        <ul>
+          <li><b>SD Licensed Apprentice Electrician</b></li>
+          <li><b>SD Licensed Journey Electrician</b> (Wyoming license is a plus)</li>
+        </ul>
+        <p>Monday to Thursday 7:30 AM to 5:00 PM and Friday 7:30 AM to 11:30 AM, so you can be home every night and have a longer weekend.</p>
+        <a class="btn btn-red" href="mailto:info@spearfishelectric.com?subject=Electrician%20position">Apply by email</a>
+      </div>
+      <div class="card">
+        <h3>Benefits</h3>
+        <ul class="benefits">
+          <li>Health insurance</li><li>Health savings account</li><li>Paid time off</li><li>Holiday pay</li><li>Employee discount</li>
+          <li>401K with company match</li><li>Profit sharing</li><li>Relocation assistance</li><li>On the job training</li><li>Bonus pay</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pay" class="tint">
+    <div class="wrap">
+      <p class="eyebrow">Pay your bill</p>
+      <h2>Three ways to pay</h2>
+      <div class="pay">
+        <div class="card"><h3>Online</h3><p>Give us a call, text, or <a href="#contact">contact us</a> and we'll send you a secure link to pay from.</p></div>
+        <div class="card"><h3>By phone</h3><p>We can also accept payment by phone. Call <a href="tel:+16056422983">(605) 642-2983</a>.</p></div>
+        <div class="card"><h3>By check</h3><p>Mail your check to Spearfish Electric, 530 W Jackson Blvd, Spearfish, SD 57783.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h2>Call today</h2>
+        <p>Tell us about your project and we'll get back to you.</p>
+        <ul class="cinfo">
+          <li><small>Call</small><a href="tel:+16056422983">(605) 642-2983</a></li>
+          <li><small>General inquiries</small><a href="mailto:info@spearfishelectric.com">info@spearfishelectric.com</a></li>
+          <li><small>Office manager</small><a href="mailto:mindi@spearfishelectric.com">mindi@spearfishelectric.com</a></li>
+          <li><small>Shop</small><span class="val">530 West Jackson Blvd, Spearfish, SD 57783</span></li>
+          <li><small>Facebook</small><a href="https://www.facebook.com/SpearfishElectric/">facebook.com/SpearfishElectric</a></li>
+        </ul>
+      </div>
+      <form class="form-card" id="estimate" novalidate>
+        <h3>Request an estimate</h3>
+        <p class="hint">A few lines about the job is plenty to start.</p>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-item">Type of work</label>
+            <select id="f-item" name="item"><option>New construction</option><option>Remodel or addition</option><option>Repair</option><option>Lighting</option><option>Backup generator</option><option>Well or sewage controls</option><option>Something else</option></select>
+          </div>
+          <div class="field"><label for="f-area">Town</label><input type="text" id="f-area" name="area" placeholder="Spearfish, Belle Fourche..." autocomplete="address-level2"></div>
+        </div>
+        <div class="field"><label for="f-msg">Tell us about it</label><textarea id="f-msg" name="details" placeholder="What needs doing, residential or commercial, timing..."></textarea></div>
+        <button class="btn btn-bolt" type="submit">Send estimate request</button>
+        <p class="form-note" id="f-note">Opens your email app with the details filled in. Or call (605) 642-2983.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b style="color:#fff">Spearfish Electric</b> · Residential, commercial &amp; industrial electrical · 530 West Jackson Blvd, Spearfish, SD 57783<br><a href="tel:+16056422983">(605) 642-2983</a> · <a href="mailto:info@spearfishelectric.com">info@spearfishelectric.com</a></div>
+    <nav class="foot-links" aria-label="Footer"><a href="#services">Services</a><a href="#work">Our work</a><a href="#reviews">Reviews</a><a href="#careers">Careers</a><a href="#pay">Pay bill</a><a href="#contact">Contact</a></nav>
+    <div class="copy">© <span id="yr">2026</span> Spearfish Electric</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+16056422983">Call (605) 642-2983</a><a href="#estimate">Request estimate</a></div>
+
+<script>
+const $ = id => document.getElementById(id);
+// Estimate request: opens the visitor's email app addressed to Spearfish Electric. Swap for a form service when the site goes live.
+function reqMailto() {
+  const v = id => $(id).value.trim();
+  const item = $("f-item").value;
+  const lines = [`Name: ${v("f-name")}`, `Phone: ${v("f-phone")}`, `Work: ${item}`];
+  if (v("f-area")) lines.push(`Town: ${v("f-area")}`);
+  if (v("f-msg")) lines.push("", v("f-msg"));
+  return "mailto:info@spearfishelectric.com?subject=" + encodeURIComponent(`Estimate request: ${item} (${v("f-name")})`) + "&body=" + encodeURIComponent(lines.join("\n"));
+}
+$("estimate").addEventListener("submit", e => {
+  e.preventDefault();
+  const note = $("f-note");
+  if (!$("f-name").value.trim()) { note.textContent = "Please add your name."; $("f-name").focus(); return; }
+  if (!$("f-phone").value.trim()) { note.textContent = "Please add a phone number so we can reach you."; $("f-phone").focus(); return; }
+  note.textContent = "Opening your email app...";
+  window.location.href = reqMailto();
+});
+$("yr").textContent = new Date().getFullYear();
+</script>
+<script defer src="../count.js"></script>
+</body>
+</html>
